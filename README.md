@@ -1,6 +1,10 @@
 # JiaMi
 纳迪亚加密器 2.1
 
+测试地址：
+
+https://guziyimai.github.io/JiaMi
+
 使用方法：
 
 1、将要加密或解密的文字复制到上方

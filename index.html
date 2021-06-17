@@ -2,41 +2,39 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="keywords" content="纳迪亚加密,纳迪亚,在线,加密">
-	<meta name="description" content="纳迪亚之宝专用文本加密器。">
+	<meta name="keywords" content="纳迪亚,加密,解密,纳迪亚加密器,在线,Nadia">
+	<meta name="description" content="纳迪亚之宝专用文本加密器">
 	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="Cache-Control" CONTENT="no-store, must-revalidate">
-	<title>纳迪亚加密器2.3</title>
+	<title>纳迪亚加密器2.4</title>
 	<style type="text/css">
-		textarea {max-width:94%;min-width:82%;resize:none;margin:10px 0px;font-size:20px;}
+		textarea {width:80%;resize:none;margin:10px 0px;font-size:20px;}
 		a {font-size:20px;margin:0px 25px;}
 		h1 {text-align:center;margin:15px 0px;}
-		h3 {text-align:center;margin:10px 0px;}
+		h4 {text-align:center;margin:10px 0px;}
 		.btn {background-color:#4e6ef2;border: none;color: white;padding: 8px 15px;margin:5px 25px;text-align: center;font-size:20px;}
 		.btn:hover {background-color:#4662d9;cursor:pointer;}
 		.btn:active {transform: translateY(4px);}
 		span {display:inline-block;font-size:18px;width:128px;}
-		#mainDiv {text-align:center;width:100%}
+		#mainDiv {text-align:center;width:100%;}
+		.msg {text-align:left;margin-left:10%;margin-top:-5px;color:#337ac7}
+		#otherDiv {text-align:right;margin-right:10%;font-size:15px}
 	</style>
 </head>
 <body>
-	<h1>纳迪亚加密器 2.3</h1>
-	<h3 id="waringStr">您的浏览器禁用了JavaScript，请启用JavaScript！</h3>
+	<h1>纳迪亚加密器 2.4</h1>
 	<div id="mainDiv">
-		<div>推荐电脑端使用谷歌内核浏览器访问，支持IE和手机浏览器。</div>
-		<div>对密文添加空格、回车、贴吧表情、开头汉字介绍，并不影响解密。</div>
-		<textarea id="upText" placeholder="请将要加密或解密的文字复制到此" rows="5" ></textarea>
+		<h4 id="waringStr">您的浏览器禁用了JavaScript，请启用JavaScript！</h4>
+		<div class="msg">请将要加密或解密的文字复制到此 :</div>
+		<textarea id="upText" placeholder="仅限文本加密，请勿用于非法用途。" rows="5" ></textarea>
 		<br>
 		<input type="button" class="btn" value="加密" onclick="encode()">
 		<span id="tiShi"></span>
 		<input type="button" class="btn" value="解密" onclick="decode()">
 		<br>
-		<textarea id="downText" placeholder="结果显示区域" rows="9" readonly></textarea>
-		<div id="otherDiv" style="display:none;">
-			
-		</div>
+		<div class="msg">结果显示区域 :</div>
+		<textarea id="downText" placeholder="对密文添加空格、回车、贴吧表情、开头汉字介绍，不影响解密。" rows="8" readonly></textarea>
+		<div id="otherDiv"></div>
 	</div>
-	<script type="text/javascript" src="Nadia_Encode2.3.3.js"></script>
+	<script type="text/javascript" src="Nadia_Encode2.4.0.js"></script>
 </body>
 </html>
-

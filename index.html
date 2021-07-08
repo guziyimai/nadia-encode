@@ -42,12 +42,12 @@
 		<div style="text-align:left;margin-left:10%;">
 		密文前缀：<input id="prefix" type="text" value="纳迪亚加密" size="12">
 		&nbsp&nbsp&nbsp&nbsp加密后：
-		<select id="encodeAfter">
+		<select id="encodeAfter" onchange="saveCookie()>
 			<option value="1">无操作</option>
 			<option value="2" selected>复制结果</option>
 		</select>
 		&nbsp&nbsp&nbsp&nbsp解密后：
-		<select id="decodeAfter">
+		<select id="decodeAfter" onchange="saveCookie()>
 			<option value="1">&nbsp&nbsp-- 无操作 --</option>
 			<option value="2">&nbsp&nbsp--复制结果--</option>
 			<option value="3" selected>打开网址并复制提取码</option>

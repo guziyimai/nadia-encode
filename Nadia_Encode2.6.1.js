@@ -132,6 +132,7 @@ function saveCookie(notShowMsg){
 	}
 	console.log(encodeAfter.value);
 	console.log(decodeAfter.value);
+	alert("prefix="+prefix.value+";encodeAfterOption="+encodeAfter.value+";decodeAfterOption="+decodeAfter.value+";expires=Fri, 31 Dec 9999 23:59:59 GMT");
 	document.cookie="prefix="+prefix.value+";encodeAfterOption="+encodeAfter.value+";decodeAfterOption="+decodeAfter.value+";expires=Fri, 31 Dec 9999 23:59:59 GMT";
 	prefixStr=prefix.value;
 	if(notShowMsg) showMsg("已保存设置","green");

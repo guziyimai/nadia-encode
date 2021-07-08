@@ -11,12 +11,17 @@
 		a {font-size:20px;margin:0px 25px;}
 		h1 {text-align:center;margin:15px 0px;}
 		h4 {text-align:center;margin:10px 0px;}
-		.btn {background-color:#4e6ef2;border: none;color: white;padding: 8px 15px;margin:3px 40px -10px 15px;text-align: center;font-size:20px;}
+		.btn {background-color:#4e6ef2;border: none;color: white;padding: 8px 15px;margin:3px -5px -10px 30px;text-align: center;font-size:20px;}
 		.btn:hover {background-color:#4662d9;cursor:pointer;}
 		.btn:active {transform: translateY(4px);}
-		#tiShi {display:inline-block;font-size:18px;width:128px;}
+		
+		.btn2 {background-color:#5cb85c;border: none;color: white;padding: 8px 15px;margin:3px -5px -10px 30px;text-align: center;font-size:20px;}
+		.btn2:hover {background-color:#4CAF50;cursor:pointer;}
+		.btn2:active {transform: translateY(4px);}
+		
+		#tiShi {display:inline-block;font-size:18px;width:128px;margin-left:60px;}
 		#mainDiv {text-align:center;width:100%;}
-		.msg {text-align:left;margin-left:10%;margin-top:-5px;margin-right:20px;color:#337ac7}
+		.msg {text-align:left;margin-left:10%;margin-top:0px;margin-right:20px;color:#337ac7}
 		#otherDiv {text-align:right;margin-right:10%;font-size:15px}
 	</style>
 </head>
@@ -28,15 +33,30 @@
 		<textarea id="upText" rows="5" ></textarea>
 		<br>
 		<span id="tiShi"></span>
-		<input type="button" class="btn" value="加密" key="FDSFBZXHFRUIFSD" onclick="encode(this)">
-		<input type="button" class="btn" value="解密" key="JHADABWEHCVXNW" onclick="decode(this)">
+		<input title="戳我加密" type="button" class="btn" value="加密" key="FDSFBZXHFRUIFSD" onclick="encode(this)">
+		<input title="戳我解密" type="button" class="btn" value="解密" key="JHADABWEHCVXNW" onclick="decode(this)">
+		<input title="复制结果" type="button" class="btn2" value="复制" onclick="copyText()">
+		<!-- <input title="尝试打开网址并复制提取码" type="button" class="btn2" value="打开" onclick="openUrl()"> -->
 		<br>
 		<div class="msg">结果显示区域 :</div>
-		<div style="text-align:left;margin-left:10%;">密文前缀：<input id="prefix" type="text" value="纳迪亚加密" size="12"></div>
+		<div style="text-align:left;margin-left:10%;">
+		密文前缀：<input id="prefix" type="text" value="纳迪亚加密" size="12">
+		&nbsp&nbsp&nbsp&nbsp加密后：
+		<select id="encodeAfter">
+			<option value="1">无操作</option>
+			<option value="2" selected>复制结果</option>
+		</select>
+		&nbsp&nbsp&nbsp&nbsp解密后：
+		<select id="decodeAfter">
+			<option value="1">&nbsp&nbsp-- 无操作 --</option>
+			<option value="2">&nbsp&nbsp--复制结果--</option>
+			<option value="3" selected>打开网址并复制提取码</option>
+		</select>
+		</div>
 		<textarea id="downText" rows="8" readonly></textarea>
 		<div id="otherDiv">
 		</div>
 	</div>
-	<script type="text/javascript" src="Nadia_Encode2.5.3.js"></script>
+	<script type="text/javascript" src="Nadia_Encode2.6.0.js"></script>
 </body>
 </html>

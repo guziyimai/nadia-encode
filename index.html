@@ -28,13 +28,13 @@
 </head>
 <body>
 	<div id="mainDiv">
-		<h1>纳迪亚加密器</h1>
+		<h1 title="纳迪亚之宝专用加密器">纳迪亚加密器</h1>
 		<h4 id="waringDiv">您的浏览器禁用了JavaScript，请启用JavaScript！</h4>
 		<div class="msg">
 		请将要加密或解密的文字复制到此 :
 		<span style="color:black;">
 			&nbsp;&nbsp;&nbsp;&nbsp;补全：
-			<select id="completeUrl">
+			<select id="completeUrl" title="补全贴吧的无头链接（可批量）">
 				<option value="0">无</option>
 				<option value="1">百度云</option>
 				<option value="5">阿里云</option>
@@ -54,24 +54,24 @@
 		<br>
 		<div class="msg">结果显示区域 :</div>
 		<div style="text-align:left;margin-left:10%;">
-		密文前缀：<input id="prefix" type="text" value="纳迪亚加密" size="12">
+		密文前缀：<input id="prefix" type="text" title="加密后开头加什么文字" value="纳迪亚加密" size="12">
 		&nbsp;&nbsp;&nbsp;&nbsp;加密后：
-		<select id="encodeAfter">
+		<select id="encodeAfter" title="加密后是否复制结果">
 			<option value="1">无操作</option>
 			<option value="2" selected>复制结果</option>
 		</select>
 		&nbsp;&nbsp;&nbsp;&nbsp;解密后：
-		<select id="decodeAfter">
+		<select id="decodeAfter" title="解密后是否需要尝试打开第1个网址">
 			<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;无操作&nbsp;&nbsp;----</option>
 			<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;复制结果&nbsp;----</option>
 			<option value="3" selected>打开网址并复制提取码</option>
 		</select>
 		</div>
 		<textarea id="downText" rows="8" readonly></textarea>
-		<div id="otherDiv">
+		<div id="otherDiv" title="有什么BUG可以联系我">
 		</div>
 		<span id="notCache" style="display:none;"></span>
 	</div>
-	<script type="text/javascript" src="Nadia_Encode2.8.1.js"></script>
+	<script type="text/javascript" src="Nadia_Encode2.8.2.js"></script>
 </body>
 </html>

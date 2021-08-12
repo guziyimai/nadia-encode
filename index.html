@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="keywords" content="纳迪亚,加密,解密,纳迪亚加密器,在线,Nadia">
 	<meta name="description" content="纳迪亚之宝专用文本加密器">
+	<!-- 禁用缓存 -->
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
 	<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
@@ -12,28 +13,36 @@
 	<style type="text/css">
 		textarea {width:80%;resize:none;margin:10px 0px;font-size:20px;}
 		a {font-size:20px;margin:0px 25px;}
-		h1 {text-align:center;margin:15px 0px;}
-		h4 {text-align:center;margin:10px 0px;}
-		.btn {background-color:#4e6ef2;border: none;color: white;padding: 8px 15px;margin:3px -5px -10px 30px;text-align: center;font-size:20px;}
+		.menuDiv {border:1px solid #e7e7e7;background-color:#e7e7e7;width:80%;margin-left:10%;margin-top:0px;}
+		.menu {text-align:center;padding:12px 16px;display:inline-block;color:#666;}
+		.menu:hover {background-color:#666;color:white;cursor:pointer;}
+		.menu2 {text-align:center;display:inline-block;padding:12px 16px;background-color:#39a0e2;color:white;cursor:pointer;}
+		h4 {text-align:center;margin:10px 2px;}
+		.btn {background-color:#4e6ef2;border: none;color: white;padding: 8px 15px;margin:3px -5px 9px 25px;text-align: center;font-size:20px;}
 		.btn:hover {background-color:#4662d9;cursor:pointer;}
 		.btn:active {transform: translateY(4px);}
-		.btn2 {background-color:#5cb85c;border: none;color: white;padding: 8px 15px;margin:3px -5px -10px 30px;text-align: center;font-size:20px;}
+		.btn2 {background-color:#5cb85c;border: none;color: white;padding: 8px 15px;margin:3px -5px 9px 25px;text-align: center;font-size:20px;}
 		.btn2:hover {background-color:#4CAF50;cursor:pointer;}
 		.btn2:active {transform: translateY(4px);}
-		#tiShi {display:inline-block;font-size:19px;width:180px;margin-left:40px;}
+		#tiShi {display:inline-block;font-size:19px;width:180px;margin-left:30px;}
 		#mainDiv {text-align:center;width:100%;}
 		.msg {text-align:left;margin-left:10%;margin-top:0px;margin-right:20px;color:#337ac7;font-size:17px;}
-		#otherDiv {text-align:right;margin-right:10%;font-size:15px;}
+		#authorDiv {text-align:right;margin-right:10%;font-size:15px;}
 	</style>
 </head>
 <body>
 	<div id="mainDiv">
-		<h1 title="纳迪亚之宝专用加密器">纳迪亚加密器</h1>
+		<!-- 导航栏 -->
+		<ul class="menuDiv">
+			<li onclick="convertEngine(this)" class="menu" title="纳迪亚之宝专用加密器">纳迪亚加密</li><li onclick="convertEngine(this)" class="menu" title="补全贴吧的无头链接（可批量）">补全链接</li><li onclick="convertEngine(this)" class="menu" title="ASCII码加密解密">ASCII加密</li><li onclick="convertEngine(this)" class="menu" title="Base64加密解密">Base64加密</li>
+		</ul>
+		<!-- 是否禁用了JS -->
 		<h4 id="waringDiv">您的浏览器禁用了JavaScript，请启用JavaScript！</h4>
 		<div class="msg">
-		请将要加密或解密的文字复制到此 :
-		<span style="color:black;">
-			&nbsp;&nbsp;&nbsp;&nbsp;补全：
+		<span id="upSpan"></span>
+		<!-- 补全链接 -->
+		<span style="color:black;display:none;" id="completeSpan">
+			&nbsp;&nbsp;请选择补全类型：
 			<select id="completeUrl" title="补全贴吧的无头链接（可批量）" key="bjzh3xUUGA2USFAS4mn4as6d">
 				<option value="0">无</option>
 				<option value="1">百度云</option>
@@ -42,36 +51,65 @@
 				<option value="3">迅雷</option>
 				<option value="4">微云</option>
 			</select>
+			<!-- 补全后操作 -->
+			&nbsp;&nbsp;补全后：
+			<select id="completeAfter" title="补全后是否需要尝试打开第1个网址">
+				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;无操作&nbsp;&nbsp;----</option>
+				<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;复制结果&nbsp;----</option>
+				<option value="3">打开网址并复制提取码</option>
+			</select>
 		</span>
 		</div>
+		<!-- 输入区域 -->
 		<textarea id="upText" rows="5" ></textarea>
 		<br>
+		<!-- 提示区域 -->
 		<span id="tiShi"></span>
-		<input title="戳我加密" type="button" class="btn" value="加密" key="FDSFBZXHFRUIFSD" onclick="encode(this)">
-		<input title="戳我解密" type="button" class="btn" value="解密" key="JHADABWEHCVXNW" onclick="decode(this)">
-		<input title="优先复制下方文字" type="button" class="btn2" value="复制" onclick="copyText()">
-		<!-- <input title="尝试打开网址并复制提取码" type="button" class="btn2" value="打开" onclick="openUrl()"> -->
+		<!-- 纳迪亚加密、解密按钮 -->
+		<span id="nadiaSpan">
+			<input title="纳迪亚加密" type="button" class="btn" value="加密" key="FDSFBZXHFRUIFSD" onclick="nadiaEncode(this)">
+			<input title="纳迪亚解密" type="button" class="btn" value="解密" key="JHADABWEHCVXNW" onclick="nadiaDecode(this)">
+		</span>
+		<!-- ASCII码加密、解密按钮 -->
+		<span id="asciiSpan" style="display:none;">
+			<input title="ASCII码加密" type="button" class="btn" value="加密" onclick="ortherEncode('ascii')">
+			<input title="ASCII码解密" type="button" class="btn" value="解密" onclick="ortherDecode('ascii')">
+		</span>
+		<!-- Base64加密、解密按钮 -->
+		<span id="base64Span" style="display:none;">
+			<input title="Base64加密" type="button" class="btn" value="加密" onclick="ortherEncode('base64')">
+			<input title="Base64解密" type="button" class="btn" value="解密" onclick="ortherDecode('base64')">
+		</span>
+		<!-- 复制按钮 -->
+		<input title="复制下方文字" type="button" class="btn2" value="复制" onclick="copyText()">
 		<br>
-		<div class="msg">结果显示区域 :</div>
-		<div style="text-align:left;margin-left:10%;">
-		密文前缀：<input id="prefix" type="text" title="加密后开头加什么文字" value="纳迪亚加密" size="12">
-		&nbsp;&nbsp;&nbsp;&nbsp;加密后：
-		<select id="encodeAfter" title="加密后是否复制结果">
-			<option value="1">无操作</option>
-			<option value="2" selected>复制结果</option>
-		</select>
-		&nbsp;&nbsp;&nbsp;&nbsp;解密后：
-		<select id="decodeAfter" title="解密后是否需要尝试打开第1个网址">
-			<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;无操作&nbsp;&nbsp;----</option>
-			<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;复制结果&nbsp;----</option>
-			<option value="3" selected>打开网址并复制提取码</option>
-		</select>
+		<div class="msg">
+			<span id="downSpan">结果显示区域 :</span>
+			<span style="color:black;" id="encodeSetSpan">
+			<!-- 加密后操作 -->
+			&nbsp;&nbsp;&nbsp;加密后：
+			<select id="encodeAfter" title="加密后是否复制结果">
+				<option value="1">无操作</option>
+				<option value="2">复制结果</option>
+			</select>
+			<!-- 解密后操作 -->
+			&nbsp;&nbsp;&nbsp;解密后：
+			<select id="decodeAfter" title="解密后是否需要尝试打开第1个网址">
+				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;无操作&nbsp;&nbsp;----</option>
+				<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;复制结果&nbsp;----</option>
+				<option value="3">打开网址并复制提取码</option>
+			</select>
+			</span>
 		</div>
+		<!-- 结果显示区域 -->
 		<textarea id="downText" rows="8" readonly></textarea>
-		<div id="otherDiv" title="有什么BUG可以联系我">
+		<!-- 作者信息 -->
+		<div id="authorDiv" title="有什么BUG可以联系我">
 		</div>
+		<!-- 防止缓存 -->
 		<span id="notCache" style="display:none;"></span>
 	</div>
-	<script type="text/javascript" src="Nadia_Encode2.8.5.js"></script>
+	<script type="text/javascript" src="base64.js"></script>
+	<script type="text/javascript" src="Nadia_Encode2.9.0.js"></script>
 </body>
 </html>

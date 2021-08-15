@@ -135,7 +135,7 @@ var Ascii = {
 	encode : function (inputStr) {
 		var allStr="",str;
 		for(var i=0;i<inputStr.length;i++){
-			str=upStr.charCodeAt(i).toString(16);
+			str=inputStr.charCodeAt(i).toString(16);
 			if(str.length==2) {
 				str="\\u00"+str;
 			} else if(str.length==3) {

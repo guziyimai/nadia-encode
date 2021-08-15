@@ -1,5 +1,5 @@
 /**
- * ¼æÈİIEä¯ÀÀÆ÷µÄBase64±àÂëºÍ½âÂë
+ * å…¼å®¹IEæµè§ˆå™¨çš„Base64ç¼–ç å’Œè§£ç 
  * @author https://blog.csdn.net/qq_34039868/article/details/103919535
  */
 var Base64 = {
@@ -127,11 +127,11 @@ var Base64 = {
 }
 
 /**
- * AsciiÂë¼ÓÃÜ¡¢½âÃÜ
+ * Asciiç åŠ å¯†ã€è§£å¯†
  * @author guziyimai
  */
 var Ascii = {
-	decode=unescape,
+	decode : window.unescape,
 	encode : function (input) {
 		var allStr="",str;
 		for(var i=0;i<upStr.length;i++){

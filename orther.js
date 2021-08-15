@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 兼容IE浏览器的Base64编码和解码
  * @author https://blog.csdn.net/qq_34039868/article/details/103919535
  */
@@ -132,9 +132,9 @@ var Base64 = {
  */
 var Ascii = {
 	decode : window.unescape,
-	encode : function (input) {
+	encode : function (inputStr) {
 		var allStr="",str;
-		for(var i=0;i<upStr.length;i++){
+		for(var i=0;i<inputStr.length;i++){
 			str=upStr.charCodeAt(i).toString(16);
 			if(str.length==2) {
 				str="\\u00"+str;

@@ -1,4 +1,5 @@
-﻿/**
+(function(){
+/**
  * 兼容IE浏览器的Base64编码和解码
  * @author https://blog.csdn.net/qq_34039868/article/details/103919535
  */
@@ -130,23 +131,19 @@ var Base64 = {
  * Ascii码加密、解密
  * @author guziyimai
  */
+var preStr=["\\u000","\\u00","\\u0","\\u"];
 var Ascii = {
 	decode : window.unescape,
 	encode : function (inputStr) {
 		var allStr="",str;
 		for(var i=0;i<inputStr.length;i++){
 			str=inputStr.charCodeAt(i).toString(16);
-			if(str.length==2) {
-				str="\\u00"+str;
-			} else if(str.length==3) {
-				str="\\u0"+str;
-			} else if(str.length==1) {
-				str="\\u000"+str;
-			} else {
-				str="\\u"+str;
-			}
+			str=preStr[str.length-1]+str;
 			allStr+=str;
 		}
 		return allStr;
 	}
 };
+window.Ascii=Ascii;
+window.Base64=Base64;
+})();

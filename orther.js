@@ -138,8 +138,7 @@ var Ascii = {
 		var allStr="",str;
 		for(var i=0;i<inputStr.length;i++){
 			str=inputStr.charCodeAt(i).toString(16);
-			str=preStr[str.length-1]+str;
-			allStr+=str;
+			allStr+=preStr[str.length-1]+str;
 		}
 		return allStr;
 	}

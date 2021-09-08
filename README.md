@@ -10,6 +10,8 @@ https://guziyimai.github.io/JiaMi
 
 3、加密或解密后的文字将在下方显示
 
+4、新增ASCII加密、Base64加密，详见更新日志
+
 
 说明：
 

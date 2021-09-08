@@ -1,8 +1,5 @@
 # JiaMi
-纳迪亚加密器
-
 测试地址：
-
 https://guziyimai.github.io/JiaMi
 
 使用方法：

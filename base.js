@@ -25,7 +25,9 @@ window.Ascii = {
 		}
 		return allStr;
 	},
-	decode : window.unescape
+	decode : function (str) {
+		return window.unescape(str.replace(/\\u/ig,'%u'));
+	}
 }
 
 /**

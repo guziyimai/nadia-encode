@@ -1,4 +1,3 @@
-﻿(function(){
 /**
  * Base64编码和解码
  * @author guziyimai
@@ -50,4 +49,3 @@ try{
 		return str.join("");
 	}
 }
-})();

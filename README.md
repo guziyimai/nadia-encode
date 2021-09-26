@@ -1,9 +1,11 @@
 # JiaMi
 测试地址：
 
-https://www.wulihub.com.cn/gc/Ww62Lo/index.html
+https://jiami.pages.dev
 
 https://guziyimai.github.io/JiaMi
+
+https://nadia.avosapps.us
 
 使用方法：
 

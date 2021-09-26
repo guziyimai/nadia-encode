@@ -1,11 +1,11 @@
 # JiaMi
 测试地址：
 
-https://jiami.pages.dev
+https://jiami.pages.dev/#1
 
-https://guziyimai.github.io/JiaMi
+https://guziyimai.github.io/JiaMi/#1
 
-https://nadia.avosapps.us
+https://nadia.avosapps.us/#1
 
 使用方法：
 

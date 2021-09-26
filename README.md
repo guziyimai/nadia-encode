@@ -1,5 +1,8 @@
 # JiaMi
 测试地址：
+
+https://www.wulihub.com.cn/gc/Ww62Lo/index.html
+
 https://guziyimai.github.io/JiaMi
 
 使用方法：

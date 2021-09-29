@@ -3,7 +3,7 @@
 
 https://guziyimai.github.io/JiaMi/#1
 
-https://dwz.win/asSW
+https://dwz.win/asYs
 
 https://jiami.pages.dev/#1
 

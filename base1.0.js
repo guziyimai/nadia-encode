@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Base64编码和解码
  * @author guziyimai
  */
@@ -149,11 +149,11 @@ try{
 	String.prototype.replaceAll=function(a,b){
 		return this.split(a).join(b);
 	};
-	Array.prototype.indexOf=function(elt,from){
+	Array.prototype.indexOf=function(elt,start){
 		var len=this.length;
-		if(!from) from=0;
-		for(;from<len;from++)
-			if(this[from] == elt) return from;
+		if(!start) start=0;
+		for(;start<len;start++)
+			if(this[start] == elt) return start;
 		return -1;
 	}
 }

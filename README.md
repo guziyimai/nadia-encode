@@ -11,7 +11,7 @@ https://jiami.pages.dev
 
 guziyimai@qq.com
 
-未经作者同意，请勿转载和修改源码！
+未经作者同意，禁止转载和修改源码！
 
 使用方法：
 

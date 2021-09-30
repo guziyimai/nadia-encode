@@ -15,7 +15,7 @@ guziyimai@qq.com
 
 网站截图：
 
-https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/Nadia001.jpg
+https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/7IXuaRPHg0rWRkvBQofwNEAEUjagcOli/Nadia001.jpg
 
 https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/Nadia002.jpg
 

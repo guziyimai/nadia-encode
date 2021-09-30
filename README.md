@@ -15,9 +15,9 @@ guziyimai@qq.com
 
 网站截图：
 
-https://images.gitee.com/uploads/images/2021/0930/145717_5671cbcf_9137200.jpeg
+https://mockplus-prototypes.mockplus.cn/1750698/EXBFHMGGJHP58VKP/8/Nadia001.jpg
 
-https://images.gitee.com/uploads/images/2021/0930/145727_38341bea_9137200.jpeg
+https://mockplus-prototypes.mockplus.cn/1750698/EXBFHMGGJHP58VKP/8/Nadia002.jpg
 
 
 使用方法：

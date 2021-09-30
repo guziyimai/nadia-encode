@@ -17,7 +17,7 @@ guziyimai@qq.com
 
 https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/7IXuaRPHg0rWRkvBQofwNEAEUjagcOli/Nadia001.jpg
 
-https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/Nadia002.jpg
+https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/wFeV1ww39LY6sL7TF8YfWE9S0CUt3nUr/Nadia002.jpg
 
 
 使用方法：

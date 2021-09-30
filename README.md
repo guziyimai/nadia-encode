@@ -13,6 +13,13 @@ guziyimai@qq.com
 
 未经作者同意，禁止转载和修改源码！
 
+网站截图：
+
+https://images.gitee.com/uploads/images/2021/0930/145717_5671cbcf_9137200.jpeg
+
+https://images.gitee.com/uploads/images/2021/0930/145727_38341bea_9137200.jpeg
+
+
 使用方法：
 
 1、将要加密或解密的文字复制到上方
@@ -28,6 +35,7 @@ guziyimai@qq.com
 1、本软件仅作为纳迪亚之宝（Treasure of Nadia）游戏进行文本加密、解密用，禁止用于非法活动！
 
 2、本软件在解密时会忽略表情、空格、回车等空白字符；所以，发布者可对密文进行换行、分割，而小白们无需手动删除空白字符，直接解密即可。
+
 
 更新日志：
 

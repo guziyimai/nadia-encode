@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<!-- IE强制Edge或Chrome模式 -->
 	<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="keywords" content="纳迪亚,加密,解密,纳迪亚加密器,在线,Nadia">
 	<meta name="description" content="纳迪亚之宝专用文本加密器">
 	<!-- 禁用缓存 -->
@@ -12,6 +12,19 @@
 	<meta http-equiv="expires" content="Wed, 26 Feb 1997 08:21:57 GMT">
 	<meta http-equiv="expires" content="-1">
 	<title>纳迪亚文本加密器</title>
+	<script type="text/javascript">
+		//网址调整
+		a=function(){
+			var urlStr=decodeURI(window.location.href).replace(/&.+/,"");
+			var num=urlStr.indexOf("=");
+			var num2=urlStr.indexOf("#");
+			//#在=前方，需要调整URL
+			if(num2>0 && num>num2){
+				var realUrl=urlStr.replace(/#\d/,"").replace(/\?.+/,"");
+				window.location.href=realUrl+urlStr.substring(realUrl.length+2)+urlStr.substr(num2,2);
+			}
+		}();
+	</script>
 	<link rel="shortcut icon" type="image/x-icon">
 	<style type="text/css">
 		textarea {width:86%;resize:none;margin:10px 0px;font-size:20px;}
@@ -116,6 +129,6 @@
 		<span style="display:none;"></span>
 	</div>
 	<script type="text/javascript" src="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/base1.0.js"></script>
-	<script type="text/javascript" src="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/Nadia_Encode3.2.5.js"></script>
+	<script type="text/javascript" src="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/Nadia_Encode3.2.6.js"></script>
 </body>
 </html>

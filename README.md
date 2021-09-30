@@ -1,13 +1,11 @@
 # JiaMi
 测试地址：
 
-https://guziyimai.github.io/JiaMi/#1
+https://guziyimai.github.io/JiaMi
 
-https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/index.html#1
+https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/index.html
 
-https://dwz.win/asYs
-
-https://jiami.pages.dev/#1
+https://jiami.pages.dev
 
 使用方法：
 

@@ -1,17 +1,13 @@
 # JiaMi
 测试地址：
-
-https://guziyimai.github.io/JiaMi
-
-https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/index.html
-
-https://jiami.pages.dev
+ https://guziyimai.github.io/JiaMi
+ https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/index.html
+ https://jiami.pages.dev
 
 联系作者：
 
-guziyimai@qq.com
-
-未经作者同意，禁止转载和修改源码！
+ guziyimai@qq.com
+ 未经作者同意，禁止转载和修改源码！
 
 网站截图：
 
@@ -20,21 +16,15 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/7IXuaRPHg0rWRkvBQofwNEAEUjagcO
 https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/wFeV1ww39LY6sL7TF8YfWE9S0CUt3nUr/Nadia002.jpg
 
 
-使用方法：
-
-1. 将需要加密或解密的文字复制到上方文本框中
-2. 点击“加密”或“解密”按钮即可；
-3. 新增ASCII加密、Base64加密；
-4. 如果密文在6万字内，可对密文任意位置添加汉字、中文标点、空白字符、贴吧表情，解密时自动忽略，Ascii码解密也可以掺杂英文、数字；
-如果超过6万字，只能在开头添加中文说明，当遇到第一个英文或字母时开始解密，不判断中间是否掺杂汉字（为了第5点的解密速度）。
-5. 百万文字谷歌浏览器加密、解密速度大约2秒左右。
-6. 可以设置解密后，是否自动复制解密后的结果，或者打开结果中的第一个网址并复制提取码（该设置保持到Cookie）。
-
 说明：
-
-1、本软件仅作为纳迪亚之宝（Treasure of Nadia）游戏进行文本加密、解密用，禁止用于非法活动！
-
-2、本软件在解密时会忽略表情、空格、回车等空白字符；所以，发布者可对密文进行换行、分割，而小白们无需手动删除空白字符，直接解密即可。
+1. 本软件仅作为纳迪亚之宝（Treasure of Nadia）游戏进行文本加密、解密用，禁止用于非法活动！
+2. 将需要加密或解密的文字复制到上方文本框中
+3. 点击“加密”或“解密”按钮即可；
+4. 新增ASCII加密、Base64加密；
+5. 如果密文在6万字内，可对密文任意位置添加汉字、中文标点、空白字符、贴吧表情，解密时自动忽略，Ascii码解密也可以掺杂英文、数字；
+如果超过6万字，只能在开头添加中文说明，当遇到第一个英文或字母时开始解密，不判断中间是否掺杂汉字（为了第6点的解密速度）。
+6. 百万文字谷歌浏览器加密、解密速度大约2秒左右。
+7. 可以设置解密后，是否自动复制解密后的结果，或者打开结果中的第一个网址并复制提取码（该设置保持到Cookie）。
 
 
 更新日志：

@@ -7,6 +7,10 @@ https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/index.html
 
 https://jiami.pages.dev
 
+联系作者：
+guziyimai@qq.com
+未经作者同意，请勿转载和修改源码！
+
 使用方法：
 
 1、将要加密或解密的文字复制到上方
@@ -16,7 +20,6 @@ https://jiami.pages.dev
 3、加密或解密后的文字将在下方显示
 
 4、新增ASCII加密、Base64加密，详见更新日志
-
 
 说明：
 

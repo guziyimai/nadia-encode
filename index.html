@@ -13,11 +13,11 @@
 	<meta http-equiv="expires" content="-1">
 	<title>纳迪亚文本加密器</title>
 	<link rel="shortcut icon" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/computer.css">
+	<link rel="stylesheet" type="text/css">
 	<script type="text/javascript">
 		var isMobile=/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
 		//网址调整
-		var a=function() {
+		var a=function(){
 			var urlStr=decodeURI(window.location.href).replace(/&.+/,"");
 			var num=urlStr.indexOf("=");
 			var num2=urlStr.indexOf("#");
@@ -27,17 +27,7 @@
 				window.location.href=realUrl+urlStr.substring(realUrl.length+2)+urlStr.substr(num2,2);
 			}
 			//移动端调整
-			if(isMobile) {
-				document.getElementById("upText").rows=9;
-				document.getElementById("downText").rows=14;
-				var mylis=document.getElementsByTagName("li");
-				mylis[0].innerHTML="纳迪亚";
-				mylis[2].innerHTML="ASCII";
-				mylis[3].innerHTML="Base64 ";
-				document.getElementsByTagName("input")[7].value=" 关闭 ";
-				document.getElementById("mobileHide").innerHTML="";
-				document.getElementsByTagName("link")[1].href="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/mobile.css"
-			} 
+			document.getElementsByTagName("link")[1].href="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/"+(isMobile?"mobile.css":"computer.css");
 		}();
 	</script>
 	<script type="text/javascript" src="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/base1.1.js"></script>
@@ -47,7 +37,7 @@
 		<!-- 导航栏 -->
 		<ul class="menuDiv">
 			<a title="点击变脸"><img class="icoImg"><h2 class="ico">Nadia</h2></a><a href="#1"></a><a href="#2"></a><a href="#3"></a><a href="#4"></a>
-			<li class="menu" title="纳迪亚之宝专用加密器">纳迪亚加密</li><li class="menu" title="补全贴吧的无头链接（可批量）">补全链接</li><li class="menu" title="ASCII码加密解密">ASCII加密</li><li class="menu" title="Base64加密解密">Base64加密</li>
+			<li class="menu" title="纳迪亚之宝专用加密器">纳迪亚</li><li class="menu" title="补全贴吧的无头链接（可批量）">补全链接</li><li class="menu" title="ASCII码加密解密">ASCII</li><li class="menu" title="Base64加密解密">Base64 </li>
 			<h2 title="你好，有什么事情我们能帮到你" class="help">帮助</h2>
 			<h2 title="我要说的事，你们千万别害怕" class="support">赞助</h2>
 		</ul>
@@ -151,10 +141,10 @@
 			</div>
 		</div>
 		<div class="modal-footer">
-			<span id="authorDiv2"></span><input title="爷知道了" type="button" value="关闭 (Esc)" class="btn">
+			<span id="authorDiv2"></span><input title="爷知道了" type="button" value=" 关闭 " class="btn">
 		</div>
 	</div>
 	<div class="mask"></div>
-	<script type="text/javascript" src="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/Nadia_Encode3.2.8.js"></script>
+	<script type="text/javascript" src="Nadia_Encode3.2.8.js"></script>
 </body>
 </html>

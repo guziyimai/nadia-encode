@@ -1,6 +1,6 @@
-﻿//@author guziyimai
+//@author guziyimai
 //是否是IE
-var IEError="浏览器版本过低，建议使用谷歌内核的浏览器",waringStr,isSBIE;
+var waringStr,isLowIE,isSBIE;
 /**
  * Ascii码加密、解密
  * @author guziyimai
@@ -135,24 +135,21 @@ try{
 			return string;
 		}
 	}
-	waringStr=IEError;
-	throw new Error(IEError);
+	isLowIE=true;
+	waringStr="浏览器版本过低，建议使用谷歌内核的浏览器";
+	throw new Error(waringStr);
 }
-/**
- * 移动端样式修改
- * @author guziyimai
- */
-var isMobile=/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent);
-getObj("link",true)[1].href="https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/"+(isMobile?"mobile.css":"computer.css");
 /**
  * 获取元素
  * @author guziyimai
  */
-function getObj(id,isName){
-	if(!isName){
-		return document.getElementById(id);
-	} else {
+function getObj(id,type){
+	if(type==1){
 		return document.getElementsByTagName(id);
+	} else if(type==2){
+		return document.getElementsByClassName(id);
+	} else {
+		return document.getElementById(id);
 	}
 }
 /**

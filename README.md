@@ -5,6 +5,8 @@ https://guziyimai.github.io/JiaMi
 
 https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/index.html
 
+https://nadia-jiami.netlify.app
+
 https://jiami.pages.dev
 
 联系作者：
@@ -19,6 +21,7 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/7IXuaRPHg0rWRkvBQofwNEAEUjagcO
 
 https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/wFeV1ww39LY6sL7TF8YfWE9S0CUt3nUr/Nadia002.jpg
 
+https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3eR/mobile.jpg
 
 说明：
 1. 本软件仅作为纳迪亚之宝（Treasure of Nadia）游戏进行文本加密、解密用，禁止用于非法活动！

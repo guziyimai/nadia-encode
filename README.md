@@ -4,7 +4,7 @@
 
 https://guziyimai.github.io/JiaMi
 
-https://share.mockplus.cn/go/EXBFHMGGJHP58VKP/index.html
+https://share.mockplus.cn/go/nadia/index.html
 
 https://nadia-jiami.netlify.app
 

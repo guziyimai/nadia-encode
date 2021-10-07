@@ -18,9 +18,9 @@ https://jiami.pages.dev
 
 网站截图：
 
-https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/7IXuaRPHg0rWRkvBQofwNEAEUjagcOli/Nadia001.jpg
+https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/KkPMTSQeoLEbn8Wmlr2eBfJT5hNGBP9L/Nadia001.jpg
 
-https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/wFeV1ww39LY6sL7TF8YfWE9S0CUt3nUr/Nadia002.jpg
+https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/taSgHLWQRIVWUUsGKqawmrbKizqKYDzR/Nadia002.jpg
 
 https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3eR/mobile.jpg
 

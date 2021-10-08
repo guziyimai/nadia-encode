@@ -1,6 +1,40 @@
-﻿//@author guziyimai
+//@author guziyimai
 //是否是IE
 var waringStr,isLowIE,isSBIE;
+/**
+ * 给SB的IE用的！！！
+ * @author guziyimai
+ */
+try{
+	"".replaceAll("","");
+}catch(err){
+	isSBIE=true;
+	String.prototype.replaceAll=function(a,b){
+		return this.split(a).join(b);
+	};
+	Array.prototype.indexOf=function(elt,start){
+		var len=this.length;
+		if(!start) start=0;
+		for(;start<len;start++)
+			if(this[start] == elt) return start;
+		return -1;
+	};
+	var children=document.getElementsByTagName('*');
+	document.getElementsByClassName=function(className){
+		var elements = new Array();
+		for (var i=0; i<children.length; i++){
+			var child = children[i];
+			var classNames = child.className.split(' ');
+			for (var j=0; j<classNames.length; j++){
+				if (classNames[j] == className){
+					elements.push(child);
+					break;
+				}
+			}
+		} 
+		return elements;
+	};
+}
 getObj("menuDiv",2)[0].style.display="block";
 /**
  * Ascii码加密、解密
@@ -151,24 +185,5 @@ function getObj(id,type){
 		return document.getElementsByClassName(id);
 	} else {
 		return document.getElementById(id);
-	}
-}
-/**
- * 给SB的IE用的！！！
- * @author guziyimai
- */
-try{
-	"".replaceAll("","");
-}catch(err){
-	isSBIE=true;
-	String.prototype.replaceAll=function(a,b){
-		return this.split(a).join(b);
-	};
-	Array.prototype.indexOf=function(elt,start){
-		var len=this.length;
-		if(!start) start=0;
-		for(;start<len;start++)
-			if(this[start] == elt) return start;
-		return -1;
 	}
 }

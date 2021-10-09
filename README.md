@@ -8,8 +8,6 @@ https://share.mockplus.cn/go/nadia/index.html
 
 https://nadia-jiami.netlify.app
 
-https://jiami.pages.dev
-
 联系作者：
 
 3625270272@qq.com

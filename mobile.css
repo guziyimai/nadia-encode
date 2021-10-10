@@ -35,6 +35,6 @@ select {font-size:28px;}
 .close:hover {cursor:pointer;}
 .modal-content {padding:10px 35px;width:800px;line-height:36px;display:none;}
 .modal-footer {border-top: 1px solid #f5f5f5;padding: 5px;text-align:center;margin-right:20px;line-height:55px;}
-.support-img {width:65%;text-align:center;display:table-cell;padding:12px 80px;}
+.support-img {width:64%;text-align:center;display:table-cell;padding:12px 90px;}
 .helpTxt {font-size:26px;}
-.zfb-img {width:75%;display:inline-block;padding:0px 80px;}
+.zfb-img {width:85%;display:inline-block;padding:0px 60px;}

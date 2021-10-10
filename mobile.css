@@ -4,10 +4,11 @@ textarea {width:92%;resize:none;margin:10px 0px;font-size:32px;border:1px solid 
 h2 {position:absolute;margin:auto;bottom:0px;}
 .ico {display:none;}
 .help {right:160px;font-size:35px;top:110px;color:#4e6ef2;}
-.help:hover{cursor:pointer;}
+.help:hover {cursor:pointer;}
 .support {right:40px;font-size:35px;top:110px;color:#4e6ef2;}
 .support:hover {cursor:pointer;}
 .activities {right:290px;font-size:35px;font-weight:bold;top:110px;color:#4e6ef2;text-decoration:none;}
+.activities:hover {cursor:pointer;}
 .menu {padding:12px;font-size:43px;text-align:center;display:inline-block;color:#666;border-radius:5px;}
 .menu:hover {background-color:#666;color:white;cursor:pointer;}
 .menu2 {padding:12px;font-size:43px;text-align:center;display:inline-block;background-color:#39a0e2;color:white;cursor:pointer;border-radius:5px;}
@@ -34,6 +35,6 @@ select {font-size:28px;}
 .close:hover {cursor:pointer;}
 .modal-content {padding:10px 35px;width:800px;line-height:36px;display:none;}
 .modal-footer {border-top: 1px solid #f5f5f5;padding: 5px;text-align:center;margin-right:20px;line-height:55px;}
-.support-img {width:70%;text-align:center;;display:table-cell;padding:12px 50px;}
+.support-img {width:65%;text-align:center;display:table-cell;padding:12px 65px;}
 .helpTxt {font-size:26px;}
-.zfb-img {height:300px;display:inline-block;padding:12px 50px;}
+.zfb-img {height:300px;display:inline-block;padding:0px 170px;}

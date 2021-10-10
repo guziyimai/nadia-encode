@@ -7,6 +7,7 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .help:hover{cursor:pointer;}
 .support {right:25px;font-size:16px;top:18px;color:#4e6ef2;}
 .support:hover {cursor:pointer;}
+.activities {position:absolute;margin:auto;right:25px;font-size:17px;font-weight:bold;top:65px;color:#4e6ef2;text-decoration:none;bottom:0px;}
 .menu {padding:12px;font-size:20px;text-align:center;display:inline-block;color:#666;border-radius:5px;}
 .menu:hover {background-color:#666;color:white;cursor:pointer;}
 .menu2 {padding:12px;font-size:20px;text-align:center;display:inline-block;background-color:#39a0e2;color:white;cursor:pointer;border-radius:5px;}
@@ -32,3 +33,4 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .modal-content {padding:10px 20px;width:695px;line-height:25px;display:none;}
 .modal-footer {border-top: 1px solid #f5f5f5;padding: 5px;text-align: right;margin-right:20px;}
 .support-img {height:300px;display:inline-block;padding:12px 50px;}
+.zfb-img {height:300px;display:inline-block;padding:12px 50px;}

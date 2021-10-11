@@ -14,6 +14,8 @@ https://nadia-jiami.netlify.app
 
 未经作者同意，禁止转载和修改源码！
 
+出现报错，一般是有流量劫持，反馈时请尽量提供：你访问的完整地址（加载完毕后从地址栏复制，我要的是最终的地址）、PC端还是移动端、用什么浏览器或APP访问的，如果有Error代码也提供一下。
+
 网站截图：
 
 https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/KkPMTSQeoLEbn8Wmlr2eBfJT5hNGBP9L/Nadia001.jpg

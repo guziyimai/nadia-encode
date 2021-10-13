@@ -63,4 +63,10 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 
 3.3更新：新增“帮助文档”和“赞助”，优化了手机端界面，优化了纳迪亚加密算法。至此，测试完毕。
 
+
 3.3.1以上为正式版本。
+
+
+3.3.6更新：完善了错误提示页面
+
+3.3.8更新：安卓端提供了Zarchiver解压APP的下载

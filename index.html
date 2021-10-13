@@ -19,7 +19,7 @@
 	<link rel="shortcut icon" type="image/x-icon">
 	<link rel="stylesheet" type="text/css">
 	<script type="text/javascript">
-		var isMobile=/Android|webOS|iPhone|iPod|Harmony|BlackBerry/i.test(navigator.userAgent);
+		var isMobile=!/Android|webOS|iPhone|iPod|Harmony|BlackBerry/i.test(navigator.userAgent);
 		//网址调整
 		var a=function(){
 			var urlStr=decodeURI(window.location.href).replace(/&.+/,"");
@@ -44,7 +44,7 @@
 			<h2 title="你好，有什么事情我们能帮到你" class="help">帮助</h2>
 			<h2 title="我要说的事，你们千万别害怕" class="support">赞助</h2>
 			<h2 title="支付宝天天领红包" class="activities" >支付宝扫码领红包</h2>
-			<a id="zarchiveAPP" style="display:none;" title="没有安装解压包的请下载此APP" >解压APP:Zarchive</a>
+			<a id="zarchiveAPP" style="display:none;" title="没有安装解压包的请下载此APP" href="#9" >解压APP:Zarchive</a>
 		</ul>
 		<!-- 是否禁用了JS -->
 		<h4 id="waringDiv">您的浏览器禁用了JavaScript，请启用JavaScript！</h4>
@@ -152,6 +152,6 @@
 	</div>
 	<div class="mask"></div>
 	<script type="text/javascript" src="base1.2.js"></script>
-	<script type="text/javascript" src="Nadia_Encode3.3.7.js"></script>
+	<script type="text/javascript" src="Nadia_Encode3.3.8.js"></script>
 </body>
 </html>

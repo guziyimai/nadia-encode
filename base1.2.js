@@ -36,6 +36,7 @@ try{
 	};
 }
 getObj("menuDiv",2)[0].style.display="block";
+if(!isMobile) getObj("helpTxt",2)[2].style.display="none";
 /**
  * Ascii码加密、解密
  * @author guziyimai

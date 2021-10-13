@@ -1,5 +1,5 @@
-//@author guziyimai
 //是否是IE
+//@author guziyimai
 var waringStr,isLowIE,isSBIE;
 /**
  * 给SB的IE用的！！！
@@ -37,6 +37,13 @@ try{
 }
 getObj("menuDiv",2)[0].style.display="block";
 if(!isMobile) getObj("helpTxt",2)[2].style.display="none";
+//第1轮：阻止注入JS脚本！
+//@author guziyimai
+document.appendChild=null;
+document.createElement=null;
+document.insertBefore=null;
+Object.prototype.setAttribute=null;
+Object.prototype.getAttribute=null;
 /**
  * Ascii码加密、解密
  * @author guziyimai

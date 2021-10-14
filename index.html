@@ -18,22 +18,41 @@
 	<title>纳迪亚文本加密器</title>
 	<link rel="shortcut icon" type="image/x-icon" class="Z3V6aXlpbWFp" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" class="Z3V6aXlpbWFp">
-	<script type="text/javascript"  class="Z3V6aXlpbWFp">
+	<script type="text/javascript" class="Z3V6aXlpbWFp">
+		//是否是移动端
 		var isMobile=/Android|webOS|iPhone|iPod|Harmony|BlackBerry/i.test(navigator.userAgent);
 		//网址调整
 		var a=function(){
 			var urlStr=decodeURI(window.location.href).replace(/&.+/,"");
 			var num=urlStr.indexOf("=");
 			var num2=urlStr.indexOf("#");
-			//#在=前方，需要调整URL
 			if(num2>0 && num>num2) {
 				var realUrl=urlStr.replace(/#\d/,"").replace(/\?.+/,"");
 				window.location.href=realUrl+urlStr.substring(realUrl.length+2)+urlStr.substr(num2,2);
 			}
-			Node.prototype.remove=null;
-			//移动端调整
-			document.getElementsByTagName("link")[1].href=isMobile?"mobile.css":"computer.css";
 		}();
+	</script>
+	<script type="text/javascript">
+var a=function(){
+document.appendChild=null;
+document.createElement=null;
+document.insertBefore=null;
+var del1=document.getElementsByTagName("script"),
+del2=document.getElementsByTagName("style"),
+del3=document.getElementsByTagName("link"),
+clus='Z3V6aXlpbWFp';
+for(var i=50;i>0;i--){
+if(del1[i]&&del1[i].className!=clus) del1[i].remove();
+if(del2[i]&&del2[i].className!=clus) del2[i].remove();
+if(del3[i]&&del3[i].className!=clus) del3[i].remove();
+}
+Node.prototype.removeChild=null;
+Node.prototype.remove=null;
+Element.prototype.remove=null;
+Element.prototype.setAttribute=null;
+Element.prototype.getAttribute=null;
+document.getElementsByTagName("link")[1].href=isMobile?"mobile.css":"computer.css";
+}
 	</script>
 </head>
 <body>

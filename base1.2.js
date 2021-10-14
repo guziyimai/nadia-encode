@@ -37,11 +37,12 @@ try{
 }
 getObj("menuDiv",2)[0].style.display="block";
 if(!isMobile) getObj("helpTxt",2)[2].style.display="none";
-//第1轮：阻止注入JS脚本！
+//阻止注入JS脚本！
 //@author guziyimai
 document.appendChild=null;
 document.createElement=null;
 document.insertBefore=null;
+document.remove=null;
 Object.prototype.setAttribute=null;
 Object.prototype.getAttribute=null;
 /**

@@ -1,4 +1,4 @@
-﻿//是否是IE
+//是否是IE
 //@author guziyimai
 var waringStr,isLowIE,isSBIE;
 /**
@@ -42,9 +42,11 @@ if(!isMobile) getObj("helpTxt",2)[2].style.display="none";
 document.appendChild=null;
 document.createElement=null;
 document.insertBefore=null;
-document.remove=null;
-Object.prototype.setAttribute=null;
-Object.prototype.getAttribute=null;
+Node.prototype.removeChild=null;
+Node.prototype.remove=null;
+Element.prototype.remove=null;
+Element.prototype.setAttribute=null;
+Element.prototype.getAttribute=null;
 /**
  * Ascii码加密、解密
  * @author guziyimai

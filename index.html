@@ -30,6 +30,7 @@
 				var realUrl=urlStr.replace(/#\d/,"").replace(/\?.+/,"");
 				window.location.href=realUrl+urlStr.substring(realUrl.length+2)+urlStr.substr(num2,2);
 			}
+			Node.prototype.remove=null;
 			//移动端调整
 			document.getElementsByTagName("link")[1].href=isMobile?"mobile.css":"computer.css";
 		}();

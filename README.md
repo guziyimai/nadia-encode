@@ -70,3 +70,5 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 3.3.6更新：完善了错误提示页面
 
 3.3.8更新：安卓端提供了Zarchiver解压APP的下载
+
+3.4.2更新：非常友善的优化了与油猴脚本的兼容性：指干掉所有外来的JS、CSS

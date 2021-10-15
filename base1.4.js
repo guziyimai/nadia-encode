@@ -1,4 +1,4 @@
-﻿//是否是IE
+//是否是IE
 //@author guziyimai
 var waringStr,isLowIE,isSBIE;
 /**
@@ -38,16 +38,6 @@ try{
 getObj("menuDiv",2)[0].style.display="block";
 getObj("script",1)[0].innerHTML="var isMobile=/Android|webOS|iPhone|iPod|Harmony|BlackBerry/i.test(navigator.userAgent);document.getElementsByTagName('link')[1].href=isMobile?'mobile.css':'computer.css';"
 if(!isMobile) getObj("helpTxt",2)[2].style.display="none";
-//阻止注入JS脚本！
-//@author guziyimai
-document.appendChild=null;
-document.createElement=null;
-document.insertBefore=null;
-Node.prototype.removeChild=null;
-Node.prototype.remove=null;
-Element.prototype.remove=null;
-Element.prototype.setAttribute=null;
-Element.prototype.getAttribute=null;
 /**
  * Ascii码加密、解密
  * @author guziyimai

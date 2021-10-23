@@ -1,6 +1,5 @@
 textarea {width:86%;resize:none;margin:10px 0px;font-size:20px;}
 .menuDiv {text-align:center;border:1px solid #e7e7e7;background-color:#e7e7e7;margin-left:7%;margin-right:7%;position:relative;}
-#mainDiv {text-align:center;width:100%;}
 .icoImg {position:absolute;margin:auto;bottom:0px;top:0px;left:8px;height:40px;}
 h2 {position:absolute;margin:auto;bottom:0px;}
 .ico {left:52px;font-size:28px;color:#333;top:9px;}
@@ -10,7 +9,7 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .support:hover {cursor:pointer;}
 .activities {right:25px;font-size:17px;font-weight:bold;top:80px;color:#4e6ef2;text-decoration:none;}
 .activities:hover {cursor:pointer;}
-.laowang {position:relative;display:inline-block;text-align:left;font-size:20px;font-weight:bold;top:10px;color:#4e6ef2;text-decoration:none;}
+.laowang {position:relative;display:inline-block;left:-39%;font-size:20px;font-weight:bold;top:5px;color:#4e6ef2;text-decoration:none;}
 .laowang:hover {cursor:pointer;}
 .menu {padding:12px;font-size:20px;text-align:center;display:inline-block;color:#666;border-radius:5px;}
 .menu:hover {background-color:#666;color:white;cursor:pointer;}
@@ -23,8 +22,9 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .btn2:hover {background-color:#4CAF50;cursor:pointer;}
 .btn2:active {transform: translateY(5px);}
 #tiShi {display:inline-block;font-size:19px;width:180px;margin-left:-30px;}
+#mainDiv {text-align:center;width:100%;}
 .msg {text-align:left;margin-left:7%;margin-top:5px;margin-right:20px;color:#337ac7;font-size:17px;}
-#authorDiv {text-align:right;margin-right:8%;font-size:16px;}
+#authorDiv {text-align:right;margin-right:8%;font-size:16px;margin-top:-20px;}
 .mask {position:fixed;top:0;bottom:0;left:0;width:100%;height:auto;background:rgba(0,0,0,0.5);z-index:100;display:none;}
 .modal {position:fixed;top:50%;left:50%;width:735px;transform:translate(-50%,-50%);border-radius:5px;background:#fff;box-shadow:2px 3px 20px rgba(0,0,0,0.2);z-index:120;display:none;}
 .modal-header {height:50px;border-bottom:1px solid #f5f5f5;padding:0 15px;}

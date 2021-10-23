@@ -9,7 +9,7 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .support:hover {cursor:pointer;}
 .activities {right:25px;font-size:17px;font-weight:bold;top:80px;color:#4e6ef2;text-decoration:none;}
 .activities:hover {cursor:pointer;}
-.laowang {margin-left:8%;font-size:20px;font-weight:bold;top:600px;color:#4e6ef2;text-decoration:none;}
+.laowang {position:relative;display:inline-block;text-align:left;font-size:20px;font-weight:bold;top:10px;color:#4e6ef2;text-decoration:none;}
 .laowang:hover {cursor:pointer;}
 .menu {padding:12px;font-size:20px;text-align:center;display:inline-block;color:#666;border-radius:5px;}
 .menu:hover {background-color:#666;color:white;cursor:pointer;}

@@ -3,9 +3,9 @@ textarea {width:86%;resize:none;margin:10px 0px;font-size:20px;}
 .icoImg {position:absolute;margin:auto;bottom:0px;top:0px;left:8px;height:40px;}
 h2 {position:absolute;margin:auto;bottom:0px;}
 .ico {left:52px;font-size:28px;color:#333;top:9px;}
-.help {right:80px;font-size:18px;top:18px;color:#4e6ef2;}
+.help {right:80px;font-size:17px;top:17px;color:#4e6ef2;}
 .help:hover {cursor:pointer;}
-.support {right:25px;font-size:18px;top:18px;color:#4e6ef2;}
+.support {right:25px;font-size:17px;top:17px;color:#4e6ef2;}
 .support:hover {cursor:pointer;}
 .activities {right:25px;font-size:17px;font-weight:bold;top:80px;color:#4e6ef2;text-decoration:none;}
 .activities:hover {cursor:pointer;}

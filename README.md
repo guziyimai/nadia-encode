@@ -77,5 +77,5 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 
 3.5.4更新：修复了垃圾插件ImageAssistant（图片批量下载助手）乱改页面导致的加密、解密功能失效的BUG。
 
-3.5.6更新：针对32位PC用户，提供了WinRARx86的下载（已试毒，无广告）
+3.5.6更新：针对32位PC用户，提供了WinRARx86的下载（已试毒，无广告）；修复了反盗链检测的一个潜在漏洞。
 

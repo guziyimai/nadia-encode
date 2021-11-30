@@ -9,8 +9,6 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .support:hover {cursor:pointer;}
 #RARZAR {position:absolute;margin:auto;right:20px;font-size:19px;font-weight:bold;top:90px;color:#4e6ef2;text-decoration:none;}
 #RARZAR:hover {cursor:pointer;}
-.laowang {position:relative;display:inline-block;left:-39%;font-size:20px;font-weight:bold;top:5px;color:#4e6ef2;text-decoration:none;}
-.laowang:hover {cursor:pointer;}
 .menu {padding:12px;font-size:20px;text-align:center;display:inline-block;color:#666;border-radius:5px;}
 .menu:hover {background-color:#666;color:white;cursor:pointer;}
 .menu2 {padding:12px;font-size:20px;text-align:center;display:inline-block;background-color:#39a0e2;color:white;cursor:pointer;border-radius:5px;}

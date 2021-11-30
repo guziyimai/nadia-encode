@@ -25,7 +25,7 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/taSgHLWQRIVWUUsGKqawmrbKizqKYD
 https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3eR/mobile.jpg
 
 说明：
-1. 本软件仅作为纳迪亚之宝（Treasure of Nadia）游戏进行文本加密、解密用，禁止用于非法活动！
+1. 本软件仅作为纳迪亚之宝（Treasure of Nadia）及创世纪秩序（The Genesis Order）进行文本加密、解密用，请勿用于非法活动！
 2. 关键词“纳迪亚加密”已被百度搜索、谷歌搜索、360搜索、必应国际版收录，密文发布到贴吧或论坛后，只需要告诉小白们自己搜“纳迪亚加密”即可。
 3. 将需要加密或解密的文字复制到上方文本框中，点击“加密”或“解密”按钮即可。
 4. 新增ASCII加密、Base64加密、网盘/磁力补全链接的功能；
@@ -76,3 +76,6 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 3.5.0更新：PC端提供了WinRARx64的下载
 
 3.5.4更新：修复了垃圾插件ImageAssistant（图片批量下载助手）乱改页面导致的加密、解密功能失效的BUG。
+
+3.5.6更新：针对32位PC用户，提供了WinRARx86的下载（已试毒，无广告）
+

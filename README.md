@@ -2,7 +2,7 @@
 
 访问地址：
 
-https://guziyimai.github.io/JiaMi
+https://guziyimai.github.io/nadia-encode
 
 https://share.mockplus.cn/go/nadia/index.html
 

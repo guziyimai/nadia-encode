@@ -1,4 +1,6 @@
 textarea {width:86%;resize:none;margin:10px 0px;font-size:20px;}
+a:visited {color:blue;}
+a:hover {color:red;}
 .menuDiv {text-align:center;border:1px solid #e7e7e7;background-color:#e7e7e7;margin-left:7%;margin-right:7%;position:relative;}
 .icoImg {position:absolute;margin:auto;bottom:0px;top:0px;left:8px;height:40px;}
 h2 {position:absolute;margin:auto;bottom:0px;}

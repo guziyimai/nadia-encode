@@ -4,11 +4,11 @@ textarea {width:86%;resize:none;margin:10px 0px;font-size:20px;}
 h2 {position:absolute;margin:auto;bottom:0px;}
 .ico {left:52px;font-size:28px;color:#333;top:9px;}
 .help {right:80px;font-size:17px;top:16px;color:#4e6ef2;}
-.help:hover {cursor:pointer;}
+.help:hover {cursor:pointer;color:red;}
 .support {right:25px;font-size:17px;top:16px;color:#4e6ef2;}
-.support:hover {cursor:pointer;}
+.support:hover {cursor:pointer;color:red;}
 #RARZAR {position:absolute;margin:auto;right:20px;font-size:19px;font-weight:bold;top:90px;color:#4e6ef2;text-decoration:none;}
-#RARZAR:hover {cursor:pointer;}
+#RARZAR:hover {cursor:pointer;color:red;}
 .menu {padding:12px;font-size:20px;text-align:center;display:inline-block;color:#666;border-radius:5px;}
 .menu:hover {background-color:#666;color:white;cursor:pointer;}
 .menu2 {padding:12px;font-size:20px;text-align:center;display:inline-block;background-color:#39a0e2;color:white;cursor:pointer;border-radius:5px;}

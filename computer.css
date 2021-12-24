@@ -37,3 +37,5 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .modal-footer {border-top: 1px solid #f5f5f5;padding: 5px;text-align: right;margin-right:20px;}
 .support-img {height:300px;display:inline-block;padding:12px 50px;}
 .zfb-img {height:485px;display:inline-block;padding:0px 175px;}
+.roar {position:relative;display:inline-block;left:-39%;font-size:20px;font-weight:bold;top:5px;color:#4e6ef2;text-decoration:none;}
+.roar:hover {cursor:pointer;}

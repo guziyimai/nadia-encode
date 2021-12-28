@@ -1,5 +1,6 @@
 //是否是IE
 //@author guziyimai
+getObj("waringDiv").style.opacity=0;
 var waringStr,isLowIE,isSBIE;
 /**
  * 给SB的IE用的！！！
@@ -53,7 +54,7 @@ window.Ascii = {
 		return allStr;
 	},
 	decode : function (str) {
-		return window.unescape(str.replace(/\\u/ig,'%u'));
+		return window.unescape(str.replace(/\\u/ig,'%u').replace(/\\x/ig,'%u00'));
 	}
 }
 /**

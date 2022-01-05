@@ -77,3 +77,5 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 
 3.5.6更新：针对32位PC用户，提供了WinRARx86的下载（已试毒，无广告）；修复了反盗链检测的一个潜在漏洞。
 
+3.5.9更新：制作了PC端谷歌插件，安装后，只需在密文处双击即可一键解密。
+

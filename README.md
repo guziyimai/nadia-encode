@@ -79,3 +79,4 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 
 3.5.9更新：制作了PC端谷歌插件，安装后，只需在密文处双击即可一键解密。
 
+3.6.2更新：整合了兽音加密。

@@ -13,6 +13,7 @@ if(_0x39245e)_0x39245e[_0x428e('f8','jUr)')]=_0x428e('f9','ie[H');_0x6afe44[_0x4
 var _0x325b9f=_0x325b8d,isRoar=false;if(_0x5d9b9c&&_0x325b8d[_z]>11&&_0x325b8d[_z]%8==4){
 	if(_0x325b9f.substring(0,3)!="~呜嗷") _0x325b9f.replaceAll(_0x325b9f[0],"~").replaceAll(_0x325b9f[1],"呜").replaceAll(_0x325b9f[2],"嗷").replaceAll(_0x325b9f[_0x325b9f.length-1],"啊");
 		_0x264ade=_0x325b9f.substring(0,3)+_0x325b9f.substring(_0x325b9f.length-1);
+		console.log(_0x264ade);
 		if(
 			_0x264ade[1]!=_0x264ade[0]
 			&&_0x264ade[2]!=_0x264ade[1]

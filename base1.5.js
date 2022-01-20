@@ -196,7 +196,7 @@ try{
  * @author guziyimai
  */
 window.Roar={
-	head : "嗷呜啊~",
+	head : "秩世序创",
 	encode : function (str) {
 		var result=this.head[3]+this.head[1]+this.head[0],offset=0;
 		for(var t=0;t<str.length;t++){

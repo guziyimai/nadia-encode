@@ -213,11 +213,13 @@ window.Roar={
 	},
 	decode : function (str) {
 		var result="",i=3,offset=0,n1,n2,b,c;
+		var myhead=str[2]+str[1]+str[str.length-1]+str[0];
 		while(i<str.length-1){
 			c=0;b=i+8;
 			while(i<b){
-				n1=this.head.indexOf(str[i++]);
-				n2=this.head.indexOf(str[i]);
+				n1=myhead.indexOf(str[i++]);
+				n2=myhead.indexOf(str[i]);
+				if(n1<0||n2<0) return null;
 				c=c<<4|((n1<<2|n2)+offset)&15
 				if(offset==0){
 					offset=4294967295;

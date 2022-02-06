@@ -8,7 +8,7 @@ https://share.mockplus.cn/go/nadia/index.html
 
 https://nadia-jiami.netlify.app
 
-PC端推荐安装纳迪亚解密插件
+PC端推荐安装纳迪亚解密插件：
 
 https://share.mockplus.cn/go/nadia/update.html#download
 

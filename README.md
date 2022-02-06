@@ -8,6 +8,12 @@ https://share.mockplus.cn/go/nadia/index.html
 
 https://nadia-jiami.netlify.app
 
+PC端推荐安装纳迪亚解密插件
+
+https://share.mockplus.cn/go/nadia/update.html#download
+
+相比网页版优势：安装后，遇到纳迪亚/兽音/Base64等密文，只需双击解密。
+
 联系作者：
 
 3625270272@qq.com
@@ -28,7 +34,7 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 1. 纳迪亚加密（nadia encode）仅作为作为纳迪亚之宝（Treasure of Nadia）及创世纪秩序（The Genesis Order）进行文本加密、解密用，请勿用于非法活动！
 2. 关键词“纳迪亚加密”已被百度搜索、谷歌搜索、360搜索、必应国际版收录，密文发布到贴吧或论坛后，只需要告诉小白们自己搜“纳迪亚加密”即可。
 3. 将需要加密或解密的文字复制到上方文本框中，点击“加密”或“解密”按钮即可。
-4. 新增ASCII、Base64、兽音加密、网盘/磁力补全链接的功能；
+4. 也支持ASCII、Base64、兽音加密、网盘/磁力补全链接的功能；
 5. 开头冒号前200以内的字符不会干扰解密，可以电脑端三击、安卓端长按，复制整楼内容都不影响解密的。
 6. 密文在30万字内，程序可自动选择解密引擎，无需手动切换选项卡。
 7. 可以设置解密后，是否自动复制解密后的结果，或者打开结果中的第一个网址并复制提取码。
@@ -81,3 +87,6 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 3.5.9更新：制作了PC端谷歌插件，安装后，只需在密文处双击即可一键解密。
 
 3.6.2更新：整合了兽音加密。加密长度可达30万字，PC谷歌浏览器测试，30万字加密、解密速度均在1秒多！
+
+3.6.3更新：新增2种格式的AscII码解密的支持。现在共支持\u、%u、\x、&#x开头的4种格式的AscII码解密。
+

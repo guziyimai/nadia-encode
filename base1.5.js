@@ -68,7 +68,7 @@ window.Ascii = {
 		return allStr;
 	},
 	decode : function (str) {
-		return window.unescape(str.replace(/\\u/ig,'%u').replace(/\\x/ig,'%u00'));
+		return window.unescape(str.replace(/\\u/ig,'%u').replace(/\\x/ig,'%u00').replaceAll('&#x','%u').replaceAll(';',''));
 	}
 }
 /**

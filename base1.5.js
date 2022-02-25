@@ -193,11 +193,10 @@ try{
 }
 /**
  * 兽音译者编码和解码
- * 使用前，需自定义head的值（4位非空白字符）
  * @author guziyimai
  */
 window.Roar={
-	head : "",
+	head : "创世秩序",
 	rand : function(){
 		var head2=this.head,head3="",randStr;
 		for(var i=1;i<4;i++){

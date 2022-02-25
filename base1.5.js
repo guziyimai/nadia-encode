@@ -196,8 +196,18 @@ try{
  * @author guziyimai
  */
 window.Roar={
-	head : "秩世序创",
+	head : "创世秩序",
+	rand : function(){
+		var head2=this.head,head3="",randStr;
+		for(var i=1;i<4;i++){
+			randStr=Math.round(Math.random()*(4-i%4));
+			head3+=head2[randStr];
+			head2=head2.replace(head2[randStr],"");
+		}
+		this.head=head3+head2;
+	},
 	encode : function (str) {
+		this.rand();
 		var result=this.head[3]+this.head[1]+this.head[0],offset=0;
 		for(var t=0;t<str.length;t++){
 			var c=str.charCodeAt(t),b=12,hex;

@@ -57,13 +57,15 @@ function getObj(id,type){
  * Ascii码加密、解密
  * @author guziyimai
  */
-var preStr=["\\u000","\\u00","\\u0","\\u"];
 window.Ascii = {
-	encode : function (inputStr) {
-		var allStr="",str;
+	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x"],["&#x000","&#x00","&#x0","&#x"]],
+	encode : function (inputStr,preIndex) {
+		if(!preIndex) preIndex=0;
+		var allStr="",str,preStr=this.preStrArr[preIndex];
 		for(var i=0;i<inputStr.length;i++){
 			str=inputStr.charCodeAt(i).toString(16);
 			allStr+=preStr[str.length-1]+str;
+			if(preIndex==3) allStr+=";";
 		}
 		return allStr;
 	},

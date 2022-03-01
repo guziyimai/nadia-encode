@@ -27,7 +27,7 @@
 		<!-- 导航栏 -->
 		<ul class="menuDiv" style="display:none;">
 			<a title="点击变脸" class="0x0a"><img class="icoImg"><h2 class="ico">Nadia</h2></a><a href="#1" class="0x0a"></a><a href="#2" class="0x0a"></a><a href="#3" class="0x0a"></a><a href="#4" class="0x0a"></a><a href="#5" class="0x0a"></a>
-			<li class="menu" style="padding:12px;" title="纳迪亚之宝专用加密器">纳迪亚</li><li class="menu" title="补全贴吧的无头链接（可批量）">补全</li><li class="menu" title="ASCII码加密解密">ASCII</li><li class="menu" title="Base64加密解密">Base64</li><li class="menu" title="兽音译者加密解密">兽音</li>
+			<li class="menu" style="padding:12px;" title="纳迪亚之宝专用加密器">纳迪亚</li><li class="menu" title="补全贴吧的无头链接（可批量）">补全</li><li class="menu" title="AscII码加密解密">AscII</li><li class="menu" title="Base64加密解密">Base64</li><li class="menu" title="兽音译者加密解密">兽音</li>
 			<h2 title="你好，有什么事情我们能帮到你" class="help">帮助</h2>
 			<h2 title="我要说的事，你们千万别害怕" class="support">赞助</h2>
 			<h2 id="RARZAR" style="opacity:0;">解压APP(Zar)</h2>
@@ -36,27 +36,37 @@
 		<h4 id="waringDiv" style="opacity:0;">您的浏览器禁用了JavaScript，请启用JavaScript！</h4>
 		<div class="msg">
 		<span class="0xspan"></span>
-		<!-- 兽音种子 -->
-		<span class="roarHead" style="color: black;display:none;">加密种子：<input title="修改兽音种子" type="text" class="roarTxt"></span>
 		<!-- 补全链接 -->
 		<span class="0xspan" style="color:black;display:none;">
 			补全类型：
-			<select title="补全贴吧的无头链接（可批量）">
+			<select class="mySel" title="补全贴吧的无头链接（可批量）">
 				<option value="0">无</option>
 				<option value="1">百度云</option>
 				<option value="2">磁力链接</option>
-				<option value="5">阿里云</option>
 				<option value="3">迅雷</option>
 				<option value="4">微云</option>
+				<option value="5">阿里云</option>
 			</select>
 			<!-- 补全后操作 -->
 			&nbsp;补全后：
-			<select title="补全后是否需要尝试打开第1个网址">
+			<select  class="mySel" title="补全后是否需要尝试打开第1个网址">
 				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;无操作&nbsp;&nbsp;----</option>
 				<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;复制结果&nbsp;----</option>
 				<option value="3">打开网址并复制提取码</option>
 			</select>
 		</span>
+		<!-- AscII前缀 -->
+		<span id="asciiSpan" style="color:black;display:none;">
+			编码格式：
+			<select class="asciiSel"  title="设置AscII加密的编码格式">
+				<option value="0">\u（标准格式）
+				<option value="1">%u</option>
+				<option value="2">\x（不支持中文）</option>
+				<option value="3">&#x</option></option>
+			</select>
+		</span>
+		<!-- 兽音种子 -->
+		<span class="roarHead" style="color: black;display:none;">加密种子：<input title="修改兽音种子" type="text" class="roarTxt"></span>
 		</div>
 		<!-- 输入区域 -->
 		<textarea id="upText" rows="5" ></textarea>
@@ -69,10 +79,10 @@
 			<input title="纳迪亚加密" type="button" class="btn" value="加密">
 			<input title="纳迪亚解密" type="button" class="btn" value="解密">
 		</span>
-		<!-- ASCII码加密、解密按钮 -->
+		<!-- AscII码加密、解密按钮 -->
 		<span style="display:none;" class="0xspan">
-			<input title="ASCII码加密" type="button" class="btn" value="加密">
-			<input title="ASCII码解密" type="button" class="btn" value="解密">
+			<input title="AscII码加密" type="button" class="btn" value="加密">
+			<input title="AscII码解密" type="button" class="btn" value="解密">
 		</span>
 		<!-- Base64加密、解密按钮 -->
 		<span style="display:none;" class="0xspan">
@@ -92,13 +102,13 @@
 			<span style="color:black;" class="0xspan">
 			<!-- 加密后操作 -->
 			加密后：
-			<select title="加密后是否复制结果">
+			<select class="mySel" title="加密后是否复制结果">
 				<option value="1">无操作</option>
 				<option value="2">复制结果</option>
 			</select>
 			<!-- 解密后操作 -->
 			&nbsp;解密后：
-			<select title="解密后是否需要尝试打开第1个网址">
+			<select class="mySel" title="解密后是否需要尝试打开第1个网址">
 				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;无操作&nbsp;&nbsp;----</option>
 				<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;复制结果&nbsp;----</option>
 				<option value="3">打开网址并复制提取码</option>
@@ -146,6 +156,6 @@
 	<div class="mask"></div>
 	<NadiaCrx style="opacity:0;"></NadiaCrx>
 	<script type="text/javascript" class="Z3V6aXlpbWFp" src="base1.5.js" ></script>
-	<script type="text/javascript" class="Z3V6aXlpbWFp" src="Nadia_Encode3.6.4.js"></script>
+	<script type="text/javascript" class="Z3V6aXlpbWFp" src="Nadia_Encode3.6.5.js"></script>
 </body>
 </html>

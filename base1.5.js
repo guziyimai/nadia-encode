@@ -70,7 +70,7 @@ window.Ascii = {
 		return allStr;
 	},
 	decode : function (str) {
-		return window.unescape(str.replace(/\\u/ig,'%u').replace(/\\x/ig,'%u00').replaceAll('&#x','%u').replaceAll(';',''));
+		return window.unescape(str.replace(/\\u/ig,'%u').replace(/\\x(?=[0-9a-f]{4})/ig,'%u').replace(/\\x/ig,'%u00').replaceAll('&#x','%u').replaceAll(';',''));
 	}
 }
 /**

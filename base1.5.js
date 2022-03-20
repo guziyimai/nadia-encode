@@ -195,7 +195,7 @@ try{
 }
 /**
  * 兽音译者编码和解码
- * @author guziyimai
+ * @author https://www.52pojie.cn/thread-1571575-1-1.html
  */
 window.Roar={
 	head : "创世秩序",

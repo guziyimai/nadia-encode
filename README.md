@@ -16,6 +16,8 @@ https://share.mockplus.cn/go/nadia/update.html#download
 
 Edge浏览器也可以在Edge商店直接搜【纳迪亚加密】，进行安装。
 
+视频教程：https://www.bilibili.com/video/BV133411H7cC
+
 联系作者：
 
 3625270272@qq.com
@@ -94,3 +96,4 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 
 3.6.4更新：允许自定义并保存兽音的加密种子。
 
+3.6.6更新：支持百度云自动提取格式链接的补全（?pwd=）

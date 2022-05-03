@@ -225,7 +225,6 @@ window.Roar={
 	},
 	decode : function (str,head) {
 		console.log(str);
-		console.log(head);
 		var result="",i=3,offset=0,n1,n2,b,c;
 		while(i<str.length-1){
 			c=0;b=i+8;

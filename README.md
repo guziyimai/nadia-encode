@@ -98,5 +98,4 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 
 3.6.6更新：支持百度云自动提取格式链接的补全（?pwd=）
 
-3.6.8更新：补全模块新增【去汉字】功能
-
+3.6.8更新：补全模块新增【去汉字】功能；允许从其他网址整合类网站点击进入官网。

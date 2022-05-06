@@ -1,5 +1,6 @@
 //是否是IE
 //@author guziyimai
+getObj("waringDiv").style.opacity=0;
 var waringStr,isLowIE,isSBIE;
 /**
  * 给SB的IE用的！！！
@@ -37,6 +38,7 @@ try{
 }
 getObj("script",1)[0].innerHTML="var isMobile=/Android|webOS|iPhone|iPod|Harmony|BlackBerry/i.test(navigator.userAgent);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';"
 if(!isMobile) getObj("helpTxt",2)[2].innerHTML="注：PC端解压失败或没有解压软件的，可以使用我提供的WinRAR。</div>";
+getObj("menuDiv",2)[0].style.display="block";
 
 /**
  * 获取元素

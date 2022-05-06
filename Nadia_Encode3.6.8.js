@@ -22,11 +22,11 @@ getObj("RARZAR")[_i]="WinRARx"+(is86?"32":"64")+"下载";
 getObj("RARZAR").title="点击下载"+(is86?"32":"64")+"位WinRAR5.5";
 window.addEventListener('resize',function(){
 if(window.innerWidth<0x3e8){
-_r[0][_i]='纳迪亚加密';
-_r[1][_i]='补全链接';
-_r[2][_i]='AscII加密';
-_r[3][_i]='Base64加密';
-_r[4][_i]='兽音译者';
+_r[0][_i]='纳迪亚';
+_r[1][_i]='补全';
+_r[2][_i]='AscII';
+_r[3][_i]='Base64';
+_r[4][_i]='兽音';
 getObj(_('9','qJ*H')).style.textAlign="left";
 getObj(_('9','qJ*H')).style.marginLeft="6%";
 }else if(window.innerWidth>0x41a){

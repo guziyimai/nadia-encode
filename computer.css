@@ -10,7 +10,7 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .help:hover {cursor:pointer;color:red;}
 .support {right:25px;font-size:17px;top:16px;color:#4e6ef2;}
 .support:hover {cursor:pointer;color:red;}
-#RARZAR {position:absolute;margin:auto;right:20px;font-size:19px;font-weight:bold;top:90px;color:#4e6ef2;text-decoration:none;}
+#RARZAR {position:absolute;margin:auto;right:10px;font-size:19px;font-weight:bold;top:90px;color:#4e6ef2;text-decoration:none;}
 #RARZAR:hover {cursor:pointer;color:red;}
 .menu {padding:12px;font-size:20px;text-align:center;display:inline-block;color:#666;border-radius:5px;}
 .menu:hover {background-color:#666;color:white;cursor:pointer;}

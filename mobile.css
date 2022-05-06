@@ -24,7 +24,7 @@ a:hover {color:red;}
 .btn2:active {transform: translateY(5px);}
 #tiShi {display:inline-block;font-size:30px;width:290px;margin-left:-32px;}
 #mainDiv {text-align:center;width:100%;}
-.msg {text-align:left;margin-left:4%;margin-top:0px;margin-right:20px;color:#337ac7;font-size:36px;}
+.msg {text-align:left;margin-left:3%;margin-top:0px;margin-right:20px;color:#337ac7;font-size:36px;}
 #authorDiv {text-align:right;margin-right:5%;font-size:28px;margin-top:-40px;}
 select {font-size:28px;}
 #authorDiv2 {font-size:28px;}

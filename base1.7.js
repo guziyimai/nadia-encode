@@ -1,4 +1,4 @@
-﻿//是否是IE
+//是否是IE
 //@author guziyimai
 getObj("waringDiv").style.opacity=0;
 var waringStr,isLowIE,isSBIE;
@@ -9,16 +9,17 @@ var waringStr,isLowIE,isSBIE;
 try{
 	new RegExp("(?<!.)");
 }catch(e1){
-	isSBIE=true;
+	isSBIE=true;//会误伤火狐，但Nadia插件也不支持火狐内核
 }
 try{
 	"".indexOf("");
 }catch(e2){
-	isLowIE=true;
+	isLowIE=true;//IE8以下
 }
 try{
 	"".replaceAll("","");
 }catch(e3){
+	//isSBIE=true;//会误伤115
 	String.prototype.replaceAll=function(a,b){
 		return this.split(a).join(b);
 	};
@@ -186,7 +187,7 @@ try{
 //IE浏览器版本太低，放弃IE吧！
 if(isLowIE) {
 	isSBIE=true;
-	waringStr="浏览器版本过低，建议使用谷歌内核的浏览器";
+	waringStr="浏览器版本过低，建议使用谷歌内核的浏览器。";
 }
 
 /**

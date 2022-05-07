@@ -27,7 +27,7 @@ try{
 try{
 	document.getElementsByClassName("menuDiv");
 }catch(e4){
-	isLowIE=true;
+	isLowIE=true;//IE8以下
 	var children=document.getElementsByTagName('*');
 	document.getElementsByClassName=function(className){
 		var elements = new Array();

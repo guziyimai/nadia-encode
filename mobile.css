@@ -19,7 +19,7 @@ a:hover {color:red;}
 .btn {background-color:#4e6ef2;border: none;color: white;padding: 10px 18px;margin:3px 5px 12px 25px;text-align: center;font-size:27px;}
 .btn:hover {background-color:#4662d9;border-radius:5px;}
 .btn:active {transform: translateY(4px);}
-.btn2 {background-color:#5cb85c;border: none;color: white;padding: 10px 18px;margin:3px 5px 12px 25px;text-align: center;font-size:17px;border-radius:5px;}
+.btn2 {background-color:#5cb85c;border: none;color: white;padding: 10px 18px;margin:3px 5px 12px 25px;text-align: center;font-size:27px;border-radius:5px;}
 .btn2:hover {background-color:#4CAF50;}
 .btn2:active {transform: translateY(5px);}
 #tiShi {display:inline-block;font-size:20px;width:290px;margin-left:-32px;}

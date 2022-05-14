@@ -41,5 +41,5 @@ select {font-size:19px;}
 .support-img {width:55%;text-align:center;display:table-cell;padding:12px 110px;}
 .helpTxt {font-size:19px;}
 .zfb-img {width:86%;display:inline-block;padding:0px 58px;}
-.roar {position:relative;display:inline-block;left:-37%;font-size:28px;font-weight:bold;top:8px;color:#4e6ef2;text-decoration:none;}
+.roar {position:relative;display:inline-block;left:-38%;font-size:28px;font-weight:bold;top:0px;color:#4e6ef2;text-decoration:none;}
 .roar:hover {cursor:pointer;;color:red;}

@@ -36,7 +36,7 @@ select {font-size:19px;}
 .titleS {font-size:18px;font-weight:bold;margin-bottom:3px;}
 .close {float:right;font-size:30px;margin-top:-2px;color:#9C9FA4;}
 .close:hover {}
-.modal-content {padding:10px 35px;width:550px;line-height:36px;display:none;}
+.modal-content {padding:10px 35px;width:560px;line-height:36px;display:none;}
 .modal-footer {border-top: 1px solid #f5f5f5;padding: 5px;text-align:center;margin-right:20px;line-height:55px;}
 .support-img {width:55%;text-align:center;display:table-cell;padding:12px 110px;}
 .helpTxt {font-size:19px;}

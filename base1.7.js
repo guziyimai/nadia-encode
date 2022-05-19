@@ -59,7 +59,7 @@ function getObj(id,type){
 	}
 }
 
-getObj("script",1)[0].innerHTML="var isMobile=/Android|webOS|iPhone|iPod|Harmony|BlackBerry/i.test(navigator.userAgent);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';"
+getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua),is86=/x86|win32|wow32/i.test(ngua),isFF=/firefox/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';"
 if(!isAndroid) getObj("helpTxt",2)[2].innerHTML=isMobile?"":"注：PC端解压失败或没有解压软件的，可以使用我提供的WinRAR。</div>";
 getObj("menuDiv",2)[0].style.display="block";
 

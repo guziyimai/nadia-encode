@@ -21,7 +21,10 @@ var flag=_p.substr(-3)=="..."||!_0x3f3889;
 if(!flag&&_0x3f3889.length==1){
 if(_0x3f3889.indexOf("pan.baidu.com")==-1||_0x3f3889.indexOf("?pwd=")!=-1) flag=true;
 }
-if(flag){_0x5dbc25(_('1d7','$a%^'),_('1d8','wa$h'));return;}
+if(flag){
+console.log(flag);
+_0x5dbc25(_('1d7','$a%^'),_('1d8','wa$h'));return;
+}
 var tqm1=/(?<=(提取|pwd=|ti\s?qu|tqm)[^a-z0-9]{0,4})[a-z0-9]{4}(?![a-z0-9])/gi,tqm2=/(?<!解压.{1,5})(?<=[\s,，:：码马]{1,2})[a-z0-9]{4}(?![a-z0-9])/gi;
 var tqmArr=_p.match(tqm1),j=0;
 if(!tqmArr) tqmArr=_p.match(tqm2);

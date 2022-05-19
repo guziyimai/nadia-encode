@@ -105,3 +105,5 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 base1.7更新：在低版本IE下，提示使用谷歌内核浏览器；在IE和Firefox中，不检测、不支持插件安装；JavaScript被禁用后的提示文字放至下方。
 
 3.7.0更新：兼容低分辨率手机，最低支持720x1280分辨率
+
+3.7.1更新：网页版也拥有了自动变蓝超链接的功能，可自行设置。

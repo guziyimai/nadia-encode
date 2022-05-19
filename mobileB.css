@@ -1,4 +1,4 @@
-textarea {width:94%;resize:none;margin:10px 0px;font-size:32px;border:1px solid #000}
+textarea {width:92%;resize:none;margin:10px 0px;font-size:32px;border:1px solid #000}
 .roarHead{font-size:45px;}
 .roarTxt {width:200px;font-size:42px;}
 .menuDiv {text-align:center;border:1px solid #e7e7e7;background-color:#e7e7e7;position:relative;}
@@ -24,7 +24,7 @@ a:hover {color:red;}
 .btn2:active {transform: translateY(5px);}
 #tiShi {display:inline-block;font-size:30px;width:290px;margin-left:-32px;}
 #mainDiv {text-align:center;width:100%;}
-.msg {text-align:left;margin-left:3%;margin-top:0px;margin-right:20px;color:#337ac7;font-size:36px;}
+.msg {text-align:left;margin-left:4%;margin-top:0px;margin-right:20px;color:#337ac7;font-size:36px;}
 #authorDiv {text-align:right;margin-right:5%;font-size:28px;margin-top:-40px;}
 select {font-size:28px;}
 #authorDiv2 {font-size:28px;}
@@ -43,5 +43,5 @@ select {font-size:28px;}
 .zfb-img {width:86%;display:inline-block;padding:0px 58px;}
 .roar {position:relative;display:inline-block;left:-35%;font-size:42px;font-weight:bold;top:8px;color:#4e6ef2;text-decoration:none;}
 .roar:hover {cursor:pointer;;color:red;}
-#downText {text-align:left;height:600px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:94%;margin:10px 0px;font-size:36px;margin-left:3%;font-family:monospace;}
+#downText {text-align:left;height:600px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:92%;margin:10px 0px;font-size:35px;margin-left:4%;font-family:monospace;}
 #downText:empty::before{content:attr(placeholder);color:#888;}

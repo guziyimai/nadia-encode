@@ -1,5 +1,5 @@
 textarea {width:88%;resize:none;margin:10px 0px;font-size:20px;}
-.roarTxt {width:70px;font-size:15px;}
+.roarTxt {width:70px;font-size:14px;}
 a:visited {color:blue;}
 a:hover {color:red;}
 .menuDiv {text-align:center;border:1px solid #e7e7e7;background-color:#e7e7e7;margin-left:6%;margin-right:6%;position:relative;}
@@ -42,4 +42,3 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .roar:hover {cursor:pointer;;color:red;}
 #downText {text-align:left;height:212px;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:88%;margin:10px 0px;font-size:20px;margin-left:6%;font-family:monospace;}
 #downText:empty::before{content:attr(placeholder);color:#888;}
-.ztj {visibility:hidden;display:inline-block;padding:8px 0px;height:32px;}

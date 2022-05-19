@@ -19,7 +19,7 @@
 	<link rel="stylesheet" type="text/css" class="Z3V6aXlpbWFp">
 	<link rel="shortcut icon" type="image/x-icon" class="Z3V6aXlpbWFp" href="favicon.ico">
 	<script type="text/javascript" class="Z3V6aXlpbWFp">
-	var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua),is86=/x86|win32|wow32/i.test(ngua),isFF=/firefox/i.test(ngua);try{"".indexOf("");}catch(e){Array.prototype.indexOf=function(elt,start){var len=this.length;if(!start)start=0;for(;start<len;start++)if(this[start]== elt)return start;return -1;};}var a=function(){var urlStr=top.location.href.replace(/#[a-z\-\._]+$/,"").replace(/&.+/,"");var num=urlStr.indexOf("=");var num2=urlStr.indexOf("#");if(num2>0&&num>num2){var realUrl=urlStr.replace(/#\d/,"").replace(/\?.+/,"");top.location.href=realUrl+urlStr.substring(realUrl.length+2)+urlStr.substr(num2,2);}else if(urlStr!=top.location.href){top.location.href=urlStr;}$=null;document.appendChild=null;document.createElement=null;document.insertBefore=null;Node.prototype.removeChild=null;Node.prototype.remove=null;Element.prototype.remove=null;Element.prototype.setAttribute=null;Element.prototype.getAttribute=null;document.getElementsByTagName("link")[0].href=isMobile?(window.innerWidth>950?"mobileB.css":"mobileS.css"):"computer.css";}();
+	var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua),is86=/x86|win32|wow32/i.test(ngua),isFF=/firefox/i.test(ngua);try{"".indexOf("");}catch(e){Array.prototype.indexOf=function(elt,start){var len=this.length;if(!start)start=0;for(;start<len;start++)if(this[start]== elt)return start;return -1;};}var a=function(){var urlStr=top.location.href.replace(/#[a-z\-\._]+$/,"").replace(/&.+/,"");var num=urlStr.indexOf("=");var num2=urlStr.indexOf("#");if(num2>0&&num>num2){var realUrl=urlStr.replace(/#\d/,"").replace(/\?.+/,"");top.location.href=realUrl+urlStr.substring(realUrl.length+2)+urlStr.substr(num2,2);}else if(urlStr!=top.location.href){top.location.href=urlStr;}$=null;document.appendChild=null;document.createElement=null;document.insertBefore=null;Node.prototype.removeChild=null;Node.prototype.remove=null;Element.prototype.remove=null;document.getElementsByTagName("link")[0].href=isMobile?(window.innerWidth>950?"mobileB.css":"mobileS.css"):"computer.css";}();
 	</script>
 </head>
 <body>
@@ -51,9 +51,9 @@
 			<!-- 补全后操作 -->
 			&nbsp;补全后：
 			<select  class="mySel" title="补全后是否需要尝试打开第1个网址">
-				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;无操作&nbsp;&nbsp;----</option>
-				<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;复制结果&nbsp;----</option>
-				<option value="3">打开网址并复制提取码</option>
+				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;无操作</option>
+				<option value="2">&nbsp;&nbsp;&nbsp;复制结果</option>
+				<option value="3">解密为超链接</option>
 			</select>
 		</span>
 		<!-- AscII前缀 -->
@@ -104,20 +104,20 @@
 			<!-- 加密后操作 -->
 			加密后：
 			<select class="mySel" title="加密后是否复制结果">
-				<option value="1">无操作</option>
+				<option value="1">&nbsp;无操作</option>
 				<option value="2">复制结果</option>
 			</select>
 			<!-- 解密后操作 -->
 			&nbsp;解密后：
 			<select class="mySel" title="解密后是否需要尝试打开第1个网址">
-				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;&nbsp;无操作&nbsp;&nbsp;----</option>
-				<option value="2">&nbsp;&nbsp;&nbsp;&nbsp;----&nbsp;复制结果&nbsp;----</option>
-				<option value="3">打开网址并复制提取码</option>
+				<option value="1">&nbsp;&nbsp;&nbsp;&nbsp;无操作</option>
+				<option value="2">&nbsp;&nbsp;&nbsp;复制结果</option>
+				<option value="3">解密为超链接</option>
 			</select>
 			</span>
 		</div>
 		<!-- 结果显示区域 -->
-		<textarea id="downText" rows="9" readonly></textarea>
+		<div id="downText"></div>
 		<div>
 			<h2 class="roar" style="opacity:0;">&nbsp;</h2>
 			<!-- 作者信息/是否禁用了JS -->
@@ -145,7 +145,7 @@
 			<div class="helpTxt">2、在【补全类型】下拉框选择要补全的类型，结果显示在下方。</div>
 			<hr>
 			<div class="titleS">补充说明：</div>
-			<div class="helpTxt">1、在【加密后】【解密后】【补全后】下拉框可以设置在操作后自动复制文字或打开第1个网址。</div>
+			<div class="helpTxt">1、在【加密后】【解密后】【补全后】下拉框可以设置在操作后自动复制文字或自动转超链接。</div>
 			<div class="helpTxt">2、密文开头添加200字内的介绍，以冒号结尾，则解压时可自动忽略。</div>
 			<div class="helpTxt">3、大部分情况下，程序能自动区分4种密文+补全百度云，可不必切换选项卡，直接点【解密】。</div>
 			<div class="helpTxt">4、点击左上角的图标或【Nadia】，可以盲盒变脸。</div>

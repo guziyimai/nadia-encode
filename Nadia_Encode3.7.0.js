@@ -24,7 +24,7 @@ var tqmArr=_p.match(tqm1),j=0,urlHead="",rList=[];
 if(!tqmArr) tqmArr=_p.match(tqm2);
 for(var i=0;i<_0x3f3889.length;i++){
 var oldUrl=_0x3f3889[i];
-if(rList.indexOf(oldUrl)) continue;
+if(rList.indexOf(oldUrl)!=-1) continue;
 if(oldUrl.indexOf("/")!=-1||/\.(com|cn|net|org|net)/.test(oldUrl)||oldUrl.indexOf("magnet:")!=-1){
 if(!/https?:|magnet:|ftp:/i.test(oldUrl)) urlHead=_0x39ee7f[0];
 var tqm=oldUrl.match(/(?<=\/s\/)1[a-z0-9_\-]{22}(?!\?p)/gi);

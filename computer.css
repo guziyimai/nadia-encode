@@ -40,3 +40,5 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .zfb-img {height:485px;display:inline-block;padding:0px 175px;}
 .roar {position:relative;display:inline-block;left:-40%;font-size:20px;font-weight:bold;top:5px;color:#4e6ef2;text-decoration:none;}
 .roar:hover {cursor:pointer;;color:red;}
+#downText {text-align:left;height:216px;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:88%;margin:10px 0px;font-size:19px;margin-left:6%;color:#333;}
+#downText:empty::before{content:attr(placeholder);color:#666;}

@@ -17,11 +17,7 @@ function _0x189e3d(){if(_0x103f22==_0xf5e424[_('1c7','qJ*H')](_('1c8','3Ten'),''
 
 function _0xdb6e75(){
 if(!_p){_0x5dbc25(_('1ce','vqJz'),'red');return;}var _0x3f3889,_0x2c9c72='';_0x3f3889=_p[_('1cf','I!l8')](/(https?:\/\/|ftp:\/\/)?[a-z0-9\-_]+?\.[a-z0-9\-\._~]{2,}([\/?#&:][a-z0-9\.~:\/\?#&\+%=\-_@]+)?/ig);if(_0x3f3889==null)_0x3f3889=_p[_('1d3','m1!g')](/(magnet:\?xt=urn|thunder|flashget|qqdl):[a-z0-9:_&\+%=\/\-]{8,}/i);
-var flag=_p.substr(-3)=="..."||!_0x3f3889;
-if(!flag&&_0x3f3889.length==1){
-if(_0x3f3889.indexOf("pan.baidu.com")==-1||_0x3f3889.indexOf("?pwd=")!=-1) flag=true;
-}
-if(flag){
+if(_p.substr(-3)=="..."||!_0x3f3889){
 console.log(flag);
 _0x5dbc25(_('1d7','$a%^'),_('1d8','wa$h'));return;
 }

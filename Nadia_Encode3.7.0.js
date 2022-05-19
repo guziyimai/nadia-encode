@@ -20,10 +20,11 @@ if(_p.substr(-3)=="..."||!_0x3f3889){
 _0x5dbc25(_('1d7','$a%^'),_('1d8','wa$h'));return;
 }
 var tqm1=/(?<=(提取|pwd=|ti\s?qu|tqm)[^a-z0-9]{0,4})[a-z0-9]{4}(?![a-z0-9])/gi,tqm2=/(?<!解压.{1,5})(?<=[\s,，:：码马]{1,2})[a-z0-9]{4}(?![a-z0-9])/gi;
-var tqmArr=_p.match(tqm1),j=0;
+var tqmArr=_p.match(tqm1),j=0,urlHead="";
 if(!tqmArr) tqmArr=_p.match(tqm2);
 for(var i=0;i<_0x3f3889.length;i++){
 if(_0x3f3889[i].indexOf("/")!=-1||/\.(com|cn|net|org|net)/.test(_0x3f3889[i])||_0x3f3889[i].indexOf("magnet:")!=-1){
+if(!/https?:|magnet:|ftp:/i.test(_0x3f3889[i])) urlHead=_0x39ee7f[0];
 var oldUrl=_0x3f3889[i];
 var tqm=_0x3f3889[i].match(/(?<=\/s\/)1[a-z0-9_\-]{22}(?!\?p)/gi);
 if (tqm &&tqm[0]&&tqmArr&&tqmArr[j]) {

@@ -6,13 +6,14 @@
 </style></head><body><div id="sb" class="sb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><iframe id="main" src="https://kdocs.cn/l/cpp10PpoHEtS" width="100%" frameborder="no" onload="initSB();"></iframe><script type="text/javascript">
 //alert(265*1.25/window.devicePixelRatio+"px");
 var main=document.getElementById("main"),ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);
-var sb=document.getElementById("sb");main.height=window.innerHeight-25;window.addEventListener('resize',function(){
-if(main.height!=window.innerHeight-25) main.height=window.innerHeight-25;
+var sb=document.getElementById("sb");main.height=window.innerHeight-25;
 alert(22*1.25/window.devicePixelRatio);
 if(isMobile) {
-sb.className="sb2";
+sb.style.padding="0 16px";
 sb.style.right=300*1.25/window.devicePixelRatio+"px";
 }
+window.addEventListener('resize',function(){
+if(main.height!=window.innerHeight-25) main.height=window.innerHeight-25;
 if(window.innerWidth<752){sb.innerHTML="";}else{sb.innerHTML="举报";}
 });function initSB(){
 sb.style.display="inline";

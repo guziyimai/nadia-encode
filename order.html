@@ -6,10 +6,10 @@
 var main=document.getElementById("main"),ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);
 var sb=document.getElementById("sb");main.height=window.innerHeight-25;
 if(isMobile) {
-sb.style.lineHeight="25px";
-sb.style.padding="0 60px";
+sb.style.lineHeight="28px";
+sb.style.padding="0 80px";
 sb.style.top="18px";
-sb.style.right=100*1.25/window.devicePixelRatio+"px";
+sb.style.right=90*1.25/window.devicePixelRatio+"px";
 }
 window.addEventListener('resize',function(){
 if(main.height!=window.innerHeight-25) main.height=window.innerHeight-25;

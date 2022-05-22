@@ -3,10 +3,9 @@
 var main=document.getElementById("main"),ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);
 var sb=document.getElementById("sb");main.height=window.innerHeight-25;
 var element=new Image();
-Object.defineProperty(element,"get",{
-  get:alert("debugger start")
-});
-console.dir(element);
+console.log(element);
+element.toSting=function(){alert(1);}
+
 if(isMobile) {
 sb.style.lineHeight="28px";
 sb.style.height="28px";

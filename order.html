@@ -6,10 +6,10 @@
 var main=document.getElementById("main"),ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);
 var sb=document.getElementById("sb");main.height=window.innerHeight-25;window.addEventListener('resize',function(){
 if(main.height!=window.innerHeight-25) main.height=window.innerHeight-25;
-alert(isMobile);
-if(isMobile) sb.style.padding="0 16px";
+if(isMobile) {
 sb.style.padding="0 16px";
-//sb.style.top="20px";
+sb.style.top="20px";
+}
 if(window.innerWidth<752){sb.innerHTML="";}else{sb.innerHTML="举报";}
 });function initSB(){
 sb.style.right=300*1.25/window.devicePixelRatio+"px";

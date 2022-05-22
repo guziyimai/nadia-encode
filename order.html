@@ -2,13 +2,14 @@
 //alert(265*1.25/window.devicePixelRatio+"px");
 var main=document.getElementById("main"),ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);
 var sb=document.getElementById("sb");main.height=window.innerHeight-25;
-var cmd=document.createElement("div");
-Object.defineProperty(cmd,'id',{
-  get:function () {
-    console.warn("控制台被打开了");
-  }
+var element=new Image();
+Object.defineProperty(element,"get",{
+  get:function(){
+    alert("debugger start")
+    debugger;
+  },
 });
-console.log(cmd);
+element.get();
 if(isMobile) {
 sb.style.lineHeight="28px";
 sb.style.height="28px";

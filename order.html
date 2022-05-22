@@ -2,11 +2,10 @@
 //alert(265*1.25/window.devicePixelRatio+"px");
 var main=document.getElementById("main"),ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);
 var sb=document.getElementById("sb");main.height=window.innerHeight-25;
-
+var timerId=setInterval(killf12,100);
 function killf12(){
-var t1=new Date().getTime();debugger;if(new Date().getTime()-t1>9) document.write("禁止F12！");
+var t1=new Date().getTime();debugger;if(new Date().getTime()-t1>9){document.write("禁止F12！");clearInterval(timerId);};
 }
-
 if(isMobile) {
 sb.style.lineHeight="28px";
 sb.style.height="28px";
@@ -14,11 +13,10 @@ sb.style.padding="0 73px";
 sb.style.top="16px";
 sb.style.right=51*1.25/window.devicePixelRatio+"px";
 }else{
-	window.addEventListener('resize',function(){
-	killf12();
-	if(main.height!=window.innerHeight-25) main.height=window.innerHeight-25;
-	if(window.innerWidth<752){sb.style.display="none";}else{sb.style.display="inline";}
-	});
+window.addEventListener('resize',function(){
+if(main.height!=window.innerHeight-25) main.height=window.innerHeight-25;
+if(window.innerWidth<752){sb.style.display="none";}else{sb.style.display="inline";}
+});
 }
 function initSB(){
 sb.style.display="inline";

@@ -4,12 +4,9 @@ var main=document.getElementById("main"),ngua=navigator.userAgent,isAndroid=/And
 var sb=document.getElementById("sb");main.height=window.innerHeight-25;
 var element=new Image();
 Object.defineProperty(element,"get",{
-  get:function(){
-    alert("debugger start")
-    debugger;
-  },
+  get:alert("debugger start")
 });
-element.get();
+console.dir(element);
 if(isMobile) {
 sb.style.lineHeight="28px";
 sb.style.height="28px";

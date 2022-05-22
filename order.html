@@ -3,6 +3,11 @@
 #sb:hover {background:#fafafa;}
 </style></head><body><div id="sb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><iframe id="main" src="https://kdocs.cn/l/cpp10PpoHEtS" width="100%" frameborder="no" onload="initSB();"></iframe><script type="text/javascript">
 alert(window.innerWidth);
-alert(document.body.clientWidth);
-var main=document.getElementById("main");var sb=document.getElementById("sb");main.height=window.innerHeight-25;window.addEventListener('resize',function(){if(main.height!=window.innerHeight-25) main.height=window.innerHeight-25;if(window.innerWidth<752){sb.innerHTML="";}else{sb.innerHTML="举报";}});function initSB(){sb.innerHTML="举报";sb.onclick=function(){alert("汪汪汪！");}}
+alert(window.screen.width);
+var main=document.getElementById("main");
+var sb=document.getElementById("sb");main.height=window.innerHeight-25;window.addEventListener('resize',function(){
+if(main.height!=window.innerHeight-25) main.height=window.innerHeight-25;if(window.innerWidth<752){sb.innerHTML="";}else{sb.innerHTML="举报";}
+});function initSB(){
+sb.style.right=265*window.innerWidth/window.screen.width;
+sb.innerHTML="举报";sb.onclick=function(){alert("汪汪汪！");}}
 </script></body></html>

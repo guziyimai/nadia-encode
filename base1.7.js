@@ -192,11 +192,10 @@ if(isLowIE) {
 
 /**
  * Ascii码加密、解密
- * 由于我这里是用div模拟input的，所以&需要转义
  * @author guziyimai
  */
 window.Ascii = {
-	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x"],["&amp;#x000","&amp;#x00","&amp;#x0","&amp;#x"]],
+	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x"],["&#x000","&#x00","&#x0","&#x"]],
 	encode : function (inputStr,preIndex) {
 		if(!preIndex) preIndex=0;
 		var allStr="",str,preStr=this.preStrArr[preIndex];

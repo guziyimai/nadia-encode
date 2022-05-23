@@ -1,4 +1,4 @@
-textarea {width:94%;resize:none;margin:10px 0px;font-size:21px;border:1px solid #000}
+textarea {width:94%;resize:none;margin:10px 0px;font-size:21px;border:1px solid #000;overflow-x:hidden;word-break:break-all;white-space:pre-wrap;word-wrap:break-word;padding:2px;}
 .roarHead{font-size:28px;}
 .roarTxt {width:135px;font-size:28px;}
 .menuDiv {text-align:center;border:1px solid #e7e7e7;background-color:#e7e7e7;position:relative;}
@@ -43,6 +43,6 @@ select {font-size:19px;}
 .zfb-img {width:86%;display:inline-block;padding:0px 58px;}
 .roar {position:relative;display:inline-block;left:-38%;font-size:28px;font-weight:bold;top:0px;color:#4e6ef2;text-decoration:none;}
 .roar:hover {cursor:pointer;;color:red;}
-#downText {text-align:left;height:400px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:94%;margin:10px 0px;font-size:21px;margin-left:3%;font-family:monospace;}
+#downText {text-align:left;height:400px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:94%;margin:10px 0px;font-size:21px;margin-left:3%;font-family:monospace;padding:2px;}
 #downText:empty::before{content:attr(placeholder);color:#888;}
-xmp {white-space:pre-wrap;word-wrap:break-word;margin:0px;padding:0px;}
+xmp {word-break:break-all;white-space:pre-wrap;word-wrap:break-word;margin:0px;padding:2px;}

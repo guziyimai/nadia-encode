@@ -2,11 +2,15 @@
 
 访问地址：
 
-https://guziyimai.github.io/nadia-encode
-
 https://share.mockplus.cn/go/nadia/index.html
 
+备用地址：
+
+https://nadia-encode.vercel.app
+
 https://nadia-jiami.netlify.app
+
+https://guziyimai.github.io/nadia-encode
 
 PC端推荐安装纳迪亚解密插件：
 

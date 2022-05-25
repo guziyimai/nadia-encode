@@ -10,8 +10,6 @@ https://nadia-encode.vercel.app
 
 https://nadia-jiami.netlify.app
 
-https://guziyimai.github.io/nadia-encode
-
 PC端推荐安装纳迪亚解密插件：
 
 https://share.mockplus.cn/go/nadia/update.html#download

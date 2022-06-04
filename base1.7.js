@@ -59,8 +59,9 @@ function getObj(id,type){
 	}
 }
 
-getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';"
-if(!isAndroid) getObj("helpTxt",2)[2].innerHTML=isWin?"注：Windows解压失败或没有解压软件的，可以使用我提供的WinRAR。</div>":"";
+//低版本IE过于SB
+setTimeout(function(){getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';"},1);
+if(!isAndroid)getObj("helpTxt",2)[2].innerHTML=isWin?"注：Windows解压失败或没有解压软件的，可以使用我提供的WinRAR。</div>":"";
 getObj("menuDiv",2)[0].style.display="block";
 
 /**
@@ -179,9 +180,7 @@ try{
 			}
 			return string;
 		}
-	}
-	
-	
+	}	
 }
 
 //IE浏览器版本太低，放弃IE吧！

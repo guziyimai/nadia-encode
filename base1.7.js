@@ -30,10 +30,10 @@ try{
 	isLowIE=true;//IE8以下
 	var children=document.getElementsByTagName('*');
 	document.getElementsByClassName=function(className){
-		var elements = new Array();
+		var elements=new Array();
 		for (var i=0; i<children.length; i++){
-			var child = children[i];
-			var classNames = child.className.split(' ');
+			var child=children[i];
+			var classNames=child.className.split(' ');
 			for (var j=0; j<classNames.length; j++){
 				if (classNames[j] == className){
 					elements.push(child);
@@ -59,8 +59,6 @@ function getObj(id,type){
 	}
 }
 
-//低版本IE过于SB
-setTimeout(function(){getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';"},1);
 if(!isAndroid)getObj("helpTxt",2)[2].innerHTML=isWin?"注：Windows解压失败或没有解压软件的，可以使用我提供的WinRAR。</div>":"";
 getObj("menuDiv",2)[0].style.display="block";
 
@@ -70,7 +68,7 @@ getObj("menuDiv",2)[0].style.display="block";
  */
 try{
 	window.btoa("");
-	window.Base64 = {
+	window.Base64={
 		encode : function (str) {
 			return window.btoa(unescape(encodeURIComponent(str)));
 		},
@@ -84,98 +82,98 @@ try{
 	 * @author https://blog.csdn.net/qq_34039868/article/details/103919535
 	 */
 	isLowIE=true;
-	window.Base64 = {
+	window.Base64={
 		_keyStr : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
-		encode : function (input) {
-			var output = "";
-			var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
-			var i = 0;
-			input = Base64._utf8_encode(input);
-			while (i < input.length) {
-				chr1 = input.charCodeAt(i++);
-				chr2 = input.charCodeAt(i++);
-				chr3 = input.charCodeAt(i++);
-				enc1 = chr1 >> 2;
-				enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
-				enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
-				enc4 = chr3 & 63;
-				if (isNaN(chr2)) {
-					enc3 = enc4 = 64;
-				} else if (isNaN(chr3)) {
-					enc4 = 64;
+		encode : function (str) {
+			var output="";
+			var chr1,chr2,chr3,enc1,enc2,enc3,enc4;
+			var i=0;
+			str=Base64._utf8_encode(str);
+			while(i<str.length) {
+				chr1=str.charCodeAt(i++);
+				chr2=str.charCodeAt(i++);
+				chr3=str.charCodeAt(i++);
+				enc1=chr1>>2;
+				enc2=((chr1&3)<<4)|(chr2>>4);
+				enc3=((chr2&15)<<2)|(chr3>>6);
+				enc4=chr3&63;
+				if(isNaN(chr2)) {
+					enc3=enc4=64;
+				}else if(isNaN(chr3)) {
+					enc4=64;
 				}
-				output = output +
-					Base64._keyStr.charAt(enc1) + Base64._keyStr.charAt(enc2) +
-					Base64._keyStr.charAt(enc3) + Base64._keyStr.charAt(enc4);
+				output=output +
+					Base64._keyStr.charAt(enc1)+Base64._keyStr.charAt(enc2) +
+					Base64._keyStr.charAt(enc3)+Base64._keyStr.charAt(enc4);
 			}
 			return output;
 		},
-		decode : function (input) {
-			var output = "";
-			var chr1, chr2, chr3;
-			var enc1, enc2, enc3, enc4;
-			var i = 0;
-			input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
-			while (i < input.length) {
-				enc1 = Base64._keyStr.indexOf(input.charAt(i++));
-				enc2 = Base64._keyStr.indexOf(input.charAt(i++));
-				enc3 = Base64._keyStr.indexOf(input.charAt(i++));
-				enc4 = Base64._keyStr.indexOf(input.charAt(i++));
-				chr1 = (enc1 << 2) | (enc2 >> 4);
-				chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
-				chr3 = ((enc3 & 3) << 6) | enc4;
-				output = output + String.fromCharCode(chr1);
-				if (enc3 != 64) {
-					output = output + String.fromCharCode(chr2);
+		decode : function (str){
+			var output="";
+			var chr1,chr2,chr3;
+			var enc1,enc2,enc3,enc4;
+			var i=0;
+			str=str.replace(/[^A-Za-z0-9\+\/\=]/g,"");
+			while (i<str.length) {
+				enc1=Base64._keyStr.indexOf(str.charAt(i++));
+				enc2=Base64._keyStr.indexOf(str.charAt(i++));
+				enc3=Base64._keyStr.indexOf(str.charAt(i++));
+				enc4=Base64._keyStr.indexOf(str.charAt(i++));
+				chr1=(enc1<< 2)|(enc2>>4);
+				chr2=((enc2&15)<<4)|(enc3>>2);
+				chr3=((enc3&3)<<6)|enc4;
+				output=output+String.fromCharCode(chr1);
+				if (enc3!=64) {
+					output=output+String.fromCharCode(chr2);
 				}
-				if (enc4 != 64) {
-					output = output + String.fromCharCode(chr3);
+				if (enc4!=64) {
+					output=output + String.fromCharCode(chr3);
 				}
 			}
-			output = Base64._utf8_decode(output);
+			output=Base64._utf8_decode(output);
 			return output;
 		},
-		_utf8_encode : function (string) {
-			string = string.replace(/\r\n/g,"\n");
-			var utftext = "";
-			for (var n = 0; n < string.length; n++) {
-				var c = string.charCodeAt(n);
+		_utf8_encode : function (str){
+			str=str.replace(/\r\n/g,"\n");
+			var utftext="";
+			for (var n=0;n<str.length;n++) {
+				var c=str.charCodeAt(n);
 				if (c < 128) {
-					utftext += String.fromCharCode(c);
+					utftext+=String.fromCharCode(c);
 				}
-				else if((c > 127) && (c < 2048)) {
-					utftext += String.fromCharCode((c >> 6) | 192);
-					utftext += String.fromCharCode((c & 63) | 128);
+				else if(c>127&&c<2048) {
+					utftext+=String.fromCharCode((c>>6)|192);
+					utftext+=String.fromCharCode((c&63)|128);
 				}
 				else {
-					utftext += String.fromCharCode((c >> 12) | 224);
-					utftext += String.fromCharCode(((c >> 6) & 63) | 128);
-					utftext += String.fromCharCode((c & 63) | 128);
+					utftext+=String.fromCharCode((c>>12)|224);
+					utftext+=String.fromCharCode(((c>>6)&63)|128);
+					utftext+=String.fromCharCode((c&63)|128);
 				}
 
 			}
 			return utftext;
 		},
 		_utf8_decode : function (utftext) {
-			var string = "";
-			var i = 0;
-			var c = c1 = c2 = 0;
-			while ( i < utftext.length ) {
-				c = utftext.charCodeAt(i);
-				if (c < 128) {
-					string += String.fromCharCode(c);
+			var str="";
+			var i=0;
+			var c=c1=c2=0;
+			while (i<utftext.length ) {
+				c=utftext.charCodeAt(i);
+				if (c<128) {
+					str+=String.fromCharCode(c);
 					i++;
 				}
-				else if((c > 191) && (c < 224)) {
-					c2 = utftext.charCodeAt(i+1);
-					string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
-					i += 2;
+				else if(c>191&&c<224) {
+					c2=utftext.charCodeAt(i+1);
+					str+=String.fromCharCode(((c&31)<<6)|(c2&63));
+					i+=2;
 				}
 				else {
-					c2 = utftext.charCodeAt(i+1);
-					c3 = utftext.charCodeAt(i+2);
-					string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
-					i += 3;
+					c2=utftext.charCodeAt(i+1);
+					c3=utftext.charCodeAt(i+2);
+					string+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));
+					i+=3;
 				}
 			}
 			return string;
@@ -188,12 +186,13 @@ if(isLowIE) {
 	isSBIE=true;
 	waringStr="浏览器版本过低，建议使用谷歌内核的浏览器。";
 }
+getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';";
 
 /**
  * Ascii码加密、解密
  * @author guziyimai
  */
-window.Ascii = {
+window.Ascii={
 	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x"],["&#x000","&#x00","&#x0","&#x"]],
 	encode : function (inputStr,preIndex) {
 		if(!preIndex) preIndex=0;

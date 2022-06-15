@@ -23,7 +23,7 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .btn2:hover {background-color:#4CAF50;cursor:pointer;}
 .btn2:active {transform: translateY(5px);}
 #tiShi {display:inline-block;font-size:19px;width:200px;margin-left:-90px;}
-#mainDiv {text-align:center;width:100%;}
+#mainDiv {text-align:center;width:100%;min-width:730px;}
 .msg {text-align:left;margin-left:6%;margin-top:5px;margin-right:20px;color:#337ac7;font-size:17px;}
 #authorDiv {text-align:right;margin-right:7%;font-size:16px;margin-top:-20px;}
 .mask {position:fixed;top:0;bottom:0;left:0;width:100%;height:auto;background:rgba(0,0,0,0.5);z-index:100;display:none;}

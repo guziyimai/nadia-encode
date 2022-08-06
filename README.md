@@ -16,8 +16,6 @@ https://share.mockplus.cn/go/nadia/update.html#download
 
 相比网页版优势：安装后，遇到纳迪亚/兽音/Base64等密文，只需双击解密。
 
-Edge正式版浏览器也可以在Edge商店直接搜【纳迪亚加密】，进行安装。
-
 视频教程：https://www.bilibili.com/video/BV133411H7cC
 
 联系作者：

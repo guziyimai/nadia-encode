@@ -10,13 +10,25 @@ https://nadia-jiami.netlify.app
 
 https://guziyimai.github.io/nadia-encode
 
-PC端推荐安装纳迪亚解密插件：
+PC浏览器插件版：
 
 https://share.mockplus.cn/go/nadia/update.html#download
 
 相比网页版优势：安装后，遇到纳迪亚/兽音/Base64等密文，只需双击解密。
 
-视频教程：https://www.bilibili.com/video/BV133411H7cC
+安卓APP版：
+
+https://nadia-jiami.netlify.app/NadiaAndrod1.0.apk
+
+相比网页版劣势：不能下载、不能保存设置、不能保存图片、不能打开网盘链接等。
+
+视频教程：
+
+https://www.bilibili.com/video/BV133411H7cC
+
+文字教程：
+
+https://www.bilibili.com/read/cv13500812
 
 联系作者：
 
@@ -107,3 +119,6 @@ base1.7更新：在低版本IE下，提示使用谷歌内核浏览器；在IE和
 3.7.0更新：兼容低分辨率手机，最低支持720x1280分辨率
 
 3.7.1更新：网页版也拥有了自动变蓝超链接的功能，可自行设置。新的代码可兼容QQ、微信浏览器的复制操作，但却不兼容IE的抓取提取码。
+
+3.7.3更新：新增安卓APP：手机访问网页版地址，可下载安卓APP；电脑访问网页版地址，可安装PC插件。
+

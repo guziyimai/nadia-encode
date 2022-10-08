@@ -13,7 +13,7 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .menu {padding:8px;font-size:28px;text-align:center;display:inline-block;color:#666;border-radius:5px;}
 .menu:hover {background-color:#666;color:white;}
 .menu2 {padding:8px;font-size:28px;text-align:center;display:inline-block;background-color:#39a0e2;color:white;border-radius:5px;}
-#waringDiv {text-align:center;margin:45px 9px 18px 9px;font-size:28px;}
+#waringDiv {text-align:center;margin:45px 0px 18px 0px;font-size:27px;}
 a {text-decoration:none;}
 a:visited {color:blue;}
 a:hover {color:red;}

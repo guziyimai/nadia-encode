@@ -20,7 +20,7 @@ https://share.mockplus.cn/go/nadia/update.html#download
 
 https://nadia-jiami.netlify.app/NadiaAndrod1.0.apk
 
-相比网页版劣势：不能下载、不能保存设置、不能保存图片、不能打开网盘链接等。
+相比网页版劣势：不能保存设置、不能保存图片、需要使用外部浏览器打开链接等。
 
 视频教程：
 

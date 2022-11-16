@@ -6,6 +6,8 @@ https://share.mockplus.cn/go/nadia/index.html
 
 备用地址：
 
+https://nlt-media.neocities.org
+
 https://nadia-jiami.netlify.app
 
 https://guziyimai.github.io/nadia-encode

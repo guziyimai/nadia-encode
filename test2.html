@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="robots" content="noindex,nofollow">
 	<title>纳迪亚解密-测试</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.js" class="Z3V6aXlpbWFp">
 	<style type="text/css" class="Z3V6aXlpbWFp">
 		.main {max-width:1000px;word-break:break-all;margin:auto;font-size:19px;padding:0px 10px;}
 		#ztj {display:flex;color:#aaa;text-align:center;font-size:15px;}
@@ -16,6 +15,7 @@
 <div class="main">
 	<h1>纳迪亚解密测试</h1>
 	<p id="isPC1" style="color:red;font-size:25px;display:none;">这是PC端插件，不支持手机浏览器！</p>
+	<p id="notHasCrx" style="color:red;font-size:25px;display:none;">请先安装插件，才能进行测试！</p>
 	<p>插件下载或BUG反馈请移步：<a href="update.html#download" target="_blank">../update.html#download</a></p>
 	<p>支持17种（28变种）算法的解密，以下示例，是告诉大家本插件不仅仅支持作者自创的&#x004e;&#x0061;&#x0064;&#x0069;&#x0061;加密算法。</p>
 	<br>
@@ -143,8 +143,7 @@
 <div id="ztj">&nbsp;&nbsp;我是有底线的&nbsp;&nbsp;</div>
 </div>
 <script type="text/javascript">
-var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);
-if(isMobile) document.getElementById("isPC1").style.display="block";
+var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);var timerId,loopTime=0,nadia_crx;if(isMobile) document.getElementById("isPC1").style.display="block";timerId=setInterval(function(){nadia_crx=document.getElementById("nadia_menu");if(nadia_crx){clearInterval(timerId);}else if(loopTime>3){clearInterval(timerId);document.getElementById("notHasCrx").style.display="block";}loopTime++;},10);
 </script>
 </body>
 </html>

@@ -16,6 +16,7 @@
 	<h1>纳迪亚解密测试</h1>
 	<p id="isPC1" style="color:red;font-size:25px;display:none;">这是PC端插件，不支持手机浏览器！</p>
 	<p id="notHasCrx" style="color:red;font-size:25px;display:none;">请先安装插件，才能进行测试！</p>
+	<p id="notRunCrx" style="color:red;font-size:25px;display:none;">请点击插件菜单栏，【启用插件】后才能测试！</p>
 	<p>插件下载或BUG反馈请移步：<a href="update.html#download" target="_blank">../update.html#download</a></p>
 	<p>支持17种（28变种）算法的解密，以下示例，是告诉大家本插件不仅仅支持作者自创的&#x004e;&#x0061;&#x0064;&#x0069;&#x0061;加密算法。</p>
 	<p>注：带*的表示，网页版和APP也支持（12变种）。</p>
@@ -147,7 +148,9 @@
 <div id="ztj">&nbsp;&nbsp;我是有底线的&nbsp;&nbsp;</div>
 </div>
 <script type="text/javascript">
-var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);var timerId,loopTime=0,nadia_crx;if(isMobile) document.getElementById("isPC1").style.display="block";timerId=setInterval(function(){nadia_crx=document.getElementById("nadia_menu");if(nadia_crx){clearInterval(timerId);}else if(loopTime>15){clearInterval(timerId);document.getElementById("notHasCrx").style.display="block";}loopTime++;},20);
+var nadia_help=function(){
+var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);var timerId,loopTime=0,nadia_crx,maxWait=10,getCrx;function getObj(id){return document.getElementById(id);}if(isMobile)getObj("isPC1").style.display="block";try{getCrx=function(){return document.getElementsByTagName("nadiatqm")[0];};nadia_crx=getCrx();}catch(e){maxWait=50;getCrx=function(){return getObj("nadia_menu");}}timerId=setInterval(function(){nadia_crx=getCrx();if(nadia_crx){clearInterval(timerId);try{var isRun=nadia_crx.getAttribute("runcrx");if(isRun=="-1")getObj("notRunCrx").style.display="block";}catch(e){}}else if(loopTime>4){clearInterval(timerId);getObj("notHasCrx").style.display="block";}loopTime++;},maxWait);
+}();
 </script>
 </body>
 </html>

@@ -149,7 +149,7 @@
 </div>
 <script type="text/javascript">
 var nadia_help=function(){
-var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);var timerId,loopTime=0,nadia_crx,maxWait=10,getCrx;function getObj(id){return document.getElementById(id);}if(isMobile)getObj("isPC1").style.display="block";try{getCrx=function(){return document.getElementsByTagName("nadiatqm")[0];};nadia_crx=getCrx();}catch(e){maxWait=50;getCrx=function(){return getObj("nadia_menu");}}timerId=setInterval(function(){nadia_crx=getCrx();if(nadia_crx){clearInterval(timerId);try{var isRun=nadia_crx.getAttribute("runcrx");if(isRun=="-1")getObj("notRunCrx").style.display="block";}catch(e){}}else if(loopTime>4){clearInterval(timerId);getObj("notHasCrx").style.display="block";}loopTime++;},maxWait);
+var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);var timerId,loopTime=0,nadia_crx,maxWait=10,getCrx;function getObj(id){return document.getElementById(id);}if(isMobile)getObj("isPC1").style.display="block";try{getCrx=function(){return document.getElementsByTagName("nadiatqm")[0];};nadia_crx=getCrx();}catch(e){maxWait=50;getCrx=function(){return getObj("nadia_menu");}}timerId=setInterval(function(){nadia_crx=getCrx();if(nadia_crx){clearInterval(timerId);setTimeout(function(){try{var isRun=nadia_crx.getAttribute("runcrx");if(isRun=="-1")getObj("notRunCrx").style.display="block";}catch(e){}},20);}else if(loopTime>4){clearInterval(timerId);getObj("notHasCrx").style.display="block";}loopTime++;},maxWait);
 }();
 </script>
 </body>

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="robots" content="noindex,nofollow">
+	<title>纳迪亚解密-测试</title>
+	<style type="text/css" class="Z3V6aXlpbWFp">
+		.main {max-width:1000px;word-break:break-all;margin:auto;font-size:19px;padding:0px 10px;}
+		#ztj {display:flex;color:#aaa;text-align:center;font-size:15px;}
+		#ztj:before,#ztj:after {content:"";flex:1 1;border-bottom:1px solid #aaa;margin:auto;}
+	</style>
+</head>
+<body>
+<div class="main">
+	<h1>纳迪亚解密测试</h1>
+	<p id="isPC1" style="color:red;font-size:25px;display:none;">这是PC端插件，不支持手机浏览器！</p>
+	<p id="notHasCrx" style="color:red;font-size:25px;display:none;">请先安装插件，才能进行测试！</p>
+	<p id="notRunCrx" style="color:red;font-size:25px;display:none;">请点击插件菜单栏，【启用插件】后才能测试！</p>
+	<p>插件下载或BUG反馈请移步：<a href="update.html#download" target="_blank">../update.html#download</a></p>
+	<p>支持17种（29变种）算法的解密，以下示例，是告诉大家本插件不仅仅支持作者自创的&#x004e;&#x0061;&#x0064;&#x0069;&#x0061;加密算法。</p>
+	<p>注：带*的表示，网页版和APP也支持（12变种）。</p>
+	<br>
+	<p>【双击/划词模式均可】</p>
+	<p>划词模式注意不要多选字符，需要准确选中密文的起止位置。</p>
+	<p>通常双击密文，可解99%的规范密文，无法解密时，才使用【划词解密】。</p>
+	<p>所以，本作者也建议，大家在发布密文时，说明文字一定要与密文分段（否则会干扰双击解密对起止字符的判断）。</p>
+	<br>
+	<p>1*、这是作者自创的&#x7eb3;&#x8fea;&#x4e9a;加密算法，与Base64编码较难区分，特点是字符串长度为3n+1。</p>
+	<p>K2wT8XVeXtgn6CnfkzgNjtsKCkkd</p>
+	<br>
+	<p>2*、AscII编码支持4种格式：</p>
+	<p>\u005c\u0075\u662f\u6807\u51c6\u7684\u0041\u0073\u0063\u0049\u0049\u7f16\u7801\u683c\u5f0f</p>
+	<p>3*、</p>
+	<p>
+	<p>%u0025%u0075%u4e5f%u662f%u0041%u0073%u0063%u0049%u0049%u7801</p>
+	<p>4*、</p>
+	<p>\x5c\x78\x20\x6e\x6f\x74\x20\x73\x75\x70\x70\x6f\x72\x74\x20\x43\x68\x69\x6e\x65\x73\x65</p>
+	<p>5*、</p>
+	<p>&amp;#x0026;&amp;#x0023;&amp;#x0078;&amp;#x662f;&amp;#x0068;&amp;#x0074;&amp;#x006d;&amp;#x006c;&amp;#x683c;&amp;#x5f0f;&amp;#x7684;&amp;#x0041;&amp;#x0073;&amp;#x0063;&amp;#x0049;&amp;#x0049;&amp;#x7f16;&amp;#x7801;</p>
+	<br>
+	<p>6*、英文串，以=结尾，大概率是Base64编码：</p>
+	<p>5ryU56S6QmFzZTY06Kej5a+GLg==</p>
+	<br>
+	<p>7、小概率是AES，但各网站的算法不统一，本插件支持2种AES算法：</p>
+	<p>lHKIwgnEbN4QYDqV0M+bxQ==</p>
+	<p>8、另一种AES：</p>
+	<p>U2FsdGVkX19YhQkTKl4qFPVG5XraFS8O6Nk3swXjrk2RnJuXk0wJ+7Qjxb4riBTw</p>
+	<br>
+	<p>9*、Base64编码，去除结尾=，一般也能正确解密，但AES算法不能去除结尾=</p>
+	<p>5Y676Zmk57uT5bC+PeeahEJhc2U2NOWvhuaWhw</p>
+	<br>
+	<p>10*、汉字类的，大家最熟悉的便是兽音算法：</p>
+	<p>嗷呜嗯啊嗯嗯嗯嗷嗷嗷嗯啊呜啊嗯呜嗯嗯呜嗷啊嗷嗷嗷嗯啊啊嗯嗯啊嗷嗯嗯啊呜呜啊嗷啊呜啊嗷啊嗷嗯嗯嗯嗯嗷嗷嗯啊</p>
+	<p>11*、兽音算法也可扩展至任意4进制：</p>
+	<p>世创序创序世世序创世秩秩序创序秩世世序秩序秩创世创世世创序世序秩世秩秩创创序世创创秩创秩创序序秩世世秩世世创序世序序创序序秩世序创序创秩创序创序创序序秩创秩序创序创秩序序秩创秩创秩序序秩序世序序世秩创创序秩秩创序序世创世序创创秩秩秩</p>
+	<br>
+	<p>补充：之前本插件，也支持解密结尾缺失几位的不完整兽音，但现在支持的算法扩展到了29变种，为防止干扰，不再支持解密不完整的兽音了。可点击菜单栏的【访问官网】，然后手动切换到【兽音译者】算法，强行解密不完整的兽音（但如果是因为贴吧字数限制，导致缺失的字符太多，强行解密出来也肯定会缺失大量文字的）。</p>
+	<br>
+	<p>12、颜文加密：</p>
+	<p>ﾟωﾟﾉ= /｀ｍ´）ﾉ ~┻━┻   //*´∇｀*/ ['_']; o=(ﾟｰﾟ)  =_=3; c=(ﾟΘﾟ) =(ﾟｰﾟ)-(ﾟｰﾟ); (ﾟДﾟ) =(ﾟΘﾟ)= (o^_^o)/ (o^_^o);(ﾟДﾟ)={ﾟΘﾟ: '_' ,ﾟωﾟﾉ : ((ﾟωﾟﾉ==3) +'_') [ﾟΘﾟ] ,ﾟｰﾟﾉ :(ﾟωﾟﾉ+ '_')[o^_^o -(ﾟΘﾟ)] ,ﾟДﾟﾉ:((ﾟｰﾟ==3) +'_')[ﾟｰﾟ] }; (ﾟДﾟ) [ﾟΘﾟ] =((ﾟωﾟﾉ==3) +'_') [c^_^o];(ﾟДﾟ) ['c'] = ((ﾟДﾟ)+'_') [ (ﾟｰﾟ)+(ﾟｰﾟ)-(ﾟΘﾟ) ];(ﾟДﾟ) ['o'] = ((ﾟДﾟ)+'_') [ﾟΘﾟ];(ﾟoﾟ)=(ﾟДﾟ) ['c']+(ﾟДﾟ) ['o']+(ﾟωﾟﾉ +'_')[ﾟΘﾟ]+ ((ﾟωﾟﾉ==3) +'_') [ﾟｰﾟ] + ((ﾟДﾟ) +'_') [(ﾟｰﾟ)+(ﾟｰﾟ)]+ ((ﾟｰﾟ==3) +'_') [ﾟΘﾟ]+((ﾟｰﾟ==3) +'_') [(ﾟｰﾟ) - (ﾟΘﾟ)]+(ﾟДﾟ) ['c']+((ﾟДﾟ)+'_') [(ﾟｰﾟ)+(ﾟｰﾟ)]+ (ﾟДﾟ) ['o']+((ﾟｰﾟ==3) +'_') [ﾟΘﾟ];(ﾟДﾟ) ['_'] =(o^_^o) [ﾟoﾟ] [ﾟoﾟ];(ﾟεﾟ)=((ﾟｰﾟ==3) +'_') [ﾟΘﾟ]+ (ﾟДﾟ) .ﾟДﾟﾉ+((ﾟДﾟ)+'_') [(ﾟｰﾟ) + (ﾟｰﾟ)]+((ﾟｰﾟ==3) +'_') [o^_^o -ﾟΘﾟ]+((ﾟｰﾟ==3) +'_') [ﾟΘﾟ]+ (ﾟωﾟﾉ +'_') [ﾟΘﾟ]; (ﾟｰﾟ)+=(ﾟΘﾟ); (ﾟДﾟ)[ﾟεﾟ]='\\'; (ﾟДﾟ).ﾟΘﾟﾉ=(ﾟДﾟ+ ﾟｰﾟ)[o^_^o -(ﾟΘﾟ)];(oﾟｰﾟo)=(ﾟωﾟﾉ +'_')[c^_^o];(ﾟДﾟ) [ﾟoﾟ]='\"';(ﾟДﾟ) ['_'] ( (ﾟДﾟ) ['_'] (ﾟεﾟ+(ﾟДﾟ)[ﾟoﾟ]+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ (ﾟｰﾟ)+ (ﾟДﾟ) .ﾟДﾟﾉ+ (c^_^o)+ (ﾟДﾟ) .ﾟｰﾟﾉ+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ ((o^_^o) +(o^_^o))+ (o^_^o)+ (ﾟДﾟ) .ﾟωﾟﾉ+ ((ﾟｰﾟ) + (ﾟｰﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ ((ﾟｰﾟ) + (ﾟｰﾟ))+ (o^_^o)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (c^_^o)+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ (ﾟｰﾟ)+ (ﾟДﾟ) [ﾟΘﾟ]+ ((ﾟｰﾟ) + (o^_^o))+ (ﾟДﾟ) [ﾟΘﾟ]+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ ((ﾟｰﾟ) + (o^_^o))+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ ((o^_^o) - (ﾟΘﾟ))+ ((ﾟｰﾟ) + (ﾟｰﾟ))+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ (ﾟДﾟ) [ﾟΘﾟ]+ (ﾟДﾟ) [ﾟΘﾟ]+ (c^_^o)+ (ﾟДﾟ) ['c']+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ (ﾟДﾟ) .ﾟΘﾟﾉ+ (ﾟДﾟ) ['c']+ ((o^_^o) +(o^_^o))+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ ((o^_^o) +(o^_^o))+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ ((ﾟｰﾟ) + (ﾟｰﾟ))+ ((ﾟｰﾟ) + (o^_^o))+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ ((ﾟｰﾟ) + (ﾟｰﾟ) + (ﾟΘﾟ))+ ((o^_^o) - (ﾟΘﾟ))+ (ﾟДﾟ) .ﾟωﾟﾉ+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ ((ﾟｰﾟ) + (ﾟｰﾟ) + (ﾟΘﾟ))+ ((ﾟｰﾟ) + (ﾟΘﾟ))+ ((ﾟｰﾟ) + (o^_^o))+ (ﾟДﾟ) [ﾟΘﾟ]+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ (ﾟｰﾟ)+ (ﾟДﾟ) .ﾟДﾟﾉ+ ((ﾟｰﾟ) + (ﾟｰﾟ))+ ((o^_^o) +(o^_^o))+ (ﾟДﾟ)[ﾟεﾟ]+(oﾟｰﾟo)+ (ﾟДﾟ) [ﾟΘﾟ]+ (ﾟДﾟ) [ﾟΘﾟ]+ (c^_^o)+ (ﾟΘﾟ)+ (ﾟДﾟ)[ﾟoﾟ]) (ﾟΘﾟ)) ('_');</p>
+	<br>
+	<p>13、与佛论禅（是否有开头的佛曰均可，汉字算法更要将说明文字与密文分段）：</p>
+	<p>佛曰：奢苦倒參奢爍伽帝逝故缽所密罰無諳姪呼侄上冥多者侄地諳殿侄羅亦上闍訶佛缽恐諳滅俱闍皤伽跋恐罰盧陀婆皤知呐寫罰舍遠得冥怛奢陀俱地。侄竟般缽依缽道遠俱有</p>
+	<p>14、无头佛曰：</p>
+	<p>梵闍諳栗怯等蘇俱不藐涅俱若缽多怯想俱曰侄密醯逝缽楞故知以顛侄所皤勝俱吉侄是涅想侄謹吉罰地不究怯知遮礙蒙伽摩奢究呐菩得摩缽殿楞等俱怖梵藐冥倒輸諳伽</p>
+	<p>15、新佛曰：</p>
+	<p>新佛曰：諸隸僧降吽諸陀摩隸僧缽薩嚤劫咒吶斯蜜嘚斯祗夷嚤嘇羅蜜愍隸善隸莊叻陀劫善囉僧諸叻修嚩善嘚羅愍波彌嘚嚩降喃陀耨囉莊菩善叻善嚴善哆宣訶聞善僧闍諸喃善訶心所劫斯如是咒如嚴善彌善般嘚羅嚴善心喼善缽善婆哆聞善咤善闍即羅夷心蜜咤如念如囑</p>
+	<p>16、无头新佛曰：</p>
+	<p>諸隸壽僧降吽諸陀摩隸僧缽薩嚤降陀壽咤是壽色壽吶咒羅夷摩嘇羅蜜宣諦須羅宣菩壽隸缽壽叻壽亦菩摩哆愍咤闍咒慧咒隸波須諸壽寂祗兜嘚僧闍吽壽嘚空壽陀羅壽囉耨蜜叻伏嚴哆劫陀愍吶耨諸諸吶諦夷壽咒壽嚩愍壽嚴耨吶夷迦夷壽須波劫亦伏莊喼宣斯諸尊劫蜜寂壽諦壽念如囑</p>
+	<br>
+	<p>17、与熊论道</p>
+	<p>熊曰：呋性嗥取萌我覺嚄怎人達動你眠咬萌萌哈歡破哮囑我歡誒出會嗅襲物沒嗷既更很拙拙意很誒笨</p>
+	<p>18、无头熊曰：</p>
+	<p>呋性嗒意魚嚄喜類很噗唬笨意呆噗樣嚄笨嗅更象告更住襲噗嗒註家溫嘶擊肉噤溫嗄嘶笨溫爾噔現發常嗄達嚄你蜜偶類吃寶告雜麼嘶嘿象寶取擊眠嗚食類嚄森樣山噔洞嗅達嗥註嗄偶萌唬笨告我拙怎襲嘿溫魚</p>
+	<br>
+	<p>19、千千秀字（该算法建议发布者仅使用默认的汉字算法，因为其官网都无法自动识别自己的算法变种）：</p>
+	<p>掣蛹卫蕊节檎节檎洗萘懒哨==</p>
+	<p>20、千千秀字数字变种（本作者还是好心的又多支持了1个变种，但是英文变种很难与Base64等区分，而其他的乱七八糟的表情算法，都不一定能正常显示，极不推荐）：</p>
+	<p>7470273354716987556164425704757884410895756365556887938780110==</p>
+	<br>
+	<p>21、摩斯密码（电影中经常用，但是请注意：它不区分大小写，所以不推荐使用）：</p>
+	<p>--..-...--.-..-/--..-.--.-.----/-.--.----...--./----..........-/--..--...-.----/-..---.....--.-/-.-..--..---.-./-.-..-......--./-.--..-..-..---/-.---......----/-.-...--..--..-/---.--.-....-../--------....--../-...------.--.../-...-.------.---/-.--..-..-..---/-.--.---.--.--./--.--..---.-.../--....-....----/--------.......-</p>
+
+	<br>
+	<p>22*、无头百度云（这不属于加密算法，属于补全链接，各位发布者的缺省程度并不统一，当初我写代码时，此算法最费劲了，如果算上提取码，排列组合可达56种写法，这里就不一一展示了）</p>
+	<p>12222222222222222222222 提取码：3333</p>
+	<p>1aaaaaaaaaaaaaaaaaaaaaa?pwd=bbbb</p>
+	<p>/s/1cccccccccccccccccccccc</p>
+	<p>init?surl=dddddddddddddddddddddd</p>
+	<p>/wap/1eeeeeeeeeeeeeeeeeeeeee</p>
+	<p>23*、无头磁力链接（支持40位/32位格式）：</p>
+	<p>aaaaaaaabbbbbbbbccccccccffffffff</p>
+	<p>11111111222222223333333344444444ffffffff</p>
+	<p>24、补全B站链接</p>
+	<p>BV133411H7cC</p>
+	<p>cv13500812</p>
+	<br>
+	
+	<p>25、如果你安装了
+	<a href="https://nadia-jiami.netlify.app/idm" target="_blank">油猴秒传脚本</a>
+	，本插件也可以识别链接并调用秒传脚本。</p>
+	<p>一般以压缩格式结尾或者命名规范的秒传，双击就能识别：</p>
+	<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa#bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#123#1.rar</p>
+	<p>如果命名不规范，或者同时写有多个秒传，则应该使用划词模式。比如你可以选中下边2个秒传，然后按F1直接1次提取2个文件：</p>
+	<p>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb#cccccccccccccccccccccccccccccccc#234#a.part1.rar</p>
+	<p>cccccccccccccccccccccccccccccccc#dddddddddddddddddddddddddddddddd#345#a.part2.rar</p>
+	<br>
+	<p>26、新版本秒传（格式上少了一段）：</p>
+	<p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee#678#xx.7z</p>
+	<br>
+	<br>
+	<p>【去汉字功能只能使用划词模式】</p>
+	<p>27*、去汉字算法，仅为解决少数发布者用汉字去和谐英文密文或网址的情况。</p>
+	<p>无法解决用英文混淆英文密文，或者对兽音、佛曰、熊曰等汉字密文乱加字符的情况！</p>
+	<p>更不要采用重复密文、缺失字符、将无关文字插到密文中间、多重括号嵌套说明等SB方法！</p>
+	<br>
+	<p>示例1（选中下边这段文字后，按F2去汉字即可）：</p>
+	<p>wh3FQ我7rU7Hz是L8RLt1De汉gii3wHc字c5</p>
+	<br>
+	<p>示例2（发布者将密文用空格、回车隔开，导致无法区分是1个密文，还是2个。那你就只能根据发帖者的提示，如果是2个密文就分别双击；如果是1个密文，就全部选中按F2去汉字后再解密）：</p>
+	<p>aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3&nbsp;&nbsp;MvMWFhYWFhYWFhYmJiYmJiYmJjY2NjY2M</p>
+	<br>
+	<p>这里，我建议资源发布者，如果是1段密文请不要分段；如果是多个密文请用回车分隔而不是空格。
+	汉字密文想防和谐，请使用空格、回车、表情，而不是用汉字去和谐，那种密文即使是手动处理，都不知道应该删除哪个字！</p>
+	<br>
+	<p>示例3（去汉字算法通常不会误伤提取码和解压码，即使选中也不会去除）</p>
+	<p>1aaa删aaaa除aaabb汉bbbbbb字bbcc 提取码：1234 解压码：纳迪亚加密</p>
+	<br>
+	<p>但是，密文和提取码、解压码之间一定要用空格或回车分割；因不规范问题而误去除了提取码、解压码，不算BUG。</p>
+	<br>
+	<p>错误示例：</p>
+	<p>VxtZxy6RQvYn80q（（解压码：我是sha逼）DUjSEz 百度（我是傻 B）(解 密)）NeUWd6wU（去 掉（汉 字））ZKzhHR2o</p>
+	<p>这种帖子直接划过吧，免得降低智商！</p>
+	<br>
+	<br>
+	<p>【划词模式：排除表情、空格干扰】</p>
+	<p>28、有时候，一段完整的密文被发布者用表情、空格、回车等强行分割，以防止和谐。</p>
+	<p>这时候，我建议大家采用划词解密（用鼠标选中密文，按F1解密），而不是双击解密（无法判断起止位置）。</p>
+	<br>
+	<p>示例：</p>
+	<p>FT37Nz c0xnZxi<img src="huaji.js" style="height:25px;">NpH9C7w 57WpoEUH</p>
+	<br>
+	<br>
+	<p>【彩蛋：图片链接】</p>
+	<p>29、本插件解密后的链接会自动变蓝，如果链接以【jpg/png/bmp/gif/webp/ico】结尾，则直接加载图片。</p>
+	<p>但是仅识别英文链接，因为中文无法判断是链接、还是说明；而且按规范链接中的汉字也应该按URL转码为英文。</p>
+	<p>这里是为了大家能看清原链接的格式，将下列链接加密后，解密也能直接加载。</p>
+	<p>以下边的12个可爱的猫娘为例（双击就能变猫娘哦~）：</p>
+	<div>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/NoxqwHJpQHEkupfFULodkv327yc8ekm5/cat1.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/5wVIYIKKFgWIXsxdXK32VsUxbiIciVkW/cat2.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/VJsnHugTMmEViPXHo4G8NJwxoQIP1wUJ/cat3.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/kiuTiCCsQkbkg1vqyABQxdTtKnP6NmAn/cat4.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/mmABljMuKzTMes91qOGTKuR6VrBsC5Pn/cat5.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/QGqmdTqEW7BTMlCTWKgzye6gWWRyR4cQ/cat6.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/iNiRKqlWkjFWclazESh1rtGfQ1Yx57Pw/cat7.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/7FLwVy8rg6UdysGIcYXlnkUckOw5JcLU/cat8.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/z7D2XF3HpTW6S6z4iiQ91JUWwJBSpX4f/cat9.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/C1WO531n6l97WP8cPRUE8qd0WjueSDoz/cat10.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/JQWOBGzsOHPWFtnhyDvQR0IzDIxKUVdf/cat11.jpg</p>
+	<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/FM2LYK7Lb7keKKyOeNeGC0y4lwNgfHDg/cat12.jpg</p>
+	</div>
+	<br><br><br><br>
+	<p>该插件主要的功能是解密，其菜单栏的【访问官网】，则提供了加密功能。你学废了么？</p>
+<br><br><br><br>
+<div id="ztj">&nbsp;&nbsp;我是有底线的&nbsp;&nbsp;</div>
+</div>
+<script type="text/javascript">
+var nadia_help=function(){
+var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);var timerId,loopTime=0,nadia_crx,maxWait=10,getCrx;function getObj(id){return document.getElementById(id);}if(isMobile)getObj("isPC1").style.display="block";try{getCrx=function(){return document.getElementsByTagName("nadiatqm")[0];};nadia_crx=getCrx();}catch(e){maxWait=50;getCrx=function(){return getObj("nadia_menu");}}timerId=setInterval(function(){nadia_crx=getCrx();if(nadia_crx){clearInterval(timerId);setTimeout(function(){try{var isRun=nadia_crx.getAttribute("runcrx");if(isRun=="-1")getObj("notRunCrx").style.display="block";}catch(e){}},20);}else if(loopTime>4){clearInterval(timerId);getObj("notHasCrx").style.display="block";}loopTime++;},maxWait);
+}();
+</script>
+</body>
+</html>

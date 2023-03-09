@@ -71,7 +71,7 @@ try{
 	window.Base64={
 		encode : function (str,force) {
 			//多支持了一种SB的base64变种
-			if(force) return escape(window.atob(str));
+			if(force) return window.btoa(escape(str));
 			return window.btoa(unescape(encodeURIComponent(str)));
 		},
 		decode : function (str,force) {

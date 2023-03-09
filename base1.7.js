@@ -1,4 +1,4 @@
-﻿//是否是IE
+//是否是IE
 //@author guziyimai
 getObj("waringDiv").style.opacity=0;
 var waringStr,isLowIE,isSBIE;
@@ -73,7 +73,12 @@ try{
 			return window.btoa(unescape(encodeURIComponent(str)));
 		},
 		decode : function (str) {
-			return decodeURIComponent(escape(window.atob(str)));
+			str=decodeURIComponent(escape(window.atob(str)));
+			if(str.length<9999&&/%u[a-z0-9]{4}/.test(str)) {
+				var tem=unescape(window.atob(str));
+				if(!/%u[a-z0-9]{4}/.test(tem)) str=tem;
+			}
+			return str;
 		}
 	}
 } catch(e){

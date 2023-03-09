@@ -69,16 +69,13 @@ getObj("menuDiv",2)[0].style.display="block";
 try{
 	window.btoa("");
 	window.Base64={
-		encode : function (str) {
+		encode : function (str,force) {
+			if(force) return escape(window.atob(str));
 			return window.btoa(unescape(encodeURIComponent(str)));
 		},
-		decode : function (str) {
-			str=decodeURIComponent(escape(window.atob(str)));
-			if(str.length<9999&&/%u[a-z0-9]{4}/.test(str)) {
-				var tem=unescape(window.atob(str));
-				if(!/%u[a-z0-9]{4}/.test(tem)) str=tem;
-			}
-			return str;
+		decode : function (str,force) {
+			if(force) return unescape(window.atob(str));
+			return decodeURIComponent(escape(window.atob(str)));
 		}
 	}
 } catch(e){

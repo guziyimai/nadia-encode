@@ -69,11 +69,11 @@ getObj("menuDiv",2)[0].style.display="block";
 try{
 	window.btoa("");
 	window.Base64={
-		encode : function (str,force) {
-			if(force) return escape(window.atob(str));
+		encode : function (str) {
 			return window.btoa(unescape(encodeURIComponent(str)));
 		},
 		decode : function (str,force) {
+			//多支持了一种SB的base64变种
 			if(force) return unescape(window.atob(str));
 			return decodeURIComponent(escape(window.atob(str)));
 		}

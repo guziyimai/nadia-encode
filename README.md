@@ -16,11 +16,11 @@ PC浏览器插件版：
 
 https://share.mockplus.cn/go/nadia/update.html#download
 
-相比网页版优势：安装后，遇到纳迪亚/兽音/Base64等密文，只需双击解密。
+相比网页版优势：安装后，遇到纳迪亚/兽音/Base64等密文，只需双击解密(最新版，贴吧可自动解密)。
 
 安卓APP版：
 
-https://nadia-jiami.netlify.app/NadiaAndrod1.0.apk
+https://nadia-jiami.netlify.app/NadiaAndrod1.3.apk
 
 相比网页版劣势：不能保存设置、不能保存图片、需要使用外部浏览器打开链接等。
 

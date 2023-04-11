@@ -69,15 +69,20 @@ getObj("menuDiv",2)[0].style.display="block";
 try{
 	window.btoa("");
 	window.Base64={
-		encode : function (str,force) {
-			//多支持了一种SB的base64变种
-			if(force) return window.btoa(escape(str));
+		encode : function (str) {
 			return window.btoa(unescape(encodeURIComponent(str)));
 		},
-		decode : function (str,force) {
+		decode : function (str) {
 			//多支持了一种SB的base64变种
-			if(force) return unescape(window.atob(str));
-			return decodeURIComponent(escape(window.atob(str)));
+			var str2=decodeURIComponent(escape(window.atob(str)));
+			var regu=/(%u[0-9a-f]{4}|%[0-9a-f]{2})/i;
+			if(regu.test(str2)) {
+				var tem=unescape(window.atob(str));
+				if(!regu.test(tem)&&window.btoa(escape(tem)).replace(/={1,3}$/, '')==str.replace(/={1,3}$/, '')){
+					str2=tem;
+				} else str2='';
+			} else if (Base64.encode(str2).replace(/={1,3}$/, '') != str.replace(/={1,3}$/, '')) str2='';
+			return str2;
 		}
 	}
 } catch(e){

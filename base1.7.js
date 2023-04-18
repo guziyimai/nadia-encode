@@ -198,7 +198,7 @@ getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android
  * @author guziyimai
  */
 window.Ascii={
-	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x"],["&#x000","&#x00","&#x0","&#x"]],
+	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x","",""],["&#x000","&#x00","&#x0","&#x"]],
 	encode : function (str,index){
 		if(!index) index=0;
 		var allStr="",str2,preStr=this.preStrArr[index];
@@ -211,7 +211,11 @@ window.Ascii={
 			if(index==4){
 				/[\/\?=&:#]/.test(str[i])?allStr+=str[i]:(allStr+=str2.length>2?encodeURI(str[i]):"%"+str2);
 			}else{
-				allStr+=preStr[str2.length-1]+str2;
+				if(index==2&&/\s/.test(str[i])){
+					allStr+=str[i];
+				}else{
+					allStr+=preStr[str2.length-1]+str2;
+				}
 				if(index==3) allStr+=";";
 			}
 		}

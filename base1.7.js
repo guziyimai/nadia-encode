@@ -78,6 +78,7 @@ try{
 			var regu=/(%u[0-9a-f]{4}|%[0-9a-f]{2})/i;
 			if(regu.test(str2)) {
 				var tem=unescape(window.atob(str));
+				//2次校验（防止将AES误当base64解出乱码）
 				if(!regu.test(tem)&&window.btoa(escape(tem)).replace(/={1,3}$/, '')==str.replace(/={1,3}$/, '')){
 					str2=tem;
 				} else str2='';
@@ -132,55 +133,49 @@ try{
 				chr2=((enc2&15)<<4)|(enc3>>2);
 				chr3=((enc3&3)<<6)|enc4;
 				output=output+String.fromCharCode(chr1);
-				if (enc3!=64) {
+				if (enc3!=64)
 					output=output+String.fromCharCode(chr2);
-				}
-				if (enc4!=64) {
+				if (enc4!=64)
 					output=output + String.fromCharCode(chr3);
-				}
 			}
 			output=Base64._utf8_decode(output);
 			return output;
 		},
 		_utf8_encode : function (str){
 			str=str.replace(/\r\n/g,"\n");
-			var utftext="";
+			var utf="";
 			for (var n=0;n<str.length;n++) {
 				var c=str.charCodeAt(n);
-				if (c < 128) {
-					utftext+=String.fromCharCode(c);
-				}
-				else if(c>127&&c<2048) {
-					utftext+=String.fromCharCode((c>>6)|192);
-					utftext+=String.fromCharCode((c&63)|128);
-				}
-				else {
-					utftext+=String.fromCharCode((c>>12)|224);
-					utftext+=String.fromCharCode(((c>>6)&63)|128);
-					utftext+=String.fromCharCode((c&63)|128);
+				if (c<128){
+					utf+=String.fromCharCode(c);
+				}else if(c>127&&c<2048){
+					utf+=String.fromCharCode((c>>6)|192);
+					utf+=String.fromCharCode((c&63)|128);
+				}else{
+					utf+=String.fromCharCode((c>>12)|224);
+					utf+=String.fromCharCode(((c>>6)&63)|128);
+					utf+=String.fromCharCode((c&63)|128);
 				}
 
 			}
-			return utftext;
+			return utf;
 		},
-		_utf8_decode : function (utftext) {
+		_utf8_decode : function (utf) {
 			var str="";
 			var i=0;
 			var c=c1=c2=0;
-			while (i<utftext.length ) {
-				c=utftext.charCodeAt(i);
+			while (i<utf.length ){
+				c=utf.charCodeAt(i);
 				if (c<128) {
 					str+=String.fromCharCode(c);
 					i++;
-				}
-				else if(c>191&&c<224) {
-					c2=utftext.charCodeAt(i+1);
+				}else if(c>191&&c<224){
+					c2=utf.charCodeAt(i+1);
 					str+=String.fromCharCode(((c&31)<<6)|(c2&63));
 					i+=2;
-				}
-				else {
-					c2=utftext.charCodeAt(i+1);
-					c3=utftext.charCodeAt(i+2);
+				}else{
+					c2=utf.charCodeAt(i+1);
+					c3=utf.charCodeAt(i+2);
 					string+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));
 					i+=3;
 				}
@@ -199,21 +194,31 @@ getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android
 
 /**
  * Ascii码加密、解密
+ * @param index取值0-4，共5个不同变种
  * @author guziyimai
  */
 window.Ascii={
 	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x"],["&#x000","&#x00","&#x0","&#x"]],
-	encode : function (inputStr,preIndex) {
-		if(!preIndex) preIndex=0;
-		var allStr="",str,preStr=this.preStrArr[preIndex];
-		for(var i=0;i<inputStr.length;i++){
-			str=inputStr.charCodeAt(i).toString(16);
-			allStr+=preStr[str.length-1]+str;
-			if(preIndex==3) allStr+=";";
+	encode : function (str,index){
+		if(!index) index=0;
+		var allStr="",str2,preStr=this.preStrArr[index];
+		if(index==4){
+			if(str.indexOf("%")) str=decodeURI(str);
+			try{allStr=str.match(/https?:\/\//i)[0];}catch(e){}
+		}
+		for(var i=allStr.length;i<str.length;i++){
+			str2=str.charCodeAt(i).toString(16);
+			if(index==4){
+				/[\/\?=&:#]/.test(str[i])?allStr+=str[i]:(allStr+=str2.length>2?encodeURI(str[i]):"%"+str2);
+			}else{
+				allStr+=preStr[str2.length-1]+str2;
+				if(index==3) allStr+=";";
+			}
 		}
 		return allStr;
 	},
-	decode : function (str) {
+	decode : function (str){
+		if(/%[a-f0-9]{2}[%\/\?=&:#][a-f0-9]{2}/.test(str)) return decodeURI(str);
 		return window.unescape(str.replace(/\\u/ig,'%u').replace(/\\x(?=[0-9a-f]{4})/ig,'%u').replace(/\\x/ig,'%u00').replaceAll('&#x','%u').replaceAll(';',''));
 	}
 }

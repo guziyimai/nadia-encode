@@ -3,13 +3,6 @@
 getObj("waringDiv").style.opacity=0;
 var waringStr,isLowIE,isSBIE;
 /**
- * 由于SB的test方法很不靠谱，底层全部转化为match方法
- * @author guziyimai
- */
-RegExp.prototype.test=function(str){
-	return !!str.match(this);
-};
-/**
  * 给SB的IE用的！！！
  * @author guziyimai
  */

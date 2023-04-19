@@ -3,6 +3,13 @@
 getObj("waringDiv").style.opacity=0;
 var waringStr,isLowIE,isSBIE;
 /**
+ * 由于SB的test方法很不靠谱，底层全部转化为match方法
+ * @author guziyimai
+ */
+RegExp.prototype.test=function(str){
+	return !!str.match(this);
+};
+/**
  * 给SB的IE用的！！！
  * @author guziyimai
  */
@@ -198,7 +205,7 @@ getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android
  * @author guziyimai
  */
 window.Ascii={
-	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x","",""],["&#x000","&#x00","&#x0","&#x"]],
+	preStrArr : [["\\u000","\\u00","\\u0","\\u"],["%u000","%u00","%u0","%u"],["\\x0","\\x"],["&#x000","&#x00","&#x0","&#x"]],
 	encode : function (str,index){
 		if(!index) index=0;
 		var allStr="",str2,preStr=this.preStrArr[index];

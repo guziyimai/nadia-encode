@@ -222,7 +222,7 @@ window.Ascii={
 		return allStr;
 	},
 	decode : function (str){
-		if(/%[a-f0-9]{2}[%\/\?=&:#][a-f0-9]{2}/.test(str)) return decodeURI(str);
+		if(/%[a-f0-9]{2}[%\/\?=&:#][a-f0-9]{2}/i.test(str)) return decodeURI(str);
 		return window.unescape(str.replace(/\\u/ig,'%u').replace(/\\x(?=[0-9a-f]{4})/ig,'%u').replace(/\\x/ig,'%u00').replaceAll('&#x','%u').replaceAll(';',''));
 	}
 }

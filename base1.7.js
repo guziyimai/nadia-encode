@@ -82,7 +82,7 @@ try{
 				if(!regu.test(tem)&&window.btoa(escape(tem)).replace(/={1,3}$/, '')==str.replace(/={1,3}$/, '')){
 					str2=tem;
 				} else str2='';
-			} else if (Base64.encode(str2).replace(/={1,3}$/, '') != str.replace(/={1,3}$/, '')) str2='';
+			} else if (Base64.encode(str2).replace(/={1,3}$/, '') != str.replace(/={1,3}$/, '')) new Error("base64 error");
 			return str2;
 		}
 	}

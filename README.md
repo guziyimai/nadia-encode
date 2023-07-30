@@ -8,8 +8,6 @@ https://share.mockplus.cn/go/nadia/index.html
 
 https://nadia-encode.neocities.org
 
-https://nadia-jiami.netlify.app
-
 https://guziyimai.github.io/nadia-encode
 
 PC浏览器插件版：

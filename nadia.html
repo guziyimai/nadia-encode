@@ -7,7 +7,8 @@
 <body>
 <!-- 跳转到主服务器 -->
 <script type="text/javascript">
-	top.location.href=top.location.href.replace('/nadia.html','/nadia').replace('guziyimai.github.io/nadia-encode','share.mockplus.cn/go/nadia/index.html');
+	var _tophref=top.location.href.replace('/nadia.html','/nadia').replace('guziyimai.github.io/nadia-encode','share.mockplus.cn/go/nadia/index.html');
+	if(top.location.href!=_tophref) top.location.href=_tophref;
 </script>
 </body>
 </html>

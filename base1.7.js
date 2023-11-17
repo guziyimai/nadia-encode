@@ -1,4 +1,4 @@
-//是否是IE
+﻿//是否是IE
 //@author guziyimai
 getObj("waringDiv").style.opacity=0;
 var waringStr,isLowIE,isSBIE;
@@ -59,7 +59,7 @@ function getObj(id,type){
 	}
 }
 
-//if(!isAndroid)getObj("helpTxt",2)[2].innerHTML=isWin?"注：Windows解压失败或没有解压软件的，可以使用我提供的WinRAR。</div>":"";
+if(isWin)getObj("helpTxt",2)[8].innerHTML="4、可整合到 Infinity、WeTab等插件的自定义搜索引擎中，地址添加后缀【?s=%s】即可。";
 getObj("menuDiv",2)[0].style.display="block";
 
 /**

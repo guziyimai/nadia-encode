@@ -1,56 +1,172 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="robots" content="noindex,nofollow">
+﻿<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><title>IDM+油猴+提速+秒传</title><link rel="shortcut icon" href="https://multiapp-cache-weboffice.wpscdn.cn/app/weboffice-static/js/images/favicon_o.215388bd.png" class="Z3V6aXlpbWFp">
+<style type="text/css">
+.suKrrLwG5z0hYKKvXDgeDgKS7jsC {word-break:break-all;font-size:18px;text-align:left;margin:auto;max-width:725px;line-height:33px;}
+a {text-decoration:none;}
+a:visited {color:blue;}
+a:hover {color:#28a2ef;}
+.red {color:red;}
+.canCopy {cursor:pointer;}
+h1,h2,h4 {margin-block-start:0.5em;margin-block-end:0.5em;}
+.seccessTxt {font-size:18px;padding-left:40px;color:green;font-weight:bold;opacity:0;}
+.copyUrl{font-size:21px;color:blue;}
+copyUrl:hover {color:#28a2ef;}
+#ztj {display:flex;color:#aaa;text-align:center;font-size:15px;}
+#ztj:before,#ztj:after {content:"";flex:1 1;border-bottom:1px solid #aaa;margin:auto;}
+.del {text-decoration:line-through;}
+.new {color:#0bc90b;}
+</style>
 </head>
-<body>
-<h1 id="result">正在测试线路……</h1>
-<div style="display:none;">
-	<div id="github"></div>
-	<div id="neocities"></div>
-	<div id="netlify"></div>
+<body style="text-align:center;">
+<div class="Z3V6aXlpbWFp" style="text-align:center;overflow-x:hidden;max-width:98%;margin:auto;">
+<h1>IDM+油猴+<span>网盘提速</span>+秒传+115转存</h1>
+<div class="suKrrLwG5z0hYKKvXDgeDgKS7jsC Z3V6aXlpbWFp">
+<div style="color:red;display:none;" id="isQQWX">不建议在QQ、微信内部访问，请<span class="copyUrl canCopy" onclick="copyTxt('url:',this)">(点击)复制地址</span>到外部浏览器访问。<span class="seccessTxt"></span></div>
+<div class="red">本教程是PC端教程，手机用户请百度或B站搜索教程吧。</div>
+<div class="red">本文档的工具集，油猴是必装的，其他的可视情况自选安装。</div>
+
+<h2>一、安装油猴插件</h2>
+<div>1. 首先在你浏览器的插件商店搜索：Tampermonkey</div>
+<div> 能搜到就直接安装官方的最新版本（注：Beta为测试版）</div>
+<div>2. 搜不到就安装此离线版本：
+<a href="https://pan.baidu.com/s/1zIXw5rG2h4e99_a91FouIA?pwd=qn8h" target="_blank">油猴+IDM+Aria2</a>，必须按文末的<a href="#jiaocheng"> 教程(点击跳转) </a>安装。</div>
+
+<br>
+<h2>二、安装百度秒传脚本</h2>
+<div class="del"><a>https://greasyfork.org/zh-CN/scripts/424574</a></div>
+<div class="red">2023/12/26:各版本的秒传似乎全军覆没，秒传时代结束！</div>
+<div class="del"><span>秒传原作者的脚本被下架，请下载： </span>
+<a href="https://www.idey.cn/script/bdwpan.user.js" target="_blank">其他人改写的秒传</a>
+，如果再挂了，我也没办法。</div>
+<div>秒传原作者脚本被下架，暂时又找了个替代品。<span class="red">如果你安装了多个秒传脚本，请测试后保留1个可用的脚本，然后将其余脚本全部卸载！</span>多个相同功能的脚本会互相干扰的！</div>
+<div>与原作者脚本不同的是，首次安装后，需要点击【秒传】→【授权】后，才能正常使用。</div>
+<div>例如：aaaa……#bbbb……#111#xx.rar，这种格式的地址就不是官方链接，而是秒传链接。</div>
+<div>安装后，<a href="https://share.mockplus.cn/go/nadia/update.html#download" target="_blank">纳迪亚解密插件</a>，也可以调用秒传脚本。安卓端请搜索【狐悠】，自行研究。</div>
+
+<br>
+<h2>三、安装IDM</h2>
+<!--
+<div class="red">由于四、五、六、七被官方封杀，所以不懂IDM的小白，也可以不安装。</div>
+-->
+<div>（1）就是一、2提供的离线版本的IDM（因为最新版是收费的，安装Aria2也可以，2选1）</div>
+<div>（2）首次打开IDM后，会自动向浏览器端安装IDM插件（没自动安装影响也不大，需要用时自己打开也行。重启电脑后再次打开IDM也会自动安装的。）</div>
+<div>（3）首次使用，请点击IDM菜单栏【下载】→【选项】，在【下载】选项卡，将最底下的UA改为【netdisk】，不含中括号，其他设置项，根据自己喜好去设置就行。</div>
+<br>
+
+
+<h2>九、百度云提速的替代品</h2>
+<div>
+三选一即可，动不动就下架，疑似作者们在小号干架，所以懒得写说明了。
 </div>
-<script type="text/javascript">
-var testRoute=function(){
-$d=document,_id='getElementById';
-var Arrs=[
-null,
-null,
-null,
-atob("aHR0cHM6Ly9ndXppeWltYWkuZ2l0aHViLmlvL25hZGlhLWVuY29kZS9waW5nLmpz"),
-atob("aHR0cHM6Ly9uYWRpYS1lbmNvZGUubmVvY2l0aWVzLm9yZy9waW5nLmpz"),
-atob("aHR0cHM6Ly9uYWRpYS1qaWFtaS5uZXRsaWZ5LmFwcC9waW5nMi5qcw"),
-$d[_id]("github"),
-$d[_id]("neocities"),
-$d[_id]("netlify"),
-];
-var t1=0;
-var t0=setInterval(function(){
-if(t1%30==0){
-for(var i=0;i<3;i++){
-	try{if(Arrs[i])Arrs[i].remove();}catch(e){}
-	Arrs[i]=document.createElement("script");
-	Arrs[i].src=Arrs[i+3]+"?t="+new Date().getTime();;
-	try{document.body.appendChild(Arrs[i]);}catch(e){}
-}
-}
-for(var j=0;j<3;j++){
-	if("1"==Arrs[j+6].innerHTML){
-	clearInterval(t0);
-	top.location.href=Arrs[j+3].replace(/\/ping\d?\.js/,'/idm.html');
-	}
-}
-t1++;
-if(t1==200){
-document.getElementById("result").innerHTML="无法访问！请更换网络或VPN后重试。";
-}
-if(t1>600){
-clearInterval(t0);
-}
-},50);
-}();
-</script>
-</body>
-</html>
+<div class="red">
+暂时是恢复可用了，如果过几天又挂了，就是这些小B崽子又在互相举报了！
+</div>
+<div>
+<a href="https://greasyfork.org/zh-CN/scripts/463707" target="_blank">https://greasyfork.org/zh-CN/scripts/463707</a>
+<br>
+<a href="https://greasyfork.org/zh-CN/scripts/463171" target="_blank">https://greasyfork.org/zh-CN/scripts/463171</a>
+<br>
+<a href="https://greasyfork.org/zh-CN/scripts/463832" target="_blank">https://greasyfork.org/zh-CN/scripts/463832</a>
+</div>
+<div>
+若发生冲突，请在油猴菜单栏选【管理面板】，只启用1个百度云加速脚本，关闭其他。
+</div>
+<br>
+
+<h2 class="del">四、用idupan提速百度云</h2>
+<div class="del">被百度云官方干掉了：<a>https://idupan.vip</a></div>
+<!--
+<div>1、先安装上方提供的IDM或Aria2（2选1即可）</div>
+<div>2、访问网站：<a href="https://idupan.vip" target="_blank">https://idupan.vip</a> （觉得好用的，建议添加到收藏夹）</div>
+<div>3、首次使用，请点击【使用教程】→【Windows IDM】→【视频教程】，学习该网站的使用方法。</div>
+<div>这样，你就能用IDM，高速下载百度云的文件了。</div>
+<div>注意：三、四这2个工具，均是只能下载你自己网盘的文件，他人的分享你需要先转存。</div>
+<div>优点：无需安装、无需关注公众号；缺点：有次数和流量限制，但一般足够用了。</div>
+<br>
+-->
+<h2 class="del">五、用“百度网盘助手”提速百度云</h2>
+<div class="del">疑似百度云官方出手，此类工具集体挂了：<a>greasyfork.org/zh-CN/scripts/418182</a></div>
+<div class="del">再次挂掉：<a>https://greasyfork.org/zh-CN/scripts/463171</a></div>
+
+<!--
+<div>与idupan，2选1即可。</div>
+<div>1、先安装上方提供的IDM或Aria2（2选1即可）</div>
+<div>2、再安装：<a href="https://greasyfork.org/zh-CN/scripts/418182" target="_blank">https://greasyfork.org/zh-CN/scripts/418182</a></div>
+<div>该脚本的作用是：将百度云的下载由百度云管家改为IDM或Aria2，不氪金也能高速下载。</div>
+<div class="red">安装脚本后，别急着关闭页面，往下拉一下，倒是看看作者亲自写的教程啊。</div>
+<div>注意：三、四这2个工具，均是只能下载你自己网盘的文件，他人的分享你需要先转存。</div>
+<div>优点：没有次数、流量的限制；缺点：安装、设置麻烦，需要关注作者公众号。</div>
+-->
+
+<h2 class="del">六、阿里云直链下载脚本</h2>
+<div class="del">也被屏蔽了：<a>https://greasyfork.org/zh-CN/scripts/425955</a></div>
+<!--
+<div>最开始，阿里云是不需要下载客户端的。没错，这个脚本的目的就是显示阿里云的【直链地址】，然后，你可以直接用IDM或浏览器下载文件。</div>
+<div>它会在阿里云网页版（
+<a href="https://www.aliyundrive.com" target="_blank">https://www.aliyundrive.com</a>
+），新增一个【显示链接】按钮。</div>
+<br>
+-->
+
+<h2 class="del">七、用KubeDown提速百度云</h2>
+<div class="del"><a>再次挂掉：https://greasyfork.org/zh-CN/scripts/462218</a></div>
+<!--
+<div>必须先安装并设置IDM（参考上方：二）。</div>
+<div>安装后，访问网页版百度云首页 ： 
+<a href="https://pan.baidu.com/disk/main" target="_blank">https://pan.baidu.com/disk/main</a>
+ &nbsp;&nbsp;&nbsp;&nbsp;，&nbsp;&nbsp;将多出1个【KubeDown】按钮。将他人的文件存入你的网盘后，选中你网盘的文件，点击【KubeDown】按钮，复制到IDM，即可使用IDM高速下载百度云的文件。
+</div>
+<div class="red">注意：本人实测，这位新手作者的代码质量很一般，BUG较多，脚本时好时坏的，遇到的话可以到下载脚本的网址反馈BUG给作者。</div>
+<br>
+-->
+
+<!--
+<h4>
+三、四、六暂时用这个替代吧，至少，不用每个网盘都下载1个客户端了：
+</h4>
+<div>
+<a href="https://greasyfork.org/zh-CN/scripts/436446" target="_blank">https://greasyfork.org/zh-CN/scripts/436446</a>
+</div>
+<div>如果你要安装这个“替代品”， 则建议先安装IDM（看二）。</div>
+-->
+
+<!--
+<h2>百度云补充</h2>
+<div>1. 百度云不仅仅有百度云管家，这是百度云网页版的入口：</div>
+<div><a href="https://pan.baidu.com/disk/main" target="_blank">https://pan.baidu.com/disk/main</a></div>
+<div>感觉，你们是从来没用过百度云吗？</div>
+<div>以上几个脚本，都是在百度云网页版上新增的功能：百度网盘下载助手新增的按钮是【简易下载助手】，秒传脚本新增的按钮是【秒传】、【生成秒传】，具体的看作者写的教程。</div>
+<div>2. 喜欢用油猴的朋友，油猴可不仅仅只有这2个脚本，其他的请自行选择安装：</div>
+<div><a href="https://greasyfork.org/zh-CN/scripts" target="_blank">https://greasyfork.org/zh-CN/scripts</a></div>
+<br>
+-->
+
+<br>
+<h2>八、115转存助手（115秒传）</h2>
+<div><a href="https://guziyimai.github.io/nadia-encode/115转存3.5改.zip">点击下载115转存助手3.5改离线版</a></div>
+<div>类似：115://xxx|xxx|xxx|xxx，这种格式，就是115sha1格式的链接，如果你从未遇到此格式的资源，就不需要安装本脚本了。</div>
+<div class="red">由于115官方出手，现在应该也失效了（115、百度、阿里云都在打压秒传）。</div>
+<div>照压缩包内的说明安装后，访问115官网，可多出【链接与sha1转存任务】按钮，将“115://”链接复制到此转存即可。</div>
+<br id="jiaocheng">
+
+<h2>【主流浏览器安装离线插件方法】</h2>
+<div>有一定计算机基础的，简单说就是：将crx文件【后缀改rar并解压】，再打开浏览器【扩展管理】页面，打开【开发者模式】，然后点【加载解压的扩展】按钮。</div>
+<div class="red">小白们就点开下面的链接，一步步来吧（其他浏览器，也均可参考）。</div>
+<div>谷歌浏览器安装离线插件方法：</div>
+<div><a href="https://jingyan.baidu.com/article/656db918a5a256a281249c89.html" target="_blank">https://jingyan.baidu.com/article/656db918a5a256a281249c89.html</a></div>
+<div>115浏览器与谷歌浏览器完全一致，略。（或参考谷歌）</div>
+<div>edge浏览器，插件商店有Tampermonkey，略。（或参考谷歌）</div>
+<div>搜狗浏览器安装离线插件方法：<a href="http://www.duoyimei.net/9.html" target="_blank">http://www.duoyimei.net/9.html</a></div>
+<div>qq浏览器安装离线插件方法：<a href="http://www.duoyimei.net/8.html" target="_blank">http://www.duoyimei.net/8.html</a></div>
+<div>360浏览器安装离线插件方法：<a href="http://www.duoyimei.net/3.html" target="_blank">http://www.duoyimei.net/3.html</a></div>
+<div>猎豹浏览器安装离线插件方法：<a href="http://www.duoyimei.net/7.html" target="_blank">http://www.duoyimei.net/7.html</a></div>
+<div>百度浏览器安装离线插件方法：<a href="http://www.duoyimei.net/4.html" target="_blank">http://www.duoyimei.net/4.html</a></div>
+<div><a href="#top"> 回到顶端 </a></div>
+<br>
+<div style="text-align:right;">By: guziyimai</div>
+<br><br><br><br><br><br>
+<div id="ztj">&nbsp;&nbsp;我是有底线的&nbsp;&nbsp;</div>
+<div id="copyTextDiv" class="Z3V6aXlpbWFp" style="opacity:0"></div>
+</div>
+</div>
+<script type="text/javascript" class="PDiXXSS5WucVKCiD9ZCHZXnTpzPn Z3V6aXlpbWFp">var $w=window,$d=document,$_=$w['\x65\x76\x61\x6c'],_$=$w['\x61\x74\x6f\x62'],t_id=-1,tsId1,oldObj,ngua=navigator.userAgent;if(!_$)_$=function(str){var output="",chr1,chr2,chr3,enc1,enc2,enc3,enc4,i=0;var _keyStr="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";str=str.replace(/[^A-Za-z0-9\+\/\=]/g, "");while(i<str.length){enc1=_keyStr.indexOf(str.charAt(i++));enc2=_keyStr.indexOf(str.charAt(i++));enc3=_keyStr.indexOf(str.charAt(i++));enc4=_keyStr.indexOf(str.charAt(i++));chr1=(enc1<<2)|(enc2>>4);chr2=((enc2&15)<<4)|(enc3>>2);chr3=((enc3&3)<<6)|enc4;output=output+String.fromCharCode(chr1);if(enc3!=64)output=output+String.fromCharCode(chr2);if(enc4!=64)output=output+String.fromCharCode(chr3);}return output;};var a_a_a=function(){var isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);}();if(/MicroMessenger|QQ\/[0-9]/i.test(ngua))$d.getElementById("isQQWX").style.display="block";var objTs=$d.getElementsByClassName("seccessTxt"),copyTextDiv=$d.getElementById("copyTextDiv");function showMsg(obj){if(tsId1){clearInterval(tsId1);oldObj.style.display='none';}oldObj=obj;obj.innerHTML="复制成功";obj.style.display=isMobile?'block':'inline';obj.style.opacity=0;var num=0;tsId1=setInterval(function(){if(num<10){obj.style.opacity=parseFloat(obj.style.opacity)+0.1;}else if(num<30){}else if(num<40){obj.style.opacity=parseFloat(obj.style.opacity)-0.1;}else{clearInterval(tsId1);obj.style.display='none';tsId1=0;obj.innerHTML="";}num++;},30);}function copyTxt(str,obj){var num,copyDivs=$d.getElementsByClassName("canCopy");if(copyDivs.length==1){num=0;}else{for(var i=0;i<copyDivs.length;i++){if(copyDivs[i]==obj){num=i;break;}}}copyTextDiv.innerHTML=str=="url:"?$w.location.href:str;copyTextDiv.focus();var range=$d.createRange(),selection=$w.getSelection();range.selectNodeContents(copyTextDiv);selection.removeAllRanges();selection.addRange(range);$d.execCommand('copy');showMsg(objTs[num]);copyTextDiv.innerHTML="";}</script>
+</body></html>

@@ -1,0 +1,1 @@
+﻿document.getElementById("netlify").innerHTML="1";

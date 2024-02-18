@@ -1,0 +1,1 @@
+﻿document.getElementById("github").innerHTML="1";

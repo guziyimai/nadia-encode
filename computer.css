@@ -1,4 +1,5 @@
-textarea {width:85.6%;margin:10px auto;font-size:17px;overflow-x:hidden;word-break:break-all;white-space:pre-wrap;word-wrap:break-word;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;resize:both;min-height:70px;max-height:262px;min-width:40%;max-width:92%;line-height:1.4;}
+#mainDiv {text-align:center;width:100%;min-width:750px;}
+textarea {width:85.6%;margin:10px auto;font-size:17px;overflow-x:hidden;word-break:break-all;white-space:pre-wrap;word-wrap:break-word;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;resize:vertical;min-height:70px;max-height:262px;min-width:40%;max-width:92%;line-height:1.4;}
 .roarTxt {width:70px;font-size:14px;}
 .menuDiv {text-align:center;border:1px solid #e7e7e7;background-color:#e7e7e7;margin-left:7%;margin-right:7%;position:relative;}
 .icoImg {position:absolute;margin:auto;bottom:0px;top:0px;left:8px;height:40px;}
@@ -24,7 +25,6 @@ a:hover {color:red;}
 .btn2:hover {background-color:#4CAF50;cursor:pointer;}
 .btn2:active {transform: translateY(5px);}
 #tiShi {display:inline-block;font-size:19px;width:200px;margin-left:-90px;}
-#mainDiv {text-align:center;width:100%;min-width:750px;}
 .msg {text-align:left;margin-left:7%;margin-top:5px;margin-right:20px;color:#337ac7;font-size:17px;}
 #authorDiv {text-align:right;margin-right:7%;font-size:16px;margin-top:-20px;}
 .mask {position:fixed;top:0;bottom:0;left:0;width:100%;height:auto;background:rgba(0,0,0,0.5);z-index:100;display:none;}
@@ -41,6 +41,6 @@ a:hover {color:red;}
 .zfb-img {height:485px;display:inline-block;padding:0px 175px;}
 .roar {position:relative;display:inline-block;margin-left:9%;font-size:20px;font-weight:bold;top:5px;color:#4e6ef2;text-decoration:none;}
 .roar:hover {cursor:pointer;;color:red;}
-#downText {text-align:left;height:203px;resize:both;min-height:100px;max-height:406px;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:86%;margin:10px auto;font-size:17px;padding:2px;cursor:text;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;min-width:40%;max-width:92%;line-height:1.5;}
+#downText {text-align:left;height:203px;resize:vertical;min-height:100px;max-height:406px;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:86%;margin:10px auto;font-size:17px;padding:2px;cursor:text;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;min-width:40%;max-width:92%;line-height:1.5;}
 #downText:empty::before{content:attr(placeholder);color:#888;}
 xmp {word-break:break-all;white-space:pre-wrap;word-wrap:break-word;margin:0px;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;}

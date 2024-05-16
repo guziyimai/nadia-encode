@@ -30,7 +30,7 @@ a:hover {color:red;}
 select {font-size:28px;}
 #authorDiv2 {font-size:33px;}
 .mask {position:fixed;top:0;bottom:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:100;display:none;}
-.modal {position:fixed;top:50%;left:50%;width:860px;transform:translate(-50%,-50%);border-radius:5px;background:#fff;box-shadow:2px 3px 20px rgba(0,0,0,0.2);z-index:120;display: none;overflow-y:auto;max-height:96%;}
+.modal {position:fixed;top:50%;left:50%;width:870px;transform:translate(-50%,-50%);border-radius:5px;background:#fff;box-shadow:2px 3px 20px rgba(0,0,0,0.2);z-index:120;display: none;overflow-y:auto;max-height:96%;}
 .modal-header {height:60px;border-bottom:1px solid #d5d5d5;padding:0 20px;}
 .modal-header p {line-height:60px;display:inline-block;}
 .titleH {font-size:42px;font-weight:bold;color:#333;padding:0;margin:0;}
@@ -44,6 +44,6 @@ select {font-size:28px;}
 .zfb-img {width:86%;display:inline-block;padding:0px 58px;}
 .roar {position:relative;display:inline-block;margin-left:7%;font-size:42px;font-weight:bold;top:8px;color:#4e6ef2;text-decoration:none;}
 .roar:hover {cursor:pointer;;color:red;}
-#downText {text-align:left;height:590px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:92%;margin:10px 0px;font-size:32px;margin-left:4%;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;line-height:1.5;}
+#downText {text-align:left;height:590px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;word-wrap:break-word;border:1px solid #000;width:92%;margin:10px 0px;font-size:32px;margin-left:4%;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;line-height:1.5;}
 #downText:empty::before{content:attr(placeholder);color:#888;}
 xmp {word-break:break-all;white-space:pre-wrap;word-wrap:break-word;margin:0px;padding:0px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;}

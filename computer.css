@@ -41,6 +41,6 @@ a:hover {color:red;}
 .zfb-img {height:485px;display:inline-block;padding:0px 175px;}
 .roar {position:relative;display:inline-block;margin-left:9%;font-size:20px;font-weight:bold;top:5px;color:#4e6ef2;text-decoration:none;}
 .roar:hover {cursor:pointer;;color:red;}
-#downText {text-align:left;height:203px;resize:vertical;min-height:100px;max-height:406px;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:86%;margin:10px auto;font-size:17px;padding:2px;cursor:text;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;min-width:40%;max-width:92%;line-height:1.5;}
+#downText {text-align:left;height:203px;resize:vertical;min-height:100px;max-height:406px;overflow-x:hidden;word-break:break-all;word-wrap:break-word;border:1px solid #000;width:86%;margin:10px auto;font-size:17px;padding:2px;cursor:text;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;min-width:40%;max-width:92%;line-height:1.5;}
 #downText:empty::before{content:attr(placeholder);color:#888;}
 xmp {word-break:break-all;white-space:pre-wrap;word-wrap:break-word;margin:0px;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;}

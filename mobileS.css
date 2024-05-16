@@ -44,6 +44,6 @@ select {font-size:19px;}
 .zfb-img {width:86%;display:inline-block;padding:0px 58px;}
 .roar {position:relative;display:inline-block;margin-left:6%;font-size:28px;font-weight:bold;top:0px;color:#4e6ef2;text-decoration:none;}
 .roar:hover {cursor:pointer;;color:red;}
-#downText {text-align:left;height:395px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;border:1px solid #000;width:94%;margin:10px 0px;font-size:21px;margin-left:3%;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;line-height:1.5;}
+#downText {text-align:left;height:395px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;word-wrap:break-word;border:1px solid #000;width:94%;margin:10px 0px;font-size:21px;margin-left:3%;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;line-height:1.5;}
 #downText:empty::before{content:attr(placeholder);color:#888;}
 xmp {word-break:break-all;white-space:pre-wrap;word-wrap:break-word;margin:0px;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;}

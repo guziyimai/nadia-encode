@@ -18,7 +18,7 @@ https://share.mockplus.cn/go/nadia/update.html#download
 
 安卓APP版：
 
-https://nadia-jiami.netlify.app/NadiaAndrod1.3.apk
+https://guziyimai.github.io/nadia-encode/NadiaAndrod1.3.apk
 
 视频教程：
 

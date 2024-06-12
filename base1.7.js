@@ -204,9 +204,9 @@ window.Ascii={
 		var allStr="",str2,preStr=this.preStrArr[index];
 		if(index==4){
 			if(str.indexOf("%")) str=decodeURI(str);
-			try{str=str.replace(/https?:\/\//i,'');}catch(e){}
+			try{allStr=str.match(/https?:\/\//i)[0];}catch(e){}
 		}
-		for(var i=0;i<str.length;i++){
+		for(var i=allStr.length;i<str.length;i++){
 			str2=str.charCodeAt(i).toString(16);
 			if(index==4){
 				/[\/\?=&:#]/.test(str[i])?allStr+=str[i]:(allStr+=str2.length>2?encodeURI(str[i]):"%"+str2);

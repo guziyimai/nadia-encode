@@ -10,6 +10,7 @@
 		#ztj {display:flex;color:#aaa;text-align:center;font-size:15px;}
 		#ztj:before,#ztj:after {content:"";flex:1 1;border-bottom:1px solid #aaa;margin:auto;}
 		.red {color:red;}
+		.bold {font-weight:bold;}
 		.del {text-decoration:line-through;}
 		#nadia_test{vertical-align:20%;margin:0px 5px;}
 		.expd {color:blue;cursor:pointer;font-weight:normal;font-size:18px;}
@@ -46,6 +47,8 @@
 	<br>
 	<p class="red">错误示例：发布者漏掉了几位密文（本插件会在解密出的文字最后增加1个省略号，表示源密文不完整。）</p>
 	<p>K2wT8XVeXtgn6CnfkzgNjtsK</p>
+	<br>
+	<p>2024/05/21：为避免误识别，修改为密文长度超过20位时，才尝试解析不完整的密文。</p>
 	<br id="3">
 	<p>3*、AscII加密（AscII编码）支持4种格式：</p>
 	<p class="red">鉴于小白们无法区分“编码”和“加密”，所以本教程中，会笼统的将“编码”全写成“加密”。</p>
@@ -58,13 +61,14 @@
 	<p>6*、</p>
 	<p>&amp;#x0026;&amp;#x0023;&amp;#x0078;&amp;#x662f;&amp;#x0068;&amp;#x0074;&amp;#x006d;&amp;#x006c;&amp;#x683c;&amp;#x5f0f;&amp;#x7684;&amp;#x0041;&amp;#x0073;&amp;#x0063;&amp;#x0049;&amp;#x0049;&amp;#x7f16;&amp;#x7801;</p>
 	<br id="7">
-	<p>7*、2023/04/18：网页版新增1个【AscII加密】变种【URI加密(编码)】，此算法无需解密，复制到浏览器的地址栏，回车即可。之前未支持URI加密，是因为各网站算法并不统一，本站的URI编码，是以RFC1630国际规范为准。</p>
+	<p>7*、2023/04/18：网页版新增1个【AscII加密】变种【URI加密(编码)】：<span class="bold">此算法无需解密，复制到浏览器的地址栏，回车即可解密。</span>之前未支持URI加密，是因为各网站算法并不统一，本站的URI编码，是以RFC1630国际规范为准。</p>
 	<p>https://%73%68%61%72%65%2e%6d%6f%63%6b%70%6c%75%73%2e%63%6e/%67%6f/%6e%61%64%69%61/%69%6e%64%65%78%2e%68%74%6d%6c</p>
 	<p>
-	注：<span class="red">据反馈，SB的edge、QQ、火狐浏览器不支持URI解密（国际标准要求所有浏览器必须支持URI算法）。</span>
-	<br>
-	2023/12/18：鉴于某些SB浏览器蔑视国际规范，本插件(+网页版+APP)只能新增对URI解密的支持。
+	注：<span class="red">据反馈，SB的edge、QQ、火狐等浏览器，部分版本不支持URI解密（国际标准要求所有浏览器必须支持URI算法）。</span>2023/12/18：鉴于某些SB浏览器蔑视国际规范，本插件(+网页版+APP)只能新增对URI解密的支持。
 	</p>
+	<br>
+	<p>补充示例：鉴于很多平台禁止发网址，发帖时可手动去掉开头的【http(s)://】标记（防秒删），不影响解密。</p>
+	<p>%73%68%61%72%65%2e%6d%6f%63%6b%70%6c%75%73%2e%63%6e/%67%6f/%6e%61%64%69%61/%69%6e%64%65%78%2e%68%74%6d%6c</p>
 	<br id="8">
 	<p>8*、英文串，以=结尾，大概率是Base64加密（Base64编码）：</p>
 	<p>5ryU56S6QmFzZTY06Kej5a+GLg==</p>
@@ -250,7 +254,7 @@
 	<p>不误伤的前提是：提取码、解压码明确用"提取"、"解压"标识，且最好与密文用空格、回车分隔。</p>
 	<p>用"提取"、"解压"等文字来分割密文，造成歧义的，不属于插件BUG（详见“错误示例2”）。</p>
 	<br>
-	<p class="red">示例3：（输入法中的"表情字符"，属于汉字类！而本文档中所说的贴吧表情，其本质是图片）</p>
+	<p class="bold">示例3：（输入法中的"表情字符"，属于汉字类！而本文档中所说的贴吧表情，其本质是图片）</p>
 	<p>sha😏re.mock★plus.cn❤/go/nadia/🐴index.html</p>
 	<br>
 	<p>注：本插件1.4.1以上版本对此特例进行了优化，按<span class="F1">F1</span>亦可调用<span class="F2">F2</span>去汉字代码。</p>
@@ -261,7 +265,7 @@
 	<p>示例5：（2024/05/15更新）扩展至适用于磁力链接；亦适用于任意不超过4个汉字的分割（但可能误伤说明性文字）</p>
 	<p>1.0版本：magnet:?xt=urn:btih:去掉FFFFFFFFFFFFFF汉字EEEEEEEEEEEEEEEEEEEEEEEEEE</p>
 	<br>
-	<p>2024/05/18更新：再次优化去汉字算法，大幅度减少对说明文字的误伤，例如：<br><br>PC1.1版本：magnet:?xt=urn:btih:解除FFFFFFFF封印FFFFFFF啊巴啊巴DDDDDDDDDD咕噜咕噜DDDDDDDD嘭擦擦DDDDDDD 解压码：a.com</p>
+	<p>2024/05/18更新：再次优化去汉字算法（必须超过20字符才支持双击，以减少对说明文字的误伤），例如：<br><br>PC1.1版本：magnet:?xt=urn:btih:解除FFFFFFFF封印FFFFFFF啊巴啊巴DDDDDDDDDD咕噜咕噜DDDDDDDD嘭擦擦DDDDDDD 解压码：a.com</p>
 	<br>
 	<p>示例6：用汉字切分时，如果其中一半被误识别成链接，这种情况不能双击补全，应该选中完整链接，<span class="F2">F2</span>去汉字。</p>
 	<div>
@@ -308,9 +312,13 @@
 	<p>34*、选中8位英文串，按<span class="F2">F2</span>补全为微云：</p>
 	<p>yZUE2vK1</p>
 	<br id="35">
+	<p>35、补全阿里云：因115的无头链接也是11位，不建议使用。</p>
+	<p class="expd" onclick="isClose(this,'d35')">点击展开</p>
+	<div id="d35" style="display:none;">
 	<p>2023/03/05新增（需1.4.1以上版本）：</p>
-	<p>35*、选中11位英文串，按<span class="F2">F2</span>补全为阿里云：</p>
+	<p>35*、选中11位英文串，按F2补全为阿里云（因为无头115更罕见）：</p>
 	<p>q6vSmeKCH4m</p>
+	</div>
 	<br id="36">
 	<p>2023/04/04新增（需1.4.1以上版本）：</p>
 	<p>36*、选中12位16进制串，按<span class="F2">F2</span>补全为夸克云：</p>
@@ -347,12 +355,12 @@
 	
 	<p>注意：<span class="F1">F1</span>
 	模式会尽可能的将多行密文，看成1个整体。所以，想达到本示例的效果，多行密文之间必须用汉字分割。</p>
-	<p>另外，因为文字越多，对本插件解密的干扰就越大，所以其他各种算法暂不支持批量解密。</p>
+	<p>另外，因为汉字越多，对本插件解密的干扰就越大，所以其他各种算法暂不支持批量解密。</p>
 	<br>
 	<br id="40">
 	<h3>【彩蛋：图片链接】</h3>
 	<p>40、本插件解密后的超链接会自动变蓝，如果链接以【jpg/png/bmp/gif/webp/ico】结尾，则直接加载图片。</p>
-	<p class="red">2024/05/16更新：鉴于中文网址误判严重，修改为仅识别全英文网址。中文网址，请参考第7条使用URI加密。</p>
+	<p class="bold">2024/05/16更新：鉴于中文网址误判严重，修改为仅识别全英文网址。中文网址，请参考第7条使用URI加密。</p>
 	<p>考虑到官网不存在大量“说明文字”/“表情”等干扰因素，故
 	<a href="index.html" target="_blank">网页版</a>
 	将继续支持参数带中文的网址格式。</p>

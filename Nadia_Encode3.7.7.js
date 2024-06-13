@@ -11,7 +11,7 @@ for(var i=0;i<len;i++){var _os=_mu[i];if(_os[_z]>0xbff||_as[_id]('href="'+_os)!=
 var uStr=_mu[i],before,after=_p,_uh="",tqm="";
 if(uStr.match(/pan\.(baidu|xunlei)\.com/i)&&!uStr.includes("?pwd=")){
 var tqmStr,tem=after.split(uStr);
-if(tem.length!=2) continue;
+if(tem.length==2){
 before=tem[0];
 after=tem[1];
 if(after){
@@ -26,6 +26,7 @@ if(!tqm||tqm[0].length!=4){
 tqm=tqmStr.match(/(?<!解压[码马:： ]{0,4})(?<=[\s,，:：]{1,2})[a-z0-9]{4,}/gi);
 }
 if(tqm&&tqm[0].length==4) tqm="?pwd="+tqm[0];	
+}
 }
 }
 //var tqm;if(!isSBIE)tqm=_os.match(new RegExp("(?<=\\/s\\/)1[\w\\-]{22}(?!\\?p)","i"));if(tqm&&tqm[0]&&tqmArr&&tqmArr[j]){_uh='',_mu[i]=_w[0]+_w[1]+tqm[0];tqm="?pwd="+tqmArr[j++];}else{tqm='';}

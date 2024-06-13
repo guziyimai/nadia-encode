@@ -2,13 +2,37 @@
 
 function _0xdb6e75(flag){var badCode=/href\=|src\=|style\=|class\=|eval\(|<\/[a-z0-9]{1,6}>/i.test(_p);if(badCode){_p="<xmp>"+_p+"</xmp>";_bc('代码原样显示','orange');return;}if(_p[_id](_w[1])!=-1)_p=_p[r_](/(\?psw|&pwd|&psw)=/ig,"?pwd=");_p=_p[_ra]("/share/init?surl=","/s/1");
 
-var _mu,_0x2c9c72='';_mu=_p[_('1cf','I!l8')](/(magnet:\?xt=urn|thunder):[\w\.:\?#&\+%=\-@]{8,2000}/gi);if(_mu==null)_mu=_p[_('1d3','m1!g')](_uReg);if(_p[s_](-4)=="...."||!_mu){_p=_p[r_](/\.{4,10}$/,'...')[r_](/&/g,'&amp;')[r_](/<br>/g,'&lt;br&gt;')[r_](/\n|\r/g,'<br>')[_ra](' ','&nbsp;');if(!flag)_bc('解密成功','green');return;}var len=_mu[_z];if(len>999)len=999;var _bs="",_as=_p;_p="";for(var i=0;i<len;i++){var _os=_mu[i];if(_os[_z]>0xbff||_as[_id]('href="'+_os)!=-1||_as[_id]('src="'+_os)!=-1)continue;if(/\/[a-z0-9%]|magnet:/i.test(_os)||/\.(com|cn|net|org|xyz|vip|app|cc)/.test(_os)){if(!/https?:|magnet:|ftp:/i.test(_os)){if(/^[\w\.-]{4,30}@/.test(_os)) {_uh="mailto:";}else{_uh=_w[0];}}
+//var tqmArr,tqm1,tqm2,j=0,_uh="";if(isSBIE||_p[_z]>0xfffe){tqmArr=null;}else{tqm1=new RegExp("(?<=(提取|pwd=|ti\\s?qu|tqm)[^a-z0-9]{0,4})[a-z0-9]{4}(?!\w)","gi"),tqm2=new RegExp("(?<!解压.{1,5})(?<=[\\s,，:：码马]{1,2})[a-z0-9]{4}(?!\w)","gi");tqmArr=_p.match(tqm1);if(!tqmArr)tqmArr=_p.match(tqm2);}
 
-var tqm;if(!isSBIE)tqm=_os.match(new RegExp("(?<=\\/s\\/)1[\w\\-]{22}(?!\\?p)","i"));if(tqm&&tqm[0]&&tqmArr&&tqmArr[j]){_uh='',_mu[i]=_w[0]+_w[1]+tqm[0];tqm="?pwd="+tqmArr[j++];}else{tqm='';}
+var _mu,_0x2c9c72='';_mu=_p[_('1cf','I!l8')](/(magnet:\?xt=urn|thunder):[\w\.:\?#&\+%=\-@]{8,2000}/gi);if(_mu==null)_mu=_p[_('1d3','m1!g')](_uReg);if(_p[s_](-4)=="...."||!_mu){_p=_p[r_](/\.{4,10}$/,'...')[r_](/&/g,'&amp;')[r_](/<br>/g,'&lt;br&gt;')[r_](/\n|\r/g,'<br>')[_ra](' ','&nbsp;');if(!flag)_bc('解密成功','green');return;}var len=_mu[_z];if(len>999)len=999;var _bs="",_as=_p;_p="";
 
-var index=_as[_id](_os);_bs=_as[s_](0,index);_as=_as[s_](index+_os[_z]);_p+=_bs+"<a href='"+_uh+_mu[i]+"' target='_blank'>"+_mu[i]+"</a>";}
+for(var i=0;i<len;i++){var _os=_mu[i];if(_os[_z]>0xbff||_as[_id]('href="'+_os)!=-1||_as[_id]('src="'+_os)!=-1)continue;if(/\/[a-z0-9%]|magnet:/i.test(_os)||/\.(com|cn|net|org|xyz|vip|app|cc)/.test(_os)){if(!/https?:|magnet:|ftp:/i.test(_os)){if(/^[\w\.-]{4,30}@/.test(_os)) {_uh="mailto:";}else{_uh=_w[0];}}
 
-}_p+=_as;_p=_p[r_](/&/g,'&amp;')[r_](/<br>/g,'&lt;br&gt;')[r_](/\n|\r/g,'<br>');_bc('转换超链接成功','green');}
+var uStr=_mu[i],before,after=_p,_uh="",tqm="";
+if(uStr.match(/pan\.(baidu|xunlei)\.com/i)&&!uStr.includes("?pwd=")){
+var tqmStr,tem=after.split(uStr);
+if(tem.length!=2) continue;
+before=tem[0];
+after=tem[1];
+if(after){
+tqmStr=after;
+}else if(before){
+tqmStr=before;
+}
+tqmStr=tqmStr.replace(/https?:\/\/.+/si,"").trim();
+if(tqmStr){
+tqm=tqmStr.match(/(?<=提取[码马:： ]{0,4})[a-z0-9]{4,}/gi);
+if(!tqm||tqm[0].length!=4){
+tqm=tqmStr.match(/(?<!解压[码马:： ]{0,4})(?<=[\s,，:：]{1,2})[a-z0-9]{4,}/gi);
+}
+if(tqm&&tqm[0].length==4) tqm="?pwd="+tqm[0];	
+}
+}
+//var tqm;if(!isSBIE)tqm=_os.match(new RegExp("(?<=\\/s\\/)1[\w\\-]{22}(?!\\?p)","i"));if(tqm&&tqm[0]&&tqmArr&&tqmArr[j]){_uh='',_mu[i]=_w[0]+_w[1]+tqm[0];tqm="?pwd="+tqmArr[j++];}else{tqm='';}
+
+var index=_as[_id](_os);_bs=_as[s_](0,index);_as=_as[s_](index+_os[_z]);_p+=_bs+"<a href='"+_uh+_mu[i]+tqm+"' target='_blank'>"+_mu[i]+"</a>";}}
+
+_p+=_as;_p=_p[r_](/&/g,'&amp;')[r_](/<br>/g,'&lt;br&gt;')[r_](/\n|\r/g,'<br>');_bc('转换超链接成功','green');}
 
 function urlqhz(_f){if(_f[_z]<12)return false;var ustr=_f.match(/(http|magnet|%[a-f0-9]{2}%).+[\w\/&#%]{3,}([ \w]{1,4})?/mgi);var _f2,_us=_f,tem;if(!ustr||!ustr[0]){ustr=_f.match(/[\w\.\-\/&#%]{3,}.+\.(com|cn|net|org|xyz|vip|app|cc)(.+[\w\.\/&#%]{3,})?([ \w]{1,4})?/mgi);}if(!ustr||!ustr[0])return false;for(var i=0;i<ustr.length;i++){if(!ustr[i].match(/解压|提取|密码/)){_f2=ustr[i][r_](/(?<=[\w\.\-\/\?:=&#%])[^\w\+=\/\\%\-&#;:\.\?@\|，。；？！、：\[\]\(\)\s]{1,4}(?=[\w\.\-\/\?:=&#%])/g,'');}else{_f2=ustr[i][r_](/(?<=[\w\.\-\/\?:=&#%])(禁?止?在线解压！?|解除|加密|解密|[^\w\+=\/\\%\-&#;:\.\?@\|，。；？！、：\[\]\(\)\s解压提取密码]{1,4})(?=[\w\.\-\/\?:=&#%])/g,'');}if(_f2.match(/\whttps?:\/\//i))_f2=ustr[i];tem=_f2[r_](/(?<=[\w\.\-\/\?:=&#%])[\s]{1,6}(?=[\w\.\-\/\?:=&#%])/g,'');if(!tem.match(/\whttps?:\/\//i))_f2=tem;if(_f2){if(_f2.match(/(%[a-f0-9]{2}){2}/i)){_f2=Ascii.decode(_f2);}_us=_us[r_](ustr[i],_f2);}}_p=_us;return true;}
 

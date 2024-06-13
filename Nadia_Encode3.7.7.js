@@ -12,9 +12,9 @@ var index=_as[_id](_os);
 _bs=_as[s_](0,index);_as=_as[s_](index+_os[_z]);
 
 if(_os.match(/pan\.(baidu|xunlei)\.com/i)&&!_os.includes("?pwd=")){
-if(_as){
+if(_as.trim()){
 tqmStr=_as;
-}else if(_bs){
+}else if(_bs.trim()){
 tqmStr=_bs;
 }
 if(tqmStr)tqmStr=tqmStr.replace(/https?:\/\/.+/si,"");

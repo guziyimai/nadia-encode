@@ -22,7 +22,7 @@ tqm=tqmStr.match(/(?<=提取[码马:： ]{0,4})[a-z0-9]{4,}/gi);
 if(!tqm||tqm[0].length!=4){
 tqm=tqmStr.match(/(?<!解压[码马:： ]{0,4})(?<=[\s,，:：]{1,2})[a-z0-9]{4,}/gi);
 }
-if(tqm&&tqm[0].length==4) tqm="?pwd="+tqm[0];	
+if(tqm&&tqm[0].length==4){tqm="?pwd="+tqm[0];}else{tqm="";}
 }
 }
 //var tqm;if(!isSBIE)tqm=_os.match(new RegExp("(?<=\\/s\\/)1[\w\\-]{22}(?!\\?p)","i"));if(tqm&&tqm[0]&&tqmArr&&tqmArr[j]){_uh='',_mu[i]=_w[0]+_w[1]+tqm[0];tqm="?pwd="+tqmArr[j++];}else{tqm='';}

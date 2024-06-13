@@ -4,19 +4,18 @@ function _0xdb6e75(flag){var badCode=/href\=|src\=|style\=|class\=|eval\(|<\/[a-
 
 //var tqmArr,tqm1,tqm2,j=0,_uh="";if(isSBIE||_p[_z]>0xfffe){tqmArr=null;}else{tqm1=new RegExp("(?<=(提取|pwd=|ti\\s?qu|tqm)[^a-z0-9]{0,4})[a-z0-9]{4}(?!\w)","gi"),tqm2=new RegExp("(?<!解压.{1,5})(?<=[\\s,，:：码马]{1,2})[a-z0-9]{4}(?!\w)","gi");tqmArr=_p.match(tqm1);if(!tqmArr)tqmArr=_p.match(tqm2);}
 
-var _mu,_0x2c9c72='';_mu=_p[_('1cf','I!l8')](/(magnet:\?xt=urn|thunder):[\w\.:\?#&\+%=\-@]{8,2000}/gi);if(_mu==null)_mu=_p[_('1d3','m1!g')](_uReg);if(_p[s_](-4)=="...."||!_mu){_p=_p[r_](/\.{4,10}$/,'...')[r_](/&/g,'&amp;')[r_](/<br>/g,'&lt;br&gt;')[r_](/\n|\r/g,'<br>')[_ra](' ','&nbsp;');if(!flag)_bc('解密成功','green');return;}var len=_mu[_z];if(len>999)len=999;var _bs="",_as=_p;_p="";
+var _mu,_0x2c9c72='';_mu=_p[_('1cf','I!l8')](/(magnet:\?xt=urn|thunder):[\w\.:\?#&\+%=\-@]{8,2000}/gi);if(_mu==null)_mu=_p[_('1d3','m1!g')](_uReg);if(_p[s_](-4)=="...."||!_mu){_p=_p[r_](/\.{4,10}$/,'...')[r_](/&/g,'&amp;')[r_](/<br>/g,'&lt;br&gt;')[r_](/\n|\r/g,'<br>')[_ra](' ','&nbsp;');if(!flag)_bc('解密成功','green');return;}var len=_mu[_z];if(len>999)len=999;var _bs="",_as=_p;_p="",uStr=_mu[i],_uh="",tqm="",tqmStr;
 
 for(var i=0;i<len;i++){var _os=_mu[i];if(_os[_z]>0xbff||_as[_id]('href="'+_os)!=-1||_as[_id]('src="'+_os)!=-1)continue;if(/\/[a-z0-9%]|magnet:/i.test(_os)||/\.(com|cn|net|org|xyz|vip|app|cc)/.test(_os)){if(!/https?:|magnet:|ftp:/i.test(_os)){if(/^[\w\.-]{4,30}@/.test(_os)) {_uh="mailto:";}else{_uh=_w[0];}}
 var index=_as[_id](_os);_bs=_as[s_](0,index);_as=_as[s_](index+_os[_z]);
 
-var uStr=_mu[i],_uh="",tqm="",tqmStr;
 if(uStr.match(/pan\.(baidu|xunlei)\.com/i)&&!uStr.includes("?pwd=")){
 if(_as){
 tqmStr=_as;
 }else if(_bs){
 tqmStr=_bs;
 }
-tqmStr=tqmStr.replace(/https?:\/\/.+/si,"");
+if(tqmStr)tqmStr=tqmStr.replace(/https?:\/\/.+/si,"");
 if(tqmStr){
 tqm=tqmStr.match(/(?<=提取[码马:： ]{0,4})[a-z0-9]{4,}/gi);
 if(!tqm||tqm[0].length!=4){

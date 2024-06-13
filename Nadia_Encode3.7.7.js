@@ -16,7 +16,7 @@ tqmStr=_as;
 }else if(_bs){
 tqmStr=_bs;
 }
-tqmStr=tqmStr.replace(/https?:\/\/.+/si,"").trim();
+tqmStr=tqmStr.replace(/https?:\/\/.+/si,"");
 if(tqmStr){
 tqm=tqmStr.match(/(?<=提取[码马:： ]{0,4})[a-z0-9]{4,}/gi);
 if(!tqm||tqm[0].length!=4){

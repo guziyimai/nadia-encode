@@ -9,16 +9,12 @@ var _mu,_0x2c9c72='';_mu=_p[_('1cf','I!l8')](/(magnet:\?xt=urn|thunder):[\w\.:\?
 for(var i=0;i<len;i++){var _os=_mu[i];if(_os[_z]>0xbff||_as[_id]('href="'+_os)!=-1||_as[_id]('src="'+_os)!=-1)continue;if(/\/[a-z0-9%]|magnet:/i.test(_os)||/\.(com|cn|net|org|xyz|vip|app|cc)/.test(_os)){if(!/https?:|magnet:|ftp:/i.test(_os)){if(/^[\w\.-]{4,30}@/.test(_os)) {_uh="mailto:";}else{_uh=_w[0];}}
 var index=_as[_id](_os);_bs=_as[s_](0,index);_as=_as[s_](index+_os[_z]);
 
-var uStr=_mu[i],before,after=_p,_uh="",tqm="";
+var uStr=_mu[i],_uh="",tqm="",tqmStr;
 if(uStr.match(/pan\.(baidu|xunlei)\.com/i)&&!uStr.includes("?pwd=")){
-var tqmStr,tem=after.split(uStr);
-if(tem.length==2){
-before=tem[0];
-after=tem[1];
-if(after){
-tqmStr=after;
-}else if(before){
-tqmStr=before;
+if(_as){
+tqmStr=_as;
+}else if(_bs){
+tqmStr=_bs;
 }
 tqmStr=tqmStr.replace(/https?:\/\/.+/si,"").trim();
 if(tqmStr){
@@ -27,7 +23,6 @@ if(!tqm||tqm[0].length!=4){
 tqm=tqmStr.match(/(?<!解压[码马:： ]{0,4})(?<=[\s,，:：]{1,2})[a-z0-9]{4,}/gi);
 }
 if(tqm&&tqm[0].length==4) tqm="?pwd="+tqm[0];	
-}
 }
 }
 //var tqm;if(!isSBIE)tqm=_os.match(new RegExp("(?<=\\/s\\/)1[\w\\-]{22}(?!\\?p)","i"));if(tqm&&tqm[0]&&tqmArr&&tqmArr[j]){_uh='',_mu[i]=_w[0]+_w[1]+tqm[0];tqm="?pwd="+tqmArr[j++];}else{tqm='';}

@@ -174,13 +174,14 @@ try{
 					str+=String.fromCharCode(((c&31)<<6)|(c2&63));
 					i+=2;
 				}else{
+					//bug修复：guziyimai
 					c2=utf.charCodeAt(i+1);
 					c3=utf.charCodeAt(i+2);
-					string+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));
+					str+=String.fromCharCode(((c&15)<<12)|((c2&63)<<6)|(c3&63));
 					i+=3;
 				}
 			}
-			return string;
+			return str;
 		}
 	}	
 }

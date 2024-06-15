@@ -10,9 +10,10 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .support {right:40px;font-size:42px;top:110px;color:#4e6ef2;}
 .support:hover {cursor:pointer;color:red;}
 #RARZAR {position:absolute;margin:auto;right:295px;font-size:42px;font-weight:bold;top:110px;color:#4e6ef2;}
-.menu {padding:12px;font-size:43px;text-align:center;display:inline-block;color:#555;border-radius:5px;}
+#RARZAR:hover {cursor:pointer;color:red;}
+.menu {padding:12px;font-size:43px;text-align:center;display:inline-block;color:#555;border-radius:5px;cursor:pointer;}
 .menu:hover {background-color:#66b8ec;color:white;}
-.menu2 {padding:12px;font-size:43px;text-align:center;display:inline-block;background-color:#39a0e2;color:white;border-radius:5px;}
+.menu2 {padding:12px;font-size:43px;text-align:center;display:inline-block;background-color:#39a0e2;color:white;border-radius:5px;cursor:pointer;}
 #waringDiv {text-align:center;margin:90px 0px 18px 0px;font-size:40px;}
 a {text-decoration:none;}
 a:visited {color:blue;}

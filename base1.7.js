@@ -1,7 +1,7 @@
 ﻿//是否是IE
 //@author guziyimai
 getObj("waringDiv").style.opacity=0;
-var waringStr,isLowIE,isSBIE;
+var waringStr,isLowIE;
 /**
  * 给SB的IE用的！！！
  * @author guziyimai
@@ -9,7 +9,7 @@ var waringStr,isLowIE,isSBIE;
 try{
 	new RegExp("(?<!.)");
 }catch(e1){
-	isSBIE=true;//会误伤火狐，但Nadia插件也不支持火狐内核
+	isSBIE=true;//不支持断言的，等同于SB的IE浏览器。
 }
 try{
 	"".indexOf("");
@@ -19,7 +19,7 @@ try{
 try{
 	"".replaceAll("","");
 }catch(e3){
-	//isSBIE=true;//会误伤115
+	//不支持replaceAll的弱智
 	String.prototype.replaceAll=function(a,b){
 		return this.split(a).join(b);
 	};
@@ -88,7 +88,7 @@ try{
 	}
 } catch(e){
 	/**
-	 * IE8、IE9兼容（IE7及以下，缺失的函数太多，不予支持）
+	 * IE9以下兼容或不支持btoa的弱智
 	 * @author https://blog.csdn.net/qq_34039868/article/details/103919535
 	 */
 	isLowIE=true;
@@ -187,11 +187,12 @@ try{
 }
 
 //IE浏览器版本太低，放弃IE吧！
+//随着大量复杂正则的引入，严重BUG会直接跳到403页面（IE9以下基本上都会跳）
 if(isLowIE) {
 	isSBIE=true;
 	waringStr="浏览器版本过低，建议使用谷歌内核的浏览器。";
 }
-getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';";
+getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua),isSBIE=/MSIE/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';";
 
 /**
  * Ascii码加密、解密

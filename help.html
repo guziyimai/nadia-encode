@@ -14,6 +14,7 @@
 		.del {text-decoration:line-through;}
 		#nadia_test{vertical-align:20%;margin:0px 5px;}
 		.expd {color:blue;cursor:pointer;font-weight:normal;font-size:18px;}
+		.huaji {height:27px;vertical-align:-20%;}
 	</style>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon5.js" class="Z3V6aXlpbWFp">
 </head>
@@ -100,7 +101,7 @@
 	<a href="index.html#5" target="_blank">
 	纳迪亚加密网页版</a>，解密出的字符最后是英文的省略号——3个点，表示结尾不完整）。
 	<span class="red">顺便，如果贴吧同楼层的说明文字中含有兽音所用的4个字符，将不会自动解密（防止出错，请手动双击）</span></p>
-	<p>同时，建议：<span class="red">不要采用空格、Tab、回车、#、@等字符作为密文种子加密，</span>因为你发布后会发现，贴吧会压缩空白字符，或错误的将#、@识别成网址格式，从而无法解密！</p>
+	<p>同时，建议：<span class="red">不要采用空格、Tab、回车、#、@等字符或Emoji表情作为密文种子加密，</span>因为你发布后会发现，贴吧会压缩空白字符，或错误的将#、@识别成网址格式，从而无法解密！</p>
 	<br id="14">
 	<p>
 	<span class="del">14~16：颜文和佛曰（已失效）</span>&nbsp;
@@ -197,17 +198,17 @@
 	<p>同时，划词模式更加安全，例如极力避免解密解压码，而双击模式可强行解密解压码（如果它看起来像一串密文）。</p>
 	<br>
 	<p>示例1：（选中下列文字，按<span class="F1">F1</span>）</p>
-	<p>w<img src="huaji.js" style="height:27px;">K8tP766Yt6Y<img src="huaji.js" style="height:27px;">7PvF1RLSi8h5UrE5</p>
+	<p>w<img src="huaji.js" class="huaji">K8tP766Yt6Y<img src="huaji.js" class="huaji">7PvF1RLSi8h5UrE5</p>
 	<br id="30">
 	<p>30*、更糟糕的情况是，有的发布者会使用空格、回车等强行分割1个完整的密文（论坛中还有多种字体的问题），以防止和谐。 &nbsp;这时候，则必须使用划词解密（选中密文后，按<span class="F1">F1</span>解密），而不能双击解密（无法判断是几个密文）。</p>
 	<br>
 	<p>示例2（英文密文被空格、贴吧表情分割；请选中下列文字按<span class="F1">F1</span>解密）：</p>
-	<p>FT37Nz c0xnZxi<img src="huaji.js" style="height:27px;">NpH9C7w 57WpoEUH</p>
+	<p>FT37Nz c0xnZxi<img src="huaji.js" class="huaji">NpH9C7w 57WpoEUH</p>
 	<br>
 	<p>但如果发布者说明了，这确实是多个密文（多个链接），那就请大家分别双击。</p>
 	<br>
 	<p>示例3：（对于佛曰、熊曰想防和谐，可去掉头部标记，或者用空格、表情混淆；只能划词解密）：</p>
-	<p>呋溫出嚁發嗚唬嘍哮森嗒 嗄堅覺動笨肉哞爾嗅很動嗚雜盜既森襲<img src="huaji.js" style="height:27px;">肉呆爾嚁非唬訴達唬眠擊蜜拙嗚呦沒萌盜哈歡破嘶冬拙非氏寶噗類森咯取家 類蜜歡拙呆意雜常吃</p>
+	<p>呋溫出嚁發嗚唬嘍哮森嗒 嗄堅覺動笨肉哞爾嗅很動嗚雜盜既森襲<img src="huaji.js" class="huaji">肉呆爾嚁非唬訴達唬眠擊蜜拙嗚呦沒萌盜哈歡破嘶冬拙非氏寶噗類森咯取家 類蜜歡拙呆意雜常吃</p>
 	<br id="31">
 	<p>31、3种10年脑血栓的特殊加密（极不推荐）</p>
 	<br>
@@ -249,10 +250,12 @@
 	<p>不误伤的前提是：提取码、解压码明确用"提取"、"解压"标识，且最好与密文用空格、回车分隔。</p>
 	<p>用"提取"、"解压"等文字来分割密文，造成歧义的，不属于插件BUG。</p>
 	<br>
-	<p class="bold">示例3：（输入法中的"表情字符"，属于汉字类！而本文档中所说的贴吧表情，其本质是图片）</p>
+	<p class="bold">示例3：Emoji表情（"Emoji表情"，本插件将其归类为"汉字类"。而本教程中所说的贴吧表情，本质是"图片"!）<br>2者区分：你用输入法能打出的表情就是"Emoji表情"，而需要在贴吧点击表情按钮选择的，例如<img src="huaji.js" class="huaji">，为贴吧表情。</p>
 	<p>https://sha😏re.mock★plus.cn❤/go/nadia/🐴index.html</p>
 	<br>
-	<p>注：本插件1.4.1以上版本对此特例进行了优化，当有“http”时，按<span class="F1">F1</span>亦可调用<span class="F2">F2</span>去汉字代码。</p>
+	<p>注：1. 本插件1.4.1以上版本对此特例进行了优化，按<span class="F1">F1</span>亦可调用<span class="F2">F2</span>去汉字代码。</p>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	2. 其他平台，点击"表情"按钮选择的表情，与贴吧同理，本质都是图片。</p>
 	<br>
 	<p>示例4：（2023/10/20更新）如果仅使用"删除"、"去掉"、"汉字"等分割超链接，则双击(英文部分)也能去汉字。</p>
 	<p>https://pan.baidu删除.com/s/1233333汉字33333333333333</p>
@@ -352,7 +355,7 @@
 	<p>注意：想使用该模式，就不能在设置中取消【去汉字】功能绑定的快捷键（即，不能选--）</p>
 	<br>
 	<p class="red">不推荐的示例1：（分别选中滑稽前后的2段文字，快速按2次<span class="F2">F2</span>可去掉英文标点，后续正常解密即可）</p>
-	<p>1ssss=sss s=sssss?ssss&amp; sssss<img src="huaji.js" style="height:27px;">1bbb bbbb /bbbb/bb bbbb/bb bbb</p>
+	<p>1ssss=sss s=sssss?ssss&amp; sssss<img src="huaji.js" class="huaji">1bbb bbbb /bbbb/bb bbbb/bb bbb</p>
 	<p>建议：不要用英文标点或者大量空格去和谐英文密文，这简直就是SB他妈给SB开门！另外，多条密文请换行！</p>
 	<br>
 	<p class="red">极不推荐的示例2：严重歧义（请分别选中冒号后的文字，快速按2下<span class="F2">F2</span>）：</p>

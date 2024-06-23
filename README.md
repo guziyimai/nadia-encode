@@ -104,7 +104,7 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 
 3.6.3更新：新增2种格式的AscII码解密的支持。现在共支持\u、%u、\x、&#x开头的4种格式的AscII码加密、解密。
 
-3.6.4更新：允许自定义并保存兽音的加密种子。
+3.6.4更新：允许自定义并保存兽音的编码字符。
 
 3.6.6更新：支持百度云自动提取格式链接的补全（?pwd=）
 

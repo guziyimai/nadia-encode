@@ -1,5 +1,6 @@
 #mainDiv {text-align:center;width:100%;min-width:750px;}
 textarea {width:85.6%;margin:10px auto;font-size:17px;overflow-x:hidden;word-break:break-all;white-space:pre-wrap;word-wrap:break-word;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;resize:vertical;min-height:70px;max-height:240px;min-width:40%;max-width:92%;line-height:1.4;}
+#copySel {cursor:pointer;font-size:15px;}
 .mySel,.asciiSel {cursor:pointer;}
 .roarTxt {width:70px;font-size:14px;}
 .menuDiv {text-align:center;border:1px solid #e7e7e7;background-color:#e7e7e7;margin-left:7%;margin-right:7%;position:relative;}

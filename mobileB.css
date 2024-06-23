@@ -1,4 +1,5 @@
 textarea {width:92%;resize:none;margin:10px 0px;font-size:32px;border:1px solid #000;overflow-x:hidden;word-break:break-all;white-space:pre-wrap;word-wrap:break-word;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;}
+#copySel {vertical-align:10%;}
 .roarHead{font-size:42px;}
 .roarTxt {width:200px;font-size:42px;}
 .menuDiv {text-align:center;border:1px solid #e7e7e7;background-color:#e7e7e7;position:relative;}

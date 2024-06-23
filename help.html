@@ -258,6 +258,11 @@
 	<p>注：1. 本插件1.4.1以上版本对此特例进行了优化，按<span class="F1">F1</span>亦可调用<span class="F2">F2</span>去汉字代码。</p>
 	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	2. 其他平台，点击"表情"按钮选择的表情，与贴吧同理，本质都是图片。</p>
+	<br>
+	<p class="red">不推荐的示例：解密后的文字混有Emoji表情或汉字。</p>
+	<p>SxPE9X99ku95ECYjV8C1RdqWUZY5US0NiiZe12Lp20JF02SXNjZeJ1ovi5Ne5jNXqr9cWSopu29H1RRH9oHSNGUTie7</p>
+	<p>2024/06/23优化：解密后是否变超链接前，进行个简单检测，避免将其中某部分（例如“plus.cn”）误识别成链接。</p>
+	<p>注：该示例进行了2次加密，所以需要双击（或滑词）解密2次。</p>
 	<br id="34">
 	<p>34、示例4：（2023/10/20更新）如果仅使用"删除"、"去掉"、"汉字"等分割超链接，则双击(英文部分)也能去汉字。</p>
 	<p>https://pan.baidu删除.com/s/1233333汉字33333333333333</p>
@@ -292,8 +297,9 @@
 	<p>示例10：</p>
 	<p>http s://tie ba.ba idu.c om/p/901 820 9762</p>
 	<p class="red">错误示例11（这……这贴可以放弃了！或者，你也可以分别手动选取每个链接后，按<span class="F2">F2</span>去汉字）：</p>
-	<p>http s://ti eba.b aidu.co m/p/901 820 976 2 ht tps :// tie ba.baidu. com/p /89638 89100 h tt ps: //tie ba.baidu.c om/p/9004511 388?pid=150 2235 12924& cid= #1502 23512924</p>
+	<p>https ://ti eba.b aidu.co m/p/901 820 9762 ht tps :// tie ba.baidu. com/p /89638 89100 htt ps: //tie ba.baidu.c om/p/9004511 388?pid=150 2235 12924& cid= #1502 23512924</p>
 	<p>可见，再推广到空格、回车分割的情况，那就更糟糕了。本插件只能尽可能区分空格是1个链接中的防和谐字符，还是多个链接的分割符。但如果2者结合，则神仙难救（如示例11）！</p>
+	<p>2024/06/23：为避免误去除说明文字，"去汉字" 算法修改为仅去除链接中 "至少2英文+汉字+至少2英文" 中的汉字。</p>
 	<br  id="36">
 	<p>36*、示例12（选中以下2行文字，按<span class="F2">F2</span>去汉字）：</p>
 	<div>
@@ -462,6 +468,8 @@
 	<p>magnet:?xt=urn:btih:F6F3DA287F4C257E32980AC1C6073E1C4397C5C0&amp;dn=The%20Genesis%20Order&amp;url=https://tieba.baidu.com/p/9050651446</p>
 	<p>其实，对于磁力链接来说，&amp;后面的字符都是无关紧要的，所以发布者也可以刻意加上原始链接的标记，但是，这个参数却是一个完整的网址链接！所以，本插件在识别网址时，必须遵循“磁力链接”优先于“网址链接”的规则。</p>
 	<p>2024/06/23：从美观角度看，10几行蓝色，不如1行变蓝；因此修改磁力链接变蓝时截断&amp;后的尾巴。（网页版保留带10几行尾巴变蓝）</p>
+	<br>
+	<p>鉴于ftp:、ed2k:、thunder: 等协议，最近几年几乎没人用了，所以本插件暂时只支持http(s)：、magnet:、mailto:。</p>
 	<br>
 	<p class="red">错误示例（用解压码或说明文字强行分割链接）：</p>
 	<p>https://www.bai解压码：我是傻逼du.com/s?wd=SB</p>

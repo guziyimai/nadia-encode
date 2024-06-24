@@ -267,7 +267,7 @@ window.Roar={
 			while(i<b){
 				n1=head.indexOf(str[i++]);
 				n2=head.indexOf(str[i]);
-				if(n1<0||n2<0) return result+"...";
+				if(n1<0||n2<0) return result+"....";
 				c=c<<4|((n1<<2|n2)+offset)&15
 				if(offset==0){
 					offset=4294967295;

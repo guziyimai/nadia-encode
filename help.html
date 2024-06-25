@@ -64,13 +64,20 @@
 	<p>6*、html格式</p>
 	<p>&amp;#x0026;&amp;#x0023;&amp;#x0078;&amp;#x662f;&amp;#x0068;&amp;#x0074;&amp;#x006d;&amp;#x006c;&amp;#x683c;&amp;#x5f0f;&amp;#x7684;&amp;#x0041;&amp;#x0073;&amp;#x0063;&amp;#x0049;&amp;#x0049;&amp;#x7f16;&amp;#x7801;</p>
 	<br id="7">
-	<p>7*、2023/04/18：网页版新增1个【AscII加密】变种【URI加密(编码)】：<span class="bold">此算法无需解密，复制到浏览器的地址栏，回车即可解密。</span>之前未支持URI加密，是因为各网站算法并不统一，本站的URI编码，是以RFC1630国际规范为准。</p>
+	<p>7*、2023/04/18：网页版新增1个【AscII加密】变种【URI加密(编码)】：<span class="bold">此算法无需解密，复制到浏览器的地址栏，回车即可解密。</span>之前未支持URI加密，是因为各网站算法并不统一，本站的URI编码，是以RFC1630国际规范为基准，同时保证谷歌内核浏览器地址栏可直接解密。</p>
+	<p>示例1：</p>
 	<p>https://%73%68%61%72%65%2e%6d%6f%63%6b%70%6c%75%73%2e%63%6e/%67%6f/%6e%61%64%69%61/%69%6e%64%65%78%2e%68%74%6d%6c</p>
-	<p>注：<span class="red">据反馈，SB的edge、QQ、火狐等浏览器，部分版本不支持URI解密（国际标准要求所有浏览器必须支持URI算法）。</span>2023/12/18：鉴于某些SB浏览器蔑视国际规范，本插件(+网页版+APP)只能新增对URI解密的支持。</p>
+	<p>注：<span class="red">据反馈，SB的edge、QQ、火狐等浏览器，部分版本不支持URI解密（国际标准要求所有浏览器必须支持URI算法）。</span>edge解决方法：当提示链接不存在时，鼠标点击地址栏再次回车，网页就神奇的又显示了。其他浏览器不清楚，但本插件(+网页版+APP)已新增对URI解密的支持了，所以大家就直接用我的插件或网页解密吧。</p>
 	<p>2024/06/22：因为部分浏览器无法打开带空格的链接，修改URI解密时不处理“%20”。</p>
 	<br>
-	<p>补充示例：鉴于很多平台禁止发网址，发帖时可手动去掉开头的【http(s)://】标记（防秒删），不影响解密。</p>
+	<p>补充示例2：如果平台禁止发网址，发帖时可手动去掉开头的【http(s)://】标记（防秒删），不影响解密。</p>
 	<p>%73%68%61%72%65%2e%6d%6f%63%6b%70%6c%75%73%2e%63%6e/%67%6f/%6e%61%64%69%61/%69%6e%64%65%78%2e%68%74%6d%6c</p>
+	<br>
+	<p><span class="red">不推荐示例3：</span>还有1种URI加密变种，只加密非英文/数字，不对英文部分加密。本插件（或网页版）亦可解密。</p>
+	<p>https%3A%2F%2Ftieba.baidu.com%2Ff%3Fkw%3D%E5%88%9B%E4%B8%96%E7%BA%AA%E7%A7%A9%E5%BA%8F%26fr%3Dindex</p>
+	<p>但本人不推荐这种格式，1来插件不支持中文参数超链接的识别；2来平台如果不禁止发网址（例如贴吧已允许发网址），示例1可直接变蓝（都不需要搜解密工具），但示例3无论是平台还是本插件均无法正确识别（
+	<a href="index.html#3" target="_blank">网页版</a>
+	可以）；<br>3嘛，示例1对域名也进行了加密，如果平台对特定域名有正则屏蔽，甚至可能逃过敏感网站过滤。</p>
 	<br id="8">
 	<p>8*、英文串，以=结尾，大概率是Base64加密（Base64编码）：</p>
 	<p>5ryU56S6QmFzZTY06Kej5a+GLg==</p>
@@ -86,7 +93,7 @@
 	<p>11*、Base64编码，去除结尾=，一般也能正确解密，但AES算法不能去除结尾=</p>
 	<p>5Y676Zmk57uT5bC+PeeahEJhc2U2NOWvhuaWhw</p>
 	<br>
-	<p>2023/03/10，新支持1种不规范的base64变种，但该算法一般也用不到，也不推荐使用，就不举例了。</p>
+	<p>2023/03/10，新支持1种不规范的base64变种的解密，但该算法一般也用不到，也不推荐使用，就不举例了。</p>
 	<br id="12">
 	<p>12*、汉字类的，大家最熟悉的便是兽音算法：</p>
 	<p id="13">~呜嗷啊嗷嗷嗷~~~嗷啊呜啊嗷呜嗷嗷呜~啊~~~嗷啊啊嗷嗷啊~嗷嗷啊呜呜啊~啊呜啊~啊~嗷嗷嗷嗷~~嗷啊</p>
@@ -505,7 +512,7 @@
 <div id="ztj">&nbsp;&nbsp;我是有底线的&nbsp;&nbsp;</div>
 </div>
 <script type="text/javascript">
-var nadia_help=function(){var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);var timerId,loopTime=0,nadia_crx,getCrx,keybinds=[112,113,"F1","F2"],nowkey,oldkey,oldRun,nowRun;function getObj(id,type){if(type==1){return document.getElementsByTagName(id);}else if(type==2){return document.getElementsByClassName(id);}else{return document.getElementById(id);}}var catArr=["NoxqwHJpQHEkupfFULodkv327yc8ekm5","5wVIYIKKFgWIXsxdXK32VsUxbiIciVkW","VJsnHugTMmEViPXHo4G8NJwxoQIP1wUJ","kiuTiCCsQkbkg1vqyABQxdTtKnP6NmAn","mmABljMuKzTMes91qOGTKuR6VrBsC5Pn","QGqmdTqEW7BTMlCTWKgzye6gWWRyR4cQ","iNiRKqlWkjFWclazESh1rtGfQ1Yx57Pw","7FLwVy8rg6UdysGIcYXlnkUckOw5JcLU","z7D2XF3HpTW6S6z4iiQ91JUWwJBSpX4f","C1WO531n6l97WP8cPRUE8qd0WjueSDoz","JQWOBGzsOHPWFtnhyDvQR0IzDIxKUVdf","FM2LYK7Lb7keKKyOeNeGC0y4lwNgfHDg"],catStr="";for(var i=0;i<12;)catStr+="<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/"+catArr[i]+"/cat"+(++i)+".jpg</p>";getObj("cats").innerHTML=catStr+"<br><br>";if(isMobile)getObj("isPC1").style.display="block";function changeKey(){try{oldkey=nadia_crx.getAttribute("keybinds").split(",");keybinds=oldkey;keybinds[2]=keybinds[0]==0?"":"F"+(keybinds[0]-111);keybinds[3]=keybinds[1]==0?"":"F"+(keybinds[1]-111);var F1s=getObj("F1",2),F2s=getObj("F2",2);if(keybinds[2])for(var i=0;i<F1s.length;i++)F1s[i].innerHTML=keybinds[2];if(keybinds[3])for(var i=0;i<F2s.length;i++)F2s[i].innerHTML=keybinds[3];}catch(e){}}function checkNadia(){try{nowkey=nadia_crx.getAttribute("keybinds").split(",");if(nowkey!=oldkey)changeKey();}catch(e){}try{nowRun=nadia_crx.getAttribute("runcrx").split(",");if(nowRun!=oldRun){getObj("notRunCrx").style.display=nowRun=="-1"?"block":"none";oldRun=nowRun;}}catch(e){}}try{getCrx=function(){return getObj("nadiatqm",1)[0];};nadia_crx=getCrx();}catch(e){}timerId=setInterval(function(){nadia_crx=getCrx();if(nadia_crx){clearInterval(timerId);setTimeout(function(){try{oldRun=nadia_crx.getAttribute("runcrx");if(oldRun=="-1")getObj("notRunCrx").style.display="block";nowkey=nadia_crx.getAttribute("keybinds");if(nowkey){changeKey();setInterval(checkNadia,800);}}catch(e){}},20);}else if(loopTime>9){clearInterval(timerId);getObj("notHasCrx").style.display="block";}loopTime++;},15);}();function isClose(obj,id){var obj2=document.getElementById(id);if(obj.innerHTML=="点击展开"){obj.innerHTML="点击收起";obj2.style.display='block';}else{obj.innerHTML="点击展开";obj2.style.display='none';}}
+var nadia_help=function(){var ngua=navigator.userAgent;var isMobile=/Android|iPhone|iPod|Harmony|BlackBerry|Mobile|SymbianOS/i.test(ngua);var timerId,loopTime=0,nadia_crx,getCrx,keybinds=[112,113,"F1","F2"],nowkey,oldkey,oldRun,nowRun;function getObj(id,type){if(type==1){return document.getElementsByTagName(id);}else if(type==2){return document.getElementsByClassName(id);}else{return document.getElementById(id);}}var catArr=["NoxqwHJpQHEkupfFULodkv327yc8ekm5","5wVIYIKKFgWIXsxdXK32VsUxbiIciVkW","VJsnHugTMmEViPXHo4G8NJwxoQIP1wUJ","kiuTiCCsQkbkg1vqyABQxdTtKnP6NmAn","mmABljMuKzTMes91qOGTKuR6VrBsC5Pn","QGqmdTqEW7BTMlCTWKgzye6gWWRyR4cQ","iNiRKqlWkjFWclazESh1rtGfQ1Yx57Pw","7FLwVy8rg6UdysGIcYXlnkUckOw5JcLU","z7D2XF3HpTW6S6z4iiQ91JUWwJBSpX4f","C1WO531n6l97WP8cPRUE8qd0WjueSDoz","JQWOBGzsOHPWFtnhyDvQR0IzDIxKUVdf","FM2LYK7Lb7keKKyOeNeGC0y4lwNgfHDg"],catStr="";for(var i=0;i<12;)catStr+="<p>https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/"+catArr[i]+"/cat"+(++i)+".jpg</p>";getObj("cats").innerHTML=catStr+"<br><br>";if(isMobile)getObj("isPC1").style.display="block";function changeKey(){try{oldkey=nadia_crx.getAttribute("keybinds").split(",");keybinds=Array.from(oldkey);keybinds[2]=keybinds[0]==0?"":"F"+(keybinds[0]-111);keybinds[3]=keybinds[1]==0?"":"F"+(keybinds[1]-111);var F1s=getObj("F1",2),F2s=getObj("F2",2);if(keybinds[2])for(var i=0;i<F1s.length;i++)F1s[i].innerHTML=keybinds[2];if(keybinds[3])for(var i=0;i<F2s.length;i++)F2s[i].innerHTML=keybinds[3];}catch(e){}}function checkNadia(){try{nowkey=nadia_crx.getAttribute("keybinds").split(",");if(nowkey.toString()!=oldkey.toString()){changeKey();}}catch(e){}try{nowRun=nadia_crx.getAttribute("runcrx").split(",");if(nowRun!=oldRun){getObj("notRunCrx").style.display=nowRun=="-1"?"block":"none";oldRun=nowRun;}}catch(e){}}try{getCrx=function(){return getObj("nadiatqm",1)[0];};nadia_crx=getCrx();}catch(e){}timerId=setInterval(function(){nadia_crx=getCrx();if(nadia_crx){clearInterval(timerId);setTimeout(function(){try{oldRun=nadia_crx.getAttribute("runcrx");if(oldRun=="-1")getObj("notRunCrx").style.display="block";nowkey=nadia_crx.getAttribute("keybinds");if(nowkey){changeKey();setInterval(checkNadia,800);}}catch(e){}},20);}else if(loopTime>9){clearInterval(timerId);getObj("notHasCrx").style.display="block";}loopTime++;},15);}();function isClose(obj,id){var obj2=document.getElementById(id);if(obj.innerHTML=="点击展开"){obj.innerHTML="点击收起";obj2.style.display='block';}else{obj.innerHTML="点击展开";obj2.style.display='none';}}
 </script>
 </body>
 </html>

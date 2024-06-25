@@ -205,7 +205,7 @@ window.Ascii={
 		if(!index) index=0;
 		var allStr="",str2,preStr=this.preStrArr[index];
 		if(index==4){
-			if(str.indexOf("%")) str=decodeURI(str);
+			if(str.indexOf("%")) str=decodeURIComponent(str);
 			try{allStr=str.match(/https?:\/\//i)[0];}catch(e){}
 		}
 		for(var i=allStr.length;i<str.length;i++){
@@ -221,10 +221,11 @@ window.Ascii={
 				if(index==3) allStr+=";";
 			}
 		}
+		if(index==4&&allStr)allStr=allStr.replaceAll("&#","%26%23");
 		return allStr;
 	},
 	decode : function (str){
-		if(/%[a-f0-9]{2}[%\/\?=&:#][a-f0-9]{2}/i.test(str)) return decodeURI(str.replaceAll("%20","▘")).replaceAll("▘","%20");
+		if(/(%[a-f0-9]{2}){2}/i.test(str)) return decodeURIComponent(str.replaceAll("%20","▘")).replaceAll("▘","%20");
 		return window.unescape(str.replace(/\\u/ig,'%u').replace(/\\x(?=[0-9a-f]{4})/ig,'%u').replace(/\\x/ig,'%u00').replaceAll('&#x','%u').replaceAll(';',''));
 	}
 }

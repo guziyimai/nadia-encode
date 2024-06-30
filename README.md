@@ -6,11 +6,11 @@ https://share.mockplus.cn/go/nadia/index.html
 
 备用地址：
 
-https://nadia-encode.neocities.org
-
 https://guziyimai.github.io/nadia-encode
 
 https://nadia-jiami.netlify.app
+
+https://nadia-encode.neocities.org
 
 PC浏览器插件版：
 

@@ -2,7 +2,7 @@
 
 访问地址：
 
-https://share.mockplus.cn/go/nadia/index.html
+https://share.mockplus.cn/go/nadia2/index.html
 
 备用地址：
 
@@ -14,7 +14,7 @@ https://nadia-encode.neocities.org
 
 PC浏览器插件版：
 
-https://share.mockplus.cn/go/nadia/update.html#download
+https://share.mockplus.cn/go/nadia2/update.html#download
 
 安卓APP版：
 

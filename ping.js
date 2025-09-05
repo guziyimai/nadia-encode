@@ -1,1 +1,1 @@
-try{﻿document.getElementById("github").innerHTML="1";}catch(e){}
+﻿try{﻿document.getElementById("netlify").innerHTML="1";}catch(e){}

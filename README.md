@@ -1,5 +1,7 @@
 # 纳迪亚加密
 
+由于不可抗力，mockplus和neocities域名已炸，现将APP和插件改为离线版，后续不再更新
+
 【网页版（官网）】
 
 地址1：https://nadia-jiami.netlify.app

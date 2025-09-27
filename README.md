@@ -1,24 +1,28 @@
 # 纳迪亚加密
 
-访问地址：
+【网页版（官网）】
 
-https://share.mockplus.cn/go/nadia2/index.html
+地址1：https://nadia-jiami.netlify.app
 
-备用地址：
+地址2：https://guziyimai.github.io/nadia-encode
 
-https://guziyimai.github.io/nadia-encode
+地址3：https://nadia-encode.vercel.app
 
-https://nadia-jiami.netlify.app
+【PC谷歌插件-离线版】
 
-https://nadia-encode.neocities.org
+地址1：https://nadia-jiami.netlify.app/update#download
 
-PC浏览器插件版：
+地址2：https://guziyimai.github.io/nadia-encode/update#download
 
-https://share.mockplus.cn/go/nadia2/update.html#download
+地址3：https://nadia-encode.vercel.app/update.html#download
 
-安卓APP版：
+【安卓APP-离线版】
 
-https://guziyimai.github.io/nadia-encode/NadiaAndrod1.3.apk
+地址1：https://nadia-jiami.netlify.app/androd#download
+
+地址2：https://guziyimai.github.io/nadia-encode/androd#download
+
+地址3：https://nadia-encode.vercel.app/androd.html#download
 
 视频教程：
 
@@ -26,7 +30,7 @@ https://www.bilibili.com/video/BV133411H7cC
 
 文字教程：
 
-https://www.bilibili.com/read/cv13500812
+https://www.bilibili.com/opus/579195164711680285
 
 联系作者：
 

@@ -6,14 +6,17 @@
 	<title>纳迪亚APP-下载</title>
 </head>
 <body>
-	<div id="main" style="font-size:30px;">
-	下载apk文件后，如果存在旧版本的纳迪亚加密APP，请先卸载旧版；
-	<br>
-	然后直接安装，如果系统提示什么没通过安全测试之类的，点继续安装就行。
+	<div style="font-size:30px;margin:auto;padding:0px 30px;">
+	<p><a id="main" href='#'>点击下载NadiaAndrod_last.apk</a></p>
+	<p>下载apk文件后，如果存在旧版本的纳迪亚加密APP，请先卸载旧版；</p>
+	<p>然后直接安装，如果系统提示什么没通过安全测试之类的，点继续安装就行。</p>
 	</div>
 	<script type="text/javascript">
 		var main=document.getElementById("main"),me=decodeURI(top.location.href);
-		if(me.substr(-9)=="#download") window.open(me.replace(/androd\.html#download/i,"NadiaAndrod_last.apk"),"_blank");
+		main.onclick=function(){
+			window.open(me.replace(/androd\.html\S{0,30}/i,"NadiaAndrod_last.apk"),"_blank");
+		};
+		if(me.substr(-9)=="#download") main.click();
 	</script>
 </body>
 </html>

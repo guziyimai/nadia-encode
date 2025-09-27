@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>纳迪亚APP-下载</title>
+</head>
+<body>
+	<div id="main" style="font-size:30px;">
+	下载apk文件后，如果存在旧版本的纳迪亚加密APP，请先卸载旧版；
+	<br>
+	然后直接安装，如果系统提示什么没通过安全测试之类的，点继续安装就行。
+	</div>
+	<script type="text/javascript">
+		var main=document.getElementById("main"),me=decodeURI(top.location.href);
+		if(me.substr(-9)=="#download") window.open(me.replace(/androd\.html#download/i,"NadiaAndrod_last.apk"));
+	</script>
+</body>
+</html>

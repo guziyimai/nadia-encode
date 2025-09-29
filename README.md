@@ -10,6 +10,8 @@
 
 地址3：https://nadia-encode.vercel.app
 
+这3个地址均是老外的网站，将来如果不能访问，请自行学习如何“科学上网”。
+
 【PC谷歌插件-离线版】
 
 地址1：https://nadia-jiami.netlify.app/update#download
@@ -60,7 +62,7 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 7. 可以设置解密后，是否自动复制解密后的结果，或者打开结果中的第一个网址并复制提取码。
 
 
-更新日志：
+网页版更新日志：
 
 1.0-2.2：最初版，界面过于简陋，不记录日志了。
 

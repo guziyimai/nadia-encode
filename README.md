@@ -32,7 +32,7 @@ NLT在上述任一地址后追加【/sots.html】即可，不含中括号，也�
 
 地址3：https://nadia-encode.vercel.app/androd.html#download
 
-离线APP的加密、解密功能，均可无网络运行；苹果的“高安全性”不允许安装个人写的APP。
+离线APP的加密、解密功能，均可无网络运行；苹果的“高安全性”不允许安装个人写的APP，请使用网页版。
 
 视频教程：
 
@@ -50,7 +50,7 @@ https://www.bilibili.com/opus/579195164711680285
 
 出现报错，请复制红色文字发送邮件给作者。
 
-网站截图：
+网页版截图：
 
 https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/KkPMTSQeoLEbn8Wmlr2eBfJT5hNGBP9L/Nadia001.jpg
 

@@ -12,6 +12,8 @@
 
 这3个地址均是老外的网站，将来如果不能访问，请自行学习如何“科学上网”（以下同理）。
 
+NLT在上述任一地址后追加【/sots.html】即可，不含中括号，也不能有“#+数字”后缀。
+
 【PC谷歌插件-离线版】
 
 地址1：https://nadia-jiami.netlify.app/update#download

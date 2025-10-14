@@ -56,7 +56,7 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/taSgHLWQRIVWUUsGKqawmrbKizqKYD
 
 https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3eR/mobile.jpg
 
-说明：
+网页版使用说明：
 1. 纳迪亚加密（nadia encode）最初仅作为纳迪亚之宝游戏的文本加密、解密用，后续也希望大家仅用于游戏的文本加密，请勿用于非法活动！
 2. 关键词“纳迪亚加密”或“nadia加密”已被必应搜索、谷歌搜索、百度搜索等收录，密文发布到贴吧或论坛后，只需要告诉小白们自己搜“纳迪亚加密”即可。
 3. 将需要加密或解密的文字复制到上方文本框中，点击“加密”或“解密”按钮即可。
@@ -65,6 +65,7 @@ https://lc-gluttony.s3.amazonaws.com/lWaoKXc5IVvx/8E0rq2B94FEGKwvAGedhe62PiyOle3
 6. 密文在30万字内，程序可自动选择解密引擎，无需手动切换选项卡（但后续发现，百度贴吧超过2千字会截断，所以大家请勿发布超长密文）。
 7. 可以设置解密、补全后，是否自动复制解密后的结果，或者是否尝试识别并标蓝下方文字中的超链接。
 8. 后续，本人也开发了浏览器插件版（在其他吧友的帮助下，做了安卓APP移植），下方的更新日志仅记录的网页版的更新。
+   安卓APP是用离线网页版移植的，功能相同；插件版是为了给“贴吧自动解密”提供便利的，所以不含加密功能，但其菜单栏的【访问官网】可访问网页版。
 
 
 网页版更新日志：

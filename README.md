@@ -10,7 +10,7 @@
 
 地址3：https://nadia-encode.vercel.app
 
-这3个地址均是老外的网站，将来如果不能访问，请自行学习如何“科学上网”。
+这3个地址均是老外的网站，将来如果不能访问，请自行学习如何“科学上网”（以下同理）。
 
 【PC谷歌插件-离线版】
 
@@ -20,6 +20,8 @@
 
 地址3：https://nadia-encode.vercel.app/update.html#download
 
+离线插件的解密功能，可无网络运行。
+
 【安卓APP-离线版】
 
 地址1：https://nadia-jiami.netlify.app/androd#download
@@ -27,6 +29,8 @@
 地址2：https://guziyimai.github.io/nadia-encode/androd#download
 
 地址3：https://nadia-encode.vercel.app/androd.html#download
+
+离线APP的加密、解密功能，均可无网络运行。
 
 视频教程：
 

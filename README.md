@@ -30,7 +30,7 @@
 
 地址3：https://nadia-encode.vercel.app/androd.html#download
 
-离线APP的加密、解密功能，均可无网络运行。
+离线APP的加密、解密功能，均可无网络运行；苹果的“高安全性”不允许安装个人写的APP。
 
 视频教程：
 

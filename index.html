@@ -19,9 +19,7 @@
 	<link rel="shortcut icon" type="image/x-icon" class="Z3V6aXlpbWFp" href="favicon.ico">
 	<!-- 参数过滤：过滤掉某些S13浏览器乱追加的参数，比如多个?拼接 -->
 	<script type="text/javascript" class="Z3V6aXlpbWFp">
-	//var ngua="nadia_app v.last"
-	var ngua=navigator.userAgent,appStr=ngua.match(/nadia_app/i);
-	var isAndroid=!!appStr||/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua),is64=/win64|wow64|x64/i.test(ngua),isFF=/firefox/i.test(ngua),isWin=/windows/i.test(ngua),isSBIE=/MSIE/i.test(ngua),$=null;try{"".indexOf("");}catch(e){Array.prototype.indexOf=function(elt,start){var len=this.length;if(!start)start=0;for(;start<len;start++)if(this[start]== elt)return start;return -1;};}try{var a=function(){var urlStr=top.location.href.replace(/#[^%\d]+/,"");try{var tem=urlStr.match(/\?\w+=[^\?#&]+/g);if(tem&&tem[0]){for(var i=1;i<tem.length;i++)urlStr=urlStr.replace(tem[i],"");if(urlStr!=top.location.href&&urlStr.indexOf(" ")==-1){top.location.href=urlStr;}}}catch(e){}if(appStr){appStr=ngua.substr(-6);}else if(isMobile&&urlStr.substr(-4)=="#app"){appStr="1.0";}else{urlStr=urlStr.replace(/#[a-z\-\._]+$/,"").replace(/&.+/,"");var num=urlStr.indexOf("=");var num2=urlStr.indexOf("#");if(num2>0&&num>num2){var realUrl=urlStr.replace(/#\d/,"").replace(/\?.+/,"");realUrl=realUrl+urlStr.substring(realUrl.length+2)+urlStr.substr(num2,2);if(realUrl!=urlStr&&realUrl!=top.location.href)top.location.href=realUrl;}}var _d=Document,_e=Element,_p='prototype';try{_d[_p].createElement=null;_e[_p].appendChild=null;_e[_p].insertBefore=null;_e[_p].remove=null;_e[_p].removeChild=null;}catch(e){}document.getElementsByTagName("link")[0].href=isMobile?(window.innerWidth>920?"mobileB.css":"mobileS.css"):"computer.css";}();}catch(e){location.href="403.html";}
+	var ngua=navigator.userAgent,appStr=ngua.match(/app\/nadia\s?[0-9\.]{3,5}/i);var isAndroid=!!appStr||/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua),is64=/win64|wow64|x64/i.test(ngua),isFF=/firefox/i.test(ngua),isWin=/windows/i.test(ngua),isSBIE=/MSIE/i.test(ngua),$=null;try{"".indexOf("");}catch(e){Array.prototype.indexOf=function(elt,start){var len=this.length;if(!start)start=0;for(;start<len;start++)if(this[start]== elt)return start;return -1;};}try{var a=function(){var urlStr=top.location.href.replace(/#[^%\d]+/,"");try{var tem=urlStr.match(/\?\w+=[^\?#&]+/g);if(tem&&tem[0]){for(var i=1;i<tem.length;i++)urlStr=urlStr.replace(tem[i],"");if(urlStr!=top.location.href&&urlStr.indexOf(" ")==-1){top.location.href=urlStr;}}}catch(e){}if(appStr&&appStr[0]){appStr=appStr[0].replace(/app\/nadia\s?/i,'');}else if(isMobile&&urlStr.substr(-4)=="#app"){appStr="1.0";}else{urlStr=urlStr.replace(/#[a-z\-\._]+$/,"").replace(/&.+/,"");var num=urlStr.indexOf("=");var num2=urlStr.indexOf("#");if(num2>0&&num>num2){var realUrl=urlStr.replace(/#\d/,"").replace(/\?.+/,"");realUrl=realUrl+urlStr.substring(realUrl.length+2)+urlStr.substr(num2,2);if(realUrl!=urlStr&&realUrl!=top.location.href)top.location.href=realUrl;}}var _d=Document,_e=Element,_p='prototype';try{_d[_p].createElement=null;_e[_p].appendChild=null;_e[_p].insertBefore=null;_e[_p].remove=null;_e[_p].removeChild=null;}catch(e){}document.getElementsByTagName("link")[0].href=isMobile?(window.innerWidth>920?"mobileB.css":"mobileS.css"):"computer.css";}();}catch(e){location.href="403.html";}
 	</script>
 </head>
 <body>
@@ -35,7 +33,7 @@
 			<div id="bgColor">
 				背景色<select id="backColor"></select>
 			</div>
-			<h2 id="RARZAR" style="display:none;">解压APP(Zar)</h2>
+			<h2 id="RARZAR" style="opacity:0;">解压APP(Zar)</h2>
 		</ul>
 		<div id="outer" style="padding:5px 0px;">
 		<!-- 首行提示语 -->
@@ -134,12 +132,11 @@
 		<div style="text-align:left">
 			<h2 class="roar" style="opacity:0;">&nbsp;</h2>
 			<!-- 作者信息/是否禁用了JS -->
-			<div id="authorDiv">您的浏览器禁用了JavaScript！或者网页加载失败？请联系作者：<a href="mailto:3625270272@qq.com" title="向作者反馈BUG" target="_blank">3625270272@qq.com </a>
-			</div>
+			<div id="authorDiv">您的浏览器禁用了JavaScript！
+		或者网页加载失败？请联系作者：<a href="mailto:3625270272@qq.com" title="向作者反馈BUG" target="_blank">3625270272@qq.com </a></div>
 		</div>
 		<!-- 防止缓存 -->
 		<span style="display:none;" class="0xspan"></span>
-			
 		<br><br></div>
 	</div>
 	

@@ -14,7 +14,8 @@ var $=null,$w=window,$d=document,_id='getElementById',_cls='getElementsByClassNa
 #outer {font-size:16px;position:relative;z-index:99;background:#fff;border:3px solid #28a2ef;border-radius:12px;padding:5px;max-width:355px;margin:auto;text-align:center;white-space:nowrap;}
 .suKrrLwG5z0hYKKvXDgeDgKS7jsC {word-break:break-all;font-size:18px;text-align:left;margin:auto;max-width:680px;line-height:32px;}
 .showImg {background-image:url('yuandan.png');background-repeat:repeat-y;background-size:100% auto;}
-.back1 {background-color:white;padding:0px 10px;}
+.back0 {background-color:white;padding:0px 10px;}
+.back1 {background-color:white;}
 .back2 {background-color:#cce6cf;}
 .back3 {background-color:#dceffe;}
 .back4 {background-color:#efefd8;}
@@ -302,7 +303,7 @@ if(isMobile&&_v>5)_v-=4;
 mySel.value=_v;
 if(_v>5){
 _v-=4;
-inner.className+=" back1";
+inner.className+=" back0";
 }else{
 inner.className+=" back"+_v;
 }
@@ -319,7 +320,7 @@ try{localStorage.setItem("back-color",_v);}catch(e){}
 inner.className=i_;
 if(_v>5){
 _v-=4;
-inner.className+=" back1";
+inner.className+=" back0";
 }else{
 inner.className+=" back"+_v;
 }

@@ -11,7 +11,7 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .help:hover {cursor:pointer;color:red;}
 .support {right:25px;font-size:17px;top:16px;color:#4e6ef2;}
 .support:hover {cursor:pointer;color:red;}
-#RARZAR {position:absolute;margin:auto;right:10px;font-size:19px;font-weight:bold;top:92px;color:#4e6ef2;text-decoration:none;}
+#RARZAR {position:absolute;margin:auto;right:10px;font-size:19px;font-weight:bold;top:95px;color:#4e6ef2;text-decoration:none;}
 #RARZAR:hover {cursor:pointer;color:red;}
 .menu {padding:11px;font-size:20px;text-align:center;display:inline-block;color:#555;border-radius:5px;cursor:pointer;}
 .menu:hover {background-color:#66b8ec;color:white;}

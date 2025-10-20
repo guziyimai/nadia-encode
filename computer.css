@@ -11,7 +11,7 @@ h2 {position:absolute;margin:auto;bottom:0px;}
 .help:hover {cursor:pointer;color:red;}
 .support {right:25px;font-size:17px;top:16px;color:#4e6ef2;}
 .support:hover {cursor:pointer;color:red;}
-#RARZAR {position:absolute;margin:auto;right:10px;font-size:19px;font-weight:bold;top:95px;color:#4e6ef2;text-decoration:none;}
+#RARZAR {position:absolute;margin:auto;right:10px;font-size:19px;font-weight:bold;top:98px;color:#4e6ef2;text-decoration:none;}
 #RARZAR:hover {cursor:pointer;color:red;}
 .menu {padding:11px;font-size:20px;text-align:center;display:inline-block;color:#555;border-radius:5px;cursor:pointer;}
 .menu:hover {background-color:#66b8ec;color:white;}
@@ -46,7 +46,7 @@ a:hover {color:red;}
 #downText {text-align:left;height:203px;resize:vertical;min-height:100px;max-height:406px;overflow-x:hidden;word-break:break-all;word-wrap:break-word;border:1px solid #000;width:86%;margin:10px auto;font-size:17px;padding:2px;cursor:text;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;min-width:40%;max-width:92%;line-height:1.5;}
 #downText:empty::before{content:attr(placeholder);color:#888;}
 xmp {word-break:break-all;white-space:pre-wrap;word-wrap:break-word;margin:0px;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;}
-#bgColor {position:absolute;margin:auto;right:10px;font-size:16px;top:69px;}
+#bgColor {position:absolute;margin:auto;right:10px;font-size:16px;top:70px;}
 .back1 {background-color:white;}
 .back2 {background-color:#cce6cf;}
 .back3 {background-color:#dceffe;}

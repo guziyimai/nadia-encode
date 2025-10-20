@@ -221,7 +221,6 @@ saveColor();
 //设置、保存背景色
 function changeColor(){
 	_val=mySel.value;
-	if(isMobile&&_val>5)_val-=4;
 	try{localStorage.setItem("backColor",_val);}catch(e){}
 	saveColor();
 }

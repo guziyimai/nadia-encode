@@ -210,7 +210,7 @@ try{
 } catch(e) {}
 //读取设置的背景色
 try{
-	_val=localStorage.getItem("backColor");
+	_val=localStorage.getItem("color-web");
 	if(!_val)_val=7;
 }catch(e){
 	_val=7;
@@ -220,7 +220,7 @@ saveColor();
 //设置、保存背景色
 function changeColor(){
 	_val=mySel.value;
-	try{localStorage.setItem("backColor",_val);}catch(e){}
+	try{localStorage.setItem("color-web",_val);}catch(e){}
 	saveColor();
 }
 function saveColor(){

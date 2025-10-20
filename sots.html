@@ -67,10 +67,12 @@ h1,h2,h3 {margin-block-start:0.5em;margin-block-end:0.3em;}
 		<option value="3">天空蓝</option>
 		<option value="4">杏仁黄</option>
 		<option value="5">极光灰</option>
-		<option value="6">内白外绿</option>
-		<option value="7">内白外蓝</option>
-		<option value="8">内白外黄</option>
-		<option value="9">内白外灰</option>
+		<span id="color2" style="display:none;">
+			<option value="6">内白外绿</option>
+			<option value="7">内白外蓝</option>
+			<option value="8">内白外黄</option>
+			<option value="9">内白外灰</option>
+		</span>
 	</select>
 </span>
 </h3>
@@ -287,7 +289,9 @@ h1,h2,h3 {margin-block-start:0.5em;margin-block-end:0.3em;}
 </div>
 <script type="text/javascript" class="PDiXXSS5WucVKCiD9ZCHZXnTpzPn Z3V6aXlpbWFp">
 //3、16早7点
-var $_ver="45102",$_time="2025/11/03 07:00:00",$_=$w['\x65\x76\x61\x6c'],_$=$w['\x61\x74\x6f\x62'],tsId1,oldObj,tsId2,ngua=navigator.userAgent,i_="suKrrLwG5z0hYKKvXDgeDgKS7jsC";var isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);var countDown=$d[_id]("countDown"),inner=$d.getElementsByClassName(i_)[0],outer=$d.getElementsByClassName("Z3V6aXlpbWFp")[3],imgCheck=$d[_id]("imgCheck");if(isMobile){$d[_id]("isBr1")[_ih]="<br>";$d[_id]("anrar").style.display='inline';$d[_id]("isBr3")[_ih]="(打不开时请用VPN)：<br>";$d[_id]("isBr4")[_ih]="<br>";$d[_id]("isBr5")[_ih]="<br>";$d[_id]("isBr6")[_ih]="<br>";$d[_id]("support-mobile").style.display="block";$d[_id]("androdtxt").style.display='block';}else{$d[_id]("sbweixin").style.display='block';$d[_id]("pcrar").style.display='inline';$d[_id]("support-pc").style.display="block";}var aStr=isMobile?$_ver.substr(0,2):$_ver;aStr="，"+aStr+"已搬运";
+var $_ver="45102",$_time="2025/11/03 07:00:00",$_=$w['\x65\x76\x61\x6c'],_$=$w['\x61\x74\x6f\x62'],tsId1,oldObj,tsId2,ngua=navigator.userAgent,i_="suKrrLwG5z0hYKKvXDgeDgKS7jsC";var isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua);var countDown=$d[_id]("countDown"),inner=$d.getElementsByClassName(i_)[0],outer=$d.getElementsByClassName("Z3V6aXlpbWFp")[3],imgCheck=$d[_id]("imgCheck");if(isMobile){$d[_id]("isBr1")[_ih]="<br>";$d[_id]("anrar").style.display='inline';$d[_id]("isBr3")[_ih]="(打不开时请用VPN)：<br>";$d[_id]("isBr4")[_ih]="<br>";$d[_id]("isBr5")[_ih]="<br>";$d[_id]("isBr6")[_ih]="<br>";$d[_id]("support-mobile").style.display="block";$d[_id]("androdtxt").style.display='block';}else{$d[_id]("sbweixin").style.display='block';$d[_id]("pcrar").style.display='inline';$d[_id]("support-pc").style.display="block";
+$d[_id]("color2").style.display="inline";
+}var aStr=isMobile?$_ver.substr(0,2):$_ver;aStr="，"+aStr+"已搬运";
 var mySel=$d[_id]("backColor"),_v;
 try{
 	//var _c=document.cookie;
@@ -296,6 +300,7 @@ try{
 } catch(e){
 	_v=7;
 }
+if(isMobile&&_v>5)_v-=4;
 mySel.value=_v;
 if(_v>5){
 _v-=4;
@@ -311,6 +316,7 @@ if(!_$)_$=function(str){var output="",chr1,chr2,chr3,enc1,enc2,enc3,enc4,i=0;var
 
 function changeColor(){
 var _v=mySel.value;
+if(isMobile&&_v>5)_v-=4;
 try{localStorage.setItem("back-color",_v);}catch(e){}
 inner.className=i_;
 if(_v>5){

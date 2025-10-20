@@ -215,7 +215,6 @@ try{
 }catch(e){
 	_val=7;
 }
-if(isMobile&&_val>5)_val-=4;
 mySel.value=_val;
 saveColor();
 //设置、保存背景色

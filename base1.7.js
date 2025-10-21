@@ -193,53 +193,6 @@ if(isLowIE) {
 	waringStr="浏览器版本过低，建议使用谷歌内核的浏览器。";
 }
 getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua),isSBIE=/MSIE/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';";
-
-/**
- * 设置、存取背景色
- * @author guziyimai
- */
-var _val,_arr=["-无-","豆沙绿","天空蓝","杏仁黄","极光灰","内白外绿","内白外蓝","内白外黄","内白外灰"],mySel=getObj("backColor"),upText=getObj("upText"),downText=getObj("downText");
-//初始化背景色下拉框
-try{
-	var str="";
-	for(var i=0;i<9;i++){
-		str+='<option value="'+(i+1)+'">'+_arr[i]+'</option>';
-	}
-	mySel.innerHTML=str;
-	mySel.onchange=changeColor;
-} catch(e) {}
-//读取设置的背景色
-try{
-	_val=localStorage.getItem("color-web");
-	if(!_val)_val=7;
-}catch(e){
-	_val=7;
-}
-mySel.value=_val;
-saveColor();
-//设置、保存背景色
-function changeColor(){
-	_val=mySel.value;
-	try{localStorage.setItem("color-web",_val);}catch(e){}
-	saveColor();
-}
-function saveColor(){
-	try{
-		var inCls;
-		if(_val>5){
-			_val-=4;
-			inCls="back1";
-		}else{
-			inCls="back"+_val;
-		}
-		getObj("outer").className="back"+_val;
-		getObj("modal",2)[0].className="modal back"+_val;
-		upText.className=inCls;
-		downText.className=inCls;
-		getObj("help").className="modal-content "+inCls;
-		getObj("support").className="modal-content "+inCls;
-	}catch(e){}
-}
 	
 /**
  * Ascii码加密、解密

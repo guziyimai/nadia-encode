@@ -49,7 +49,7 @@ select {font-size:19px;}
 #downText {text-align:left;height:395px;overflow-y:scroll;overflow-x:hidden;word-break:break-all;word-wrap:break-word;border:1px solid #000;width:94%;margin:10px 0px;font-size:21px;margin-left:3%;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;line-height:1.5;}
 #downText:empty::before{content:attr(placeholder);color:#888;}
 xmp {word-break:break-all;white-space:pre-wrap;word-wrap:break-word;margin:0px;padding:2px;font-family:Microsoft YaHei,PingFang SC,Tahoma,monospace;}
-#bgColor {position:absolute;margin:auto;right:10px;font-size:22px;top:110px;}
+#bgColor {position:absolute;margin:auto;right:20px;font-size:22px;top:110px;}
 .back1 {background-color:white;}
 .back2 {background-color:#cce6cf;}
 .back3 {background-color:#dceffe;}

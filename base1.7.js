@@ -193,6 +193,7 @@ if(isLowIE) {
 	waringStr="浏览器版本过低，建议使用谷歌内核的浏览器。";
 }
 getObj("script",1)[0].innerHTML="var ngua=navigator.userAgent,isAndroid=/Android|Harmony|BlackBerry/i.test(ngua),isMobile=isAndroid||/iPhone|iPod|Mobile|SymbianOS/i.test(ngua),isSBIE=/MSIE/i.test(ngua);document.getElementsByTagName('link')[0].href=isMobile?'mobile.css':'computer.css';";
+if(isMobile) getObj("mobile_br").innerHTML+="<br><br><br><br>";
 	
 /**
  * Ascii码加密、解密

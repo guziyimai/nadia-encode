@@ -22,6 +22,8 @@ NLT在上述任一地址后追加【/sots.html】即可，不含中括号，也�
 
 地址3：https://nadia-encode.vercel.app/update.html#download
 
+补个百度云（炸了不补）：https://pan.baidu.com/s/1hyj3fFscuIc-GSWwEXz64A?pwd=1111，解压码：纳迪亚加密
+
 离线插件的解密功能，可无网络运行。
 
 【安卓APP-离线版】
@@ -31,6 +33,8 @@ NLT在上述任一地址后追加【/sots.html】即可，不含中括号，也�
 地址2：https://guziyimai.github.io/nadia-encode/androd#download
 
 地址3：https://nadia-encode.vercel.app/androd.html#download
+
+补个百度云（炸了不补）：https://pan.baidu.com/s/1hyj3fFscuIc-GSWwEXz64A?pwd=1111，解压码：纳迪亚加密
 
 离线APP的加密、解密功能，均可无网络运行；苹果的“高安全性”不允许安装个人写的APP，请使用网页版。
 
